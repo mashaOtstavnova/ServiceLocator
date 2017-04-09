@@ -1,0 +1,215 @@
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MyServiceLocator.Droid.dll
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MyServiceLocator.Droid.pdb
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MyServiceLocator.Droid.apk
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MyServiceLocator.Droid-Signed.apk
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MvvmCross.Binding.dll
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MvvmCross.Binding.Droid.dll
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MvvmCross.Core.dll
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MvvmCross.Droid.dll
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MvvmCross.Droid.Shared.dll
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MvvmCross.Droid.Support.Core.UI.dll
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MvvmCross.Droid.Support.Core.Utils.dll
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MvvmCross.Droid.Support.Design.dll
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MvvmCross.Droid.Support.Fragment.dll
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MvvmCross.Droid.Support.V7.AppCompat.dll
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MvvmCross.Droid.Support.V7.RecyclerView.dll
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MvvmCross.Localization.dll
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MvvmCross.Platform.dll
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MvvmCross.Platform.Droid.dll
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MvvmCross.Plugins.Json.dll
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MyServiceLocator.Core.dll
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\Newtonsoft.Json.dll
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\Xamarin.Android.Support.Animated.Vector.Drawable.dll
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\Xamarin.Android.Support.Compat.dll
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\Xamarin.Android.Support.Core.UI.dll
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\Xamarin.Android.Support.Core.Utils.dll
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\Xamarin.Android.Support.Design.dll
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\Xamarin.Android.Support.Fragment.dll
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\Xamarin.Android.Support.Media.Compat.dll
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\Xamarin.Android.Support.v7.AppCompat.dll
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\Xamarin.Android.Support.v7.RecyclerView.dll
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\Xamarin.Android.Support.Vector.Drawable.dll
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MyServiceLocator.Core.pdb
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MvvmCross.Binding.dll.mdb
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MvvmCross.Localization.dll.mdb
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MvvmCross.Platform.dll.mdb
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\Newtonsoft.Json.xml
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\MyServiceLocator.Droid.csprojResolveAssemblyReference.cache
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\MyServiceLocator.Droid.dll
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\MyServiceLocator.Droid.pdb
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\android\bin\MyServiceLocator.Droid.apk
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\layout\toolbar.xml
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\layout\firstview.xml
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\layout\splashscreen.xml
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\values\strings.xml
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\drawable\icon.png
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\values\styles.xml
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\values\colors.xml
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\values\dimens.xml
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\values\integers.xml
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\values\arrays.xml
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\values-v21\styles.xml
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\drawable-xxhdpi\icon.png
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\drawable-xxxhdpi\icon.png
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\drawable-hdpi\icon.png
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\drawable-mdpi\icon.png
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\drawable-xhdpi\icon.png
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\values\splashstyle.xml
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\drawable\splash.png
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\drawable\nameservice.png
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\drawable\splash1.png
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\drawable\splash2.png
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\drawable\splash3.png
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\drawable-hdpi\ic_launcher.png
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\drawable-mdpi\ic_launcher.png
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\drawable-xhdpi\ic_launcher.png
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\drawable-xxhdpi\ic_launcher.png
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\drawable-xxxhdpi\ic_launcher.png
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\R.cs.flag
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\uploadflags.txt
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MyServiceLocator.Droid.dll.mdb
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MyServiceLocator.Core.dll.mdb
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\Java.Interop.dll.mdb
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\Mono.Android.dll.mdb
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\Mono.Android.Export.dll.mdb
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\mscorlib.dll.mdb
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\System.ComponentModel.Composition.dll.mdb
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\System.Core.dll.mdb
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\System.dll.mdb
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\System.Net.Http.dll.mdb
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\System.Runtime.Serialization.dll.mdb
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\System.ServiceModel.Internals.dll.mdb
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\System.Xml.dll.mdb
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\System.Xml.Linq.dll.mdb
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\android\assets\Java.Interop.dll.mdb
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\android\assets\Mono.Android.dll.mdb
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\android\assets\Mono.Android.Export.dll.mdb
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\android\assets\mscorlib.dll.mdb
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\android\assets\MvvmCross.Binding.dll.mdb
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\android\assets\MvvmCross.Localization.dll.mdb
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\android\assets\MvvmCross.Platform.dll.mdb
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\android\assets\MyServiceLocator.Core.dll.mdb
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\android\assets\MyServiceLocator.Droid.dll.mdb
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\android\assets\System.ComponentModel.Composition.dll.mdb
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\android\assets\System.Core.dll.mdb
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\android\assets\System.dll.mdb
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\android\assets\System.Net.Http.dll.mdb
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\android\assets\System.Runtime.Serialization.dll.mdb
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\android\assets\System.Xml.dll.mdb
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\layout\loginvk.xml
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\layout\typeuserview.xml
+c:\users\maria\documents\visual studio 2015\Projects\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\MyServiceLocator.Droid.dll.mdb
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MyServiceLocator.Droid.dll
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MyServiceLocator.Droid.pdb
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MyServiceLocator.Droid.apk
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MyServiceLocator.Droid-Signed.apk
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MvvmCross.Binding.dll
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MvvmCross.Binding.Droid.dll
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MvvmCross.Core.dll
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MvvmCross.Droid.dll
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MvvmCross.Droid.Shared.dll
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MvvmCross.Droid.Support.Core.UI.dll
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MvvmCross.Droid.Support.Core.Utils.dll
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MvvmCross.Droid.Support.Design.dll
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MvvmCross.Droid.Support.Fragment.dll
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MvvmCross.Droid.Support.V7.AppCompat.dll
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MvvmCross.Droid.Support.V7.RecyclerView.dll
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MvvmCross.Localization.dll
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MvvmCross.Platform.dll
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MvvmCross.Platform.Droid.dll
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MvvmCross.Plugins.Json.dll
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MyServiceLocator.Core.dll
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\Newtonsoft.Json.dll
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\Xamarin.Android.Support.Animated.Vector.Drawable.dll
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\Xamarin.Android.Support.Compat.dll
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\Xamarin.Android.Support.Core.UI.dll
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\Xamarin.Android.Support.Core.Utils.dll
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\Xamarin.Android.Support.Design.dll
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\Xamarin.Android.Support.Fragment.dll
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\Xamarin.Android.Support.Media.Compat.dll
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\Xamarin.Android.Support.v7.AppCompat.dll
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\Xamarin.Android.Support.v7.RecyclerView.dll
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\Xamarin.Android.Support.Vector.Drawable.dll
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MyServiceLocator.Core.pdb
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MyServiceLocator.Core.dll.mdb
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MvvmCross.Binding.dll.mdb
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MvvmCross.Localization.dll.mdb
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MvvmCross.Platform.dll.mdb
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\Newtonsoft.Json.xml
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\MyServiceLocator.Droid.csprojResolveAssemblyReference.cache
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\MyServiceLocator.Droid.dll
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\MyServiceLocator.Droid.pdb
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\android\bin\MyServiceLocator.Droid.apk
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\layout\toolbar.xml
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\layout\firstview.xml
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\layout\splashscreen.xml
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\layout\loginvk.xml
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\layout\typeuserview.xml
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\values\strings.xml
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\drawable\icon.png
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\values\styles.xml
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\values\colors.xml
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\values\dimens.xml
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\values\integers.xml
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\values\arrays.xml
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\values-v21\styles.xml
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\drawable-xxhdpi\icon.png
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\drawable-xxxhdpi\icon.png
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\drawable-hdpi\icon.png
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\drawable-mdpi\icon.png
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\drawable-xhdpi\icon.png
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\values\splashstyle.xml
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\drawable\splash.png
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\drawable\nameservice.png
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\drawable\splash1.png
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\drawable\splash2.png
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\drawable\splash3.png
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\drawable-hdpi\ic_launcher.png
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\drawable-mdpi\ic_launcher.png
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\drawable-xhdpi\ic_launcher.png
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\drawable-xxhdpi\ic_launcher.png
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\drawable-xxxhdpi\ic_launcher.png
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\R.cs.flag
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\uploadflags.txt
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\Java.Interop.dll.mdb
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\Mono.Android.dll.mdb
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\Mono.Android.Export.dll.mdb
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\mscorlib.dll.mdb
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MyServiceLocator.Droid.dll.mdb
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\System.ComponentModel.Composition.dll.mdb
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\System.Core.dll.mdb
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\System.dll.mdb
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\System.Net.Http.dll.mdb
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\System.Runtime.Serialization.dll.mdb
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\System.ServiceModel.Internals.dll.mdb
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\System.Xml.dll.mdb
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\System.Xml.Linq.dll.mdb
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\android\assets\Java.Interop.dll.mdb
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\android\assets\Mono.Android.dll.mdb
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\android\assets\Mono.Android.Export.dll.mdb
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\android\assets\mscorlib.dll.mdb
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\android\assets\MvvmCross.Binding.dll.mdb
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\android\assets\MvvmCross.Localization.dll.mdb
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\android\assets\MvvmCross.Platform.dll.mdb
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\android\assets\MyServiceLocator.Core.dll.mdb
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\android\assets\MyServiceLocator.Droid.dll.mdb
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\android\assets\System.ComponentModel.Composition.dll.mdb
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\android\assets\System.Core.dll.mdb
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\android\assets\System.dll.mdb
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\android\assets\System.Net.Http.dll.mdb
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\android\assets\System.Runtime.Serialization.dll.mdb
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\android\assets\System.Xml.dll.mdb
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\anim\rotate.xml
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\anim\fade_in.xml
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\drawable\border.xml
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\drawable-hdpi\ic_keyboard.png
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\drawable-mdpi\ic_keyboard.png
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\drawable-xhdpi\ic_keyboard.png
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\drawable-xxhdpi\ic_keyboard.png
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\res\drawable-xxxhdpi\ic_keyboard.png
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\obj\Debug\MyServiceLocator.Droid.dll.mdb
+C:\Users\maria\Desktop\MyServiceLocator\MyServiceLocator\MyServiceLocator.Droid\bin\Debug\MyServiceLocator.Droid.dll.mdb
