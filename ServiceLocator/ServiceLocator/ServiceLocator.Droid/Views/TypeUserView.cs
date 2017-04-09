@@ -18,8 +18,9 @@ namespace ServiceLocator.Droid
     [Activity]
     public class TypeUserView: BaseView<TypeUserViewModel>
     {
-        Button button;
+        Button buttonForMaster;
         protected override int LayoutResource => Resource.Layout.typeUserView;
+        
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
@@ -28,11 +29,13 @@ namespace ServiceLocator.Droid
             Window.ClearFlags(WindowManagerFlags.ForceNotFullscreen);
             //bigIcon = (ImageView)FindViewById(Resource.Id.bigicon);
             //background = (ImageView)FindViewById(Resource.Id.background);
-            button = (Button)FindViewById(Resource.Id.type_user_master);
+            buttonForMaster = (Button)FindViewById(Resource.Id.type_user_master);
 
             //Animation anim = AnimationUtils.LoadAnimation(ApplicationContext,
             //              Resource.Animation.fade_in);
             //button.StartAnimation(anim);
+           
+            buttonForMaster.Click += OnButtonForMasterClic;
         }
 
         //protected override void OnResume()
@@ -42,5 +45,9 @@ namespace ServiceLocator.Droid
         //                 Resource.Animation.fade_in);
         //    button.StartAnimation(anim);
         //}
+        private void OnButtonForMasterClic(object sender, EventArgs eventArgs)
+        {
+            ViewModel.SetTypeUserClickCommand.Execute();
+        }
     }
 }
