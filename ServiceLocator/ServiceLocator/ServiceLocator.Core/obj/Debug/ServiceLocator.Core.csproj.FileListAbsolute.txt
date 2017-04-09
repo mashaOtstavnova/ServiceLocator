@@ -1,0 +1,14 @@
+C:\Users\maria\Desktop\Kochev-roadhelperv2-5e8da0fb8f07\ServiceLocator\ServiceLocator\ServiceLocator.Core\bin\Debug\ServiceLocator.Core.dll
+C:\Users\maria\Desktop\Kochev-roadhelperv2-5e8da0fb8f07\ServiceLocator\ServiceLocator\ServiceLocator.Core\bin\Debug\ServiceLocator.Core.pdb
+C:\Users\maria\Desktop\Kochev-roadhelperv2-5e8da0fb8f07\ServiceLocator\ServiceLocator\ServiceLocator.Core\bin\Debug\MvvmCross.Binding.dll
+C:\Users\maria\Desktop\Kochev-roadhelperv2-5e8da0fb8f07\ServiceLocator\ServiceLocator\ServiceLocator.Core\bin\Debug\MvvmCross.Core.dll
+C:\Users\maria\Desktop\Kochev-roadhelperv2-5e8da0fb8f07\ServiceLocator\ServiceLocator\ServiceLocator.Core\bin\Debug\MvvmCross.Localization.dll
+C:\Users\maria\Desktop\Kochev-roadhelperv2-5e8da0fb8f07\ServiceLocator\ServiceLocator\ServiceLocator.Core\bin\Debug\MvvmCross.Platform.dll
+C:\Users\maria\Desktop\Kochev-roadhelperv2-5e8da0fb8f07\ServiceLocator\ServiceLocator\ServiceLocator.Core\obj\Debug\ServiceLocator.Core.dll
+C:\Users\maria\Desktop\Kochev-roadhelperv2-5e8da0fb8f07\ServiceLocator\ServiceLocator\ServiceLocator.Core\obj\Debug\ServiceLocator.Core.pdb
+C:\Users\maria\Desktop\Kochev-roadhelperv2-5e8da0fb8f07\ServiceLocator\ServiceLocator\ServiceLocator.Core\obj\Debug\ServiceLocator.Core.dll.mdb
+C:\Users\maria\Desktop\Kochev-roadhelperv2-5e8da0fb8f07\ServiceLocator\ServiceLocator\ServiceLocator.Core\bin\Debug\ServiceLocator.Core.dll.mdb
+C:\Users\maria\Desktop\Kochev-roadhelperv2-5e8da0fb8f07\ServiceLocator\ServiceLocator\ServiceLocator.Core\obj\Debug\ServiceLocator.Core.dll.mdb
+C:\Users\maria\Desktop\Kochev-roadhelperv2-5e8da0fb8f07\ServiceLocator\ServiceLocator\ServiceLocator.Core\bin\Debug\ServiceLocator.Core.dll.mdb
+C:\Users\maria\Desktop\Kochev-roadhelperv2-5e8da0fb8f07\ServiceLocator\ServiceLocator\ServiceLocator.Core\obj\Debug\ServiceLocator.Core.dll.mdb
+C:\Users\maria\Desktop\Kochev-roadhelperv2-5e8da0fb8f07\ServiceLocator\ServiceLocator\ServiceLocator.Core\bin\Debug\ServiceLocator.Core.dll.mdb
