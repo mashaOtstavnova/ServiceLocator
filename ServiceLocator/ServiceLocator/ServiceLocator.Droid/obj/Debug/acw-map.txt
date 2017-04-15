@@ -18,6 +18,14 @@ ServiceLocator.Droid.Views.BaseView`1, ServiceLocator.Droid;md5e187c0d02747d8043
 ServiceLocator.Droid.Views.BaseView`1, ServiceLocator.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5e187c0d02747d8043bdf48cfd714108a.BaseView_1
 ServiceLocator.Droid.Views.BaseView`1;md5e187c0d02747d8043bdf48cfd714108a.BaseView_1
 servicelocator.droid.views.BaseView_1;md5e187c0d02747d8043bdf48cfd714108a.BaseView_1
+ServiceLocator.Droid.Views.FirstMasterView, ServiceLocator.Droid;md5e187c0d02747d8043bdf48cfd714108a.FirstMasterView
+ServiceLocator.Droid.Views.FirstMasterView, ServiceLocator.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5e187c0d02747d8043bdf48cfd714108a.FirstMasterView
+ServiceLocator.Droid.Views.FirstMasterView;md5e187c0d02747d8043bdf48cfd714108a.FirstMasterView
+servicelocator.droid.views.FirstMasterView;md5e187c0d02747d8043bdf48cfd714108a.FirstMasterView
+ServiceLocator.Droid.Views.HomeMasterView, ServiceLocator.Droid;md5e187c0d02747d8043bdf48cfd714108a.HomeMasterView
+ServiceLocator.Droid.Views.HomeMasterView, ServiceLocator.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5e187c0d02747d8043bdf48cfd714108a.HomeMasterView
+ServiceLocator.Droid.Views.HomeMasterView;md5e187c0d02747d8043bdf48cfd714108a.HomeMasterView
+servicelocator.droid.views.HomeMasterView;md5e187c0d02747d8043bdf48cfd714108a.HomeMasterView
 ServiceLocator.Droid.Views.SplashScreenView, ServiceLocator.Droid;md5e187c0d02747d8043bdf48cfd714108a.SplashScreenView
 ServiceLocator.Droid.Views.SplashScreenView, ServiceLocator.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5e187c0d02747d8043bdf48cfd714108a.SplashScreenView
 ServiceLocator.Droid.Views.SplashScreenView;md5e187c0d02747d8043bdf48cfd714108a.SplashScreenView
@@ -334,6 +342,18 @@ MvvmCross.Platform.Droid.Views.MvxEventSourceTabActivity, MvvmCross.Platform.Dro
 MvvmCross.Platform.Droid.Views.MvxEventSourceTabActivity, MvvmCross.Platform.Droid, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null;mvvmcross.platform.droid.views.MvxEventSourceTabActivity
 MvvmCross.Platform.Droid.Views.MvxEventSourceTabActivity;mvvmcross.platform.droid.views.MvxEventSourceTabActivity
 mvvmcross.platform.droid.views.MvxEventSourceTabActivity;mvvmcross.platform.droid.views.MvxEventSourceTabActivity
+Com.Nostra13.Universalimageloader.Core.Listener.IImageLoadingListenerImplementor, UniversalImageLoader;mono.com.nostra13.universalimageloader.core.listener.ImageLoadingListenerImplementor
+Com.Nostra13.Universalimageloader.Core.Listener.IImageLoadingListenerImplementor, UniversalImageLoader, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.nostra13.universalimageloader.core.listener.ImageLoadingListenerImplementor
+Com.Nostra13.Universalimageloader.Core.Listener.IImageLoadingListenerImplementor;mono.com.nostra13.universalimageloader.core.listener.ImageLoadingListenerImplementor
+mono.com.nostra13.universalimageloader.core.listener.ImageLoadingListenerImplementor;mono.com.nostra13.universalimageloader.core.listener.ImageLoadingListenerImplementor
+Com.Nostra13.Universalimageloader.Core.Listener.IImageLoadingProgressListenerImplementor, UniversalImageLoader;mono.com.nostra13.universalimageloader.core.listener.ImageLoadingProgressListenerImplementor
+Com.Nostra13.Universalimageloader.Core.Listener.IImageLoadingProgressListenerImplementor, UniversalImageLoader, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.nostra13.universalimageloader.core.listener.ImageLoadingProgressListenerImplementor
+Com.Nostra13.Universalimageloader.Core.Listener.IImageLoadingProgressListenerImplementor;mono.com.nostra13.universalimageloader.core.listener.ImageLoadingProgressListenerImplementor
+mono.com.nostra13.universalimageloader.core.listener.ImageLoadingProgressListenerImplementor;mono.com.nostra13.universalimageloader.core.listener.ImageLoadingProgressListenerImplementor
+Com.Nostra13.Universalimageloader.Utils.IoUtils/ICopyListenerImplementor, UniversalImageLoader;mono.com.nostra13.universalimageloader.utils.IoUtils_CopyListenerImplementor
+Com.Nostra13.Universalimageloader.Utils.IoUtils+ICopyListenerImplementor, UniversalImageLoader, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.nostra13.universalimageloader.utils.IoUtils_CopyListenerImplementor
+Com.Nostra13.Universalimageloader.Utils.IoUtils.ICopyListenerImplementor;mono.com.nostra13.universalimageloader.utils.IoUtils_CopyListenerImplementor
+mono.com.nostra13.universalimageloader.utils.IoUtils_CopyListenerImplementor;mono.com.nostra13.universalimageloader.utils.IoUtils_CopyListenerImplementor
 VKontakte.ActionCallback`1, VKontakte.Android;md5f07b4c044a0165b3b7e6615fa34ca015.ActionCallback_1
 VKontakte.ActionCallback`1, VKontakte.Android, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null;md5f07b4c044a0165b3b7e6615fa34ca015.ActionCallback_1
 VKontakte.ActionCallback`1;md5f07b4c044a0165b3b7e6615fa34ca015.ActionCallback_1

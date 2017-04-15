@@ -22,7 +22,8 @@ namespace ServiceLocator.Core.ViewModels
         }
         private void SetTypeUserClick()
         {
-            _dataLoader.SetTypeUser();
+            ShowViewModel<FirstMasterViewModel>();
+            //_dataLoader.SetTypeUser();
         }
     }
 }

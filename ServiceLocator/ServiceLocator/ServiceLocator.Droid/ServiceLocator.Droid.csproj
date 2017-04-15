@@ -10,12 +10,16 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ServiceLocator.Droid</RootNamespace>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
     <AssemblyName>ServiceLocator.Droid</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <AndroidApplication>true</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
-    <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
     <DevInstrumentationEnabled>True</DevInstrumentationEnabled>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
@@ -35,9 +39,11 @@
     <EmbedAssembliesIntoApk>False</EmbedAssembliesIntoApk>
     <BundleAssemblies>False</BundleAssemblies>
     <AndroidCreatePackagePerAbi>False</AndroidCreatePackagePerAbi>
-    <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
-    <Debugger>Xamarin</Debugger>
+    <JavaMaximumHeapSize>2G</JavaMaximumHeapSize>
     <AndroidEnableMultiDex>False</AndroidEnableMultiDex>
+    <AotAssemblies>False</AotAssemblies>
+    <EnableLLVM>False</EnableLLVM>
+    <EnableProguard>False</EnableProguard>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -109,6 +115,9 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
+    <Reference Include="UniversalImageLoader, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Bindings.UniversalImageLoader.1.0.4\lib\MonoAndroid\UniversalImageLoader.dll</HintPath>
+    </Reference>
     <Reference Include="VKontakte.Android, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xamarin.VKontakte.1.0.0-beta2\lib\MonoAndroid\VKontakte.Android.dll</HintPath>
       <Private>True</Private>
@@ -119,7 +128,6 @@
     </Reference>
     <Reference Include="Xamarin.Android.Support.Design, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xamarin.Android.Support.Design.23.4.0.1\lib\MonoAndroid43\Xamarin.Android.Support.Design.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xamarin.Android.Support.v4.23.4.0.1\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll</HintPath>
@@ -159,8 +167,11 @@
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceLocatorApplication.cs" />
+    <Compile Include="Services\ProfilerService.cs" />
     <Compile Include="Setup.cs" />
     <Compile Include="Views\BaseView.cs" />
+    <Compile Include="Views\FirstMasterView.cs" />
+    <Compile Include="Views\HomeMasterView.cs" />
     <Compile Include="Views\LoginVKView.cs" />
     <Compile Include="Views\SplashScreen.cs" />
     <Compile Include="Views\TypeUserView.cs" />
@@ -177,7 +188,18 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\loginVK.axml" />
-    <AndroidResource Include="Resources\layout\typeUserView.axml" />
+    <AndroidResource Include="Resources\layout\typeUserView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\home_master_view.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\home_client_view.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\first_master_view.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\strings.xml" />
@@ -186,6 +208,7 @@
     <AndroidResource Include="Resources\drawable\Icon.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="menu\nav_menu_masters.xml" />
     <Content Include="Properties\AndroidManifest.xml">
       <SubType>Designer</SubType>
     </Content>
@@ -223,11 +246,85 @@
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_launcher.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\ic_keyboard.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\menu\nav_menu_masters.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\nav_header.axml" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_add.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_browser.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_dashboard.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_discuss.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_done.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_event.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_exit.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_forum.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_friends.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_headset.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_home.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_info.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_menu.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_menu_refresh.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_save.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_settings.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_user.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_add.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_browser.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_dashboard.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_discuss.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_done.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_event.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_exit.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_forum.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_friends.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_headset.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_home.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_info.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_menu.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_menu_refresh.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_save.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_settings.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_user.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_add.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_browser.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_dashboard.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_discuss.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_done.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_event.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_exit.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_forum.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_friends.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_headset.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_home.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_info.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_menu.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_save.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_settings.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_user.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_add.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_browser.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_dashboard.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_discuss.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_done.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_event.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_exit.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_forum.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_friends.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_headset.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_home.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_info.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_menu.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_save.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_settings.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_user.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ServiceLocator.Core\ServiceLocator.Core.csproj">
       <Project>{31d7792c-8339-4c32-8c91-123c9b248b83}</Project>
       <Name>ServiceLocator.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ServiceLocator.Entities\ServiceLocator.Entities.csproj">
+      <Project>{d38ead50-838b-46fc-b1c0-78b92b3ee0e7}</Project>
+      <Name>ServiceLocator.Entities</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -240,9 +337,7 @@
       <Version>23.4.0.1</Version>
     </XamarinComponentReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Services\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.4.0.1\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.4.0.1\build\Xamarin.Android.Support.Vector.Drawable.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -112,6 +112,7 @@ class MonoPackageManager_Resources {
 		"MvvmCross.Platform.Droid.dll",
 		"MvvmCross.Plugins.Json.dll",
 		"Newtonsoft.Json.dll",
+		"UniversalImageLoader.dll",
 		"VKontakte.Android.dll",
 		"Xamarin.Android.Support.Animated.Vector.Drawable.dll",
 		"Xamarin.Android.Support.Design.dll",
@@ -123,6 +124,7 @@ class MonoPackageManager_Resources {
 		"Xamarin.GooglePlayServices.Basement.dll",
 		"Xamarin.GooglePlayServices.Maps.dll",
 		"ServiceLocator.Core.dll",
+		"ServiceLocator.Entities.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

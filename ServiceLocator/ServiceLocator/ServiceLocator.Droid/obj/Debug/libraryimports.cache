@@ -6,6 +6,7 @@
   </ManifestDocuments>
   <NativeLibraries />
   <Jars>
+    <Jar>obj\Debug\__library_projects__\UniversalImageLoader\library_project_imports\universal-image-loader-1.9.4.jar</Jar>
     <Jar>obj\Debug\__library_projects__\VKontakte.Android\library_project_imports\bin\classes.jar</Jar>
   </Jars>
 </Paths>

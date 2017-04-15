@@ -8,6 +8,8 @@ using MvvmCross.Platform.Platform;
 using ServiceLocator.Core;
 using ServiceLocator.Core.IServices;
 using ServiceLocator.Core.IServices.Services;
+using ServiceLocator.Droid.Services;
+
 namespace ServiceLocator.Droid
 {
     public class Setup : MvxAndroidSetup
@@ -36,6 +38,8 @@ namespace ServiceLocator.Droid
         {
             base.InitializeFirstChance();
             Mvx.RegisterSingleton<IDataLoaderService>(() => new DataLoaderService());
+
+            Mvx.RegisterSingleton<IProfileService>(() => new ProfileService());
         }
     }
 }
