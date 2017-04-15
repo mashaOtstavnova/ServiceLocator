@@ -5,7 +5,7 @@
   <xs:import schemaLocation="schemas.android.com.tools.xsd" namespace="http://schemas.android.com/tools" />
   <xs:annotation>
     <xs:documentation>v23</xs:documentation>
-    <xs:documentation>15.04.2017 14:41:03</xs:documentation>
+    <xs:documentation>15.04.2017 18:48:43</xs:documentation>
   </xs:annotation>
   <xs:group name="any-view">
     <xs:choice>
@@ -83,9 +83,47 @@
       <xs:element ref="SearchView" />
       <xs:element ref="fragment" />
       <xs:element ref="com.vk.sdk.WebView" />
+      <xs:element ref="MvvmCross.Binding.Droid.Views.MvxTableLayout" />
+      <xs:element ref="MvvmCross.Binding.Droid.Views.MvxFrameLayout" />
+      <xs:element ref="MvvmCross.Binding.Droid.Views.MvxRelativeLayout" />
+      <xs:element ref="MvvmCross.Binding.Droid.Views.MvxTimePicker" />
+      <xs:element ref="MvvmCross.Binding.Droid.Views.MvxImageView" />
+      <xs:element ref="MvvmCross.Binding.Droid.Views.MvxListView" />
+      <xs:element ref="MvvmCross.Binding.Droid.Views.MvxListItemView" />
+      <xs:element ref="MvvmCross.Binding.Droid.Views.MvxLinearLayout" />
+      <xs:element ref="MvvmCross.Binding.Droid.Views.MvxSpinner" />
+      <xs:element ref="MvvmCross.Binding.Droid.Views.MvxRadioGroup" />
+      <xs:element ref="MvvmCross.Binding.Droid.Views.MvxAutoCompleteTextView" />
+      <xs:element ref="MvvmCross.Binding.Droid.Views.MvxGridView" />
+      <xs:element ref="MvvmCross.Binding.Droid.Views.MvxDatePicker" />
+      <xs:element ref="MvvmCross.Binding.Droid.Views.MvxFrameControl" />
+      <xs:element ref="MvvmCross.Binding.Droid.Views.MvxExpandableListView" />
+      <xs:element ref="MvvmCross.Binding.Droid.Views.MvxBaseListItemView" />
+      <xs:element ref="MvvmCross.Droid.Support.V7.AppCompat.Widget.MvxAppCompatSpinner" />
+      <xs:element ref="MvvmCross.Droid.Support.V7.AppCompat.Widget.MvxAppCompatRadioGroup" />
+      <xs:element ref="MvvmCross.Droid.Support.V7.AppCompat.Widget.MvxAppCompatImageView" />
+      <xs:element ref="MvvmCross.Droid.Support.V7.AppCompat.Widget.MvxAppCompatAutoCompleteTextView" />
+      <xs:element ref="MvvmCross.Droid.Support.V4.MvxSwipeRefreshLayout" />
       <xs:element ref="com.google.android.gms.maps.StreetViewPanoramaView" />
       <xs:element ref="com.google.android.gms.maps.MapView" />
       <xs:element ref="com.google.android.gms.common.SignInButton" />
+      <xs:element ref="android.support.design.widget.VisibilityAwareImageButton" />
+      <xs:element ref="android.support.design.widget.TextInputLayout" />
+      <xs:element ref="android.support.design.widget.TextInputEditText" />
+      <xs:element ref="android.support.design.widget.TabLayout" />
+      <xs:element ref="android.support.design.widget.TabLayout.TabView" />
+      <xs:element ref="android.support.design.widget.TabLayout.SlidingTabStrip" />
+      <xs:element ref="android.support.design.widget.TabItem" />
+      <xs:element ref="android.support.design.widget.NavigationView" />
+      <xs:element ref="android.support.design.widget.FloatingActionButton" />
+      <xs:element ref="android.support.design.widget.AppBarLayout" />
+      <xs:element ref="android.support.design.widget.CoordinatorLayout" />
+      <xs:element ref="android.support.design.widget.Snackbar.SnackbarLayout" />
+      <xs:element ref="android.support.design.widget.CollapsingToolbarLayout" />
+      <xs:element ref="android.support.design.internal.ScrimInsetsFrameLayout" />
+      <xs:element ref="android.support.design.internal.NavigationMenuView" />
+      <xs:element ref="android.support.design.internal.NavigationMenuItemView" />
+      <xs:element ref="android.support.design.internal.ForegroundLinearLayout" />
       <xs:element ref="android.support.v4.widget.Space" />
       <xs:element ref="android.support.v4.widget.SlidingPaneLayout" />
       <xs:element ref="android.support.v4.widget.DrawerLayout" />
@@ -98,6 +136,7 @@
       <xs:element ref="android.support.v4.app.FragmentTabHost" />
       <xs:element ref="android.support.v7.view.menu.ExpandedMenuView" />
       <xs:element ref="android.support.v7.view.menu.ListMenuItemView" />
+      <xs:element ref="android.support.v7.widget.CardView" />
       <xs:element ref="android.support.v7.widget.ViewStubCompat" />
       <xs:element ref="android.support.v7.widget.SwitchCompat" />
       <xs:element ref="android.support.v7.widget.SearchView" />
@@ -119,44 +158,6 @@
       <xs:element ref="android.support.v7.widget.AbsActionBarView" />
       <xs:element ref="android.support.v7.widget.Toolbar" />
       <xs:element ref="android.support.v7.widget.RecyclerView" />
-      <xs:element ref="android.support.design.widget.VisibilityAwareImageButton" />
-      <xs:element ref="android.support.design.widget.TextInputLayout" />
-      <xs:element ref="android.support.design.widget.TextInputEditText" />
-      <xs:element ref="android.support.design.widget.TabLayout" />
-      <xs:element ref="android.support.design.widget.TabLayout.TabView" />
-      <xs:element ref="android.support.design.widget.TabLayout.SlidingTabStrip" />
-      <xs:element ref="android.support.design.widget.TabItem" />
-      <xs:element ref="android.support.design.widget.NavigationView" />
-      <xs:element ref="android.support.design.widget.FloatingActionButton" />
-      <xs:element ref="android.support.design.widget.AppBarLayout" />
-      <xs:element ref="android.support.design.widget.CoordinatorLayout" />
-      <xs:element ref="android.support.design.widget.Snackbar.SnackbarLayout" />
-      <xs:element ref="android.support.design.widget.CollapsingToolbarLayout" />
-      <xs:element ref="android.support.design.internal.ScrimInsetsFrameLayout" />
-      <xs:element ref="android.support.design.internal.NavigationMenuView" />
-      <xs:element ref="android.support.design.internal.NavigationMenuItemView" />
-      <xs:element ref="android.support.design.internal.ForegroundLinearLayout" />
-      <xs:element ref="MvvmCross.Droid.Support.V7.AppCompat.Widget.MvxAppCompatSpinner" />
-      <xs:element ref="MvvmCross.Droid.Support.V7.AppCompat.Widget.MvxAppCompatRadioGroup" />
-      <xs:element ref="MvvmCross.Droid.Support.V7.AppCompat.Widget.MvxAppCompatImageView" />
-      <xs:element ref="MvvmCross.Droid.Support.V7.AppCompat.Widget.MvxAppCompatAutoCompleteTextView" />
-      <xs:element ref="MvvmCross.Droid.Support.V4.MvxSwipeRefreshLayout" />
-      <xs:element ref="MvvmCross.Binding.Droid.Views.MvxTableLayout" />
-      <xs:element ref="MvvmCross.Binding.Droid.Views.MvxFrameLayout" />
-      <xs:element ref="MvvmCross.Binding.Droid.Views.MvxRelativeLayout" />
-      <xs:element ref="MvvmCross.Binding.Droid.Views.MvxTimePicker" />
-      <xs:element ref="MvvmCross.Binding.Droid.Views.MvxImageView" />
-      <xs:element ref="MvvmCross.Binding.Droid.Views.MvxListView" />
-      <xs:element ref="MvvmCross.Binding.Droid.Views.MvxListItemView" />
-      <xs:element ref="MvvmCross.Binding.Droid.Views.MvxLinearLayout" />
-      <xs:element ref="MvvmCross.Binding.Droid.Views.MvxSpinner" />
-      <xs:element ref="MvvmCross.Binding.Droid.Views.MvxRadioGroup" />
-      <xs:element ref="MvvmCross.Binding.Droid.Views.MvxAutoCompleteTextView" />
-      <xs:element ref="MvvmCross.Binding.Droid.Views.MvxGridView" />
-      <xs:element ref="MvvmCross.Binding.Droid.Views.MvxDatePicker" />
-      <xs:element ref="MvvmCross.Binding.Droid.Views.MvxFrameControl" />
-      <xs:element ref="MvvmCross.Binding.Droid.Views.MvxExpandableListView" />
-      <xs:element ref="MvvmCross.Binding.Droid.Views.MvxBaseListItemView" />
       <xs:element ref="merge" />
     </xs:choice>
   </xs:group>
@@ -383,31 +384,10 @@
     <xs:attribute ref="android:foregroundTintMode" />
     <xs:attribute ref="android:scrollIndicators" />
     <xs:attribute ref="tools:visibility" />
-    <xs:attribute ref="android:layout_toLeftOf" />
-    <xs:attribute ref="android:layout_toRightOf" />
-    <xs:attribute ref="android:layout_above" />
-    <xs:attribute ref="android:layout_below" />
-    <xs:attribute ref="android:layout_alignBaseline" />
-    <xs:attribute ref="android:layout_alignLeft" />
-    <xs:attribute ref="android:layout_alignTop" />
-    <xs:attribute ref="android:layout_alignRight" />
-    <xs:attribute ref="android:layout_alignBottom" />
-    <xs:attribute ref="android:layout_alignParentLeft" />
-    <xs:attribute ref="android:layout_alignParentTop" />
-    <xs:attribute ref="android:layout_alignParentRight" />
-    <xs:attribute ref="android:layout_alignParentBottom" />
-    <xs:attribute ref="android:layout_centerInParent" />
-    <xs:attribute ref="android:layout_centerHorizontal" />
-    <xs:attribute ref="android:layout_centerVertical" />
-    <xs:attribute ref="android:layout_alignWithParentIfMissing" />
-    <xs:attribute ref="android:layout_toStartOf" />
-    <xs:attribute ref="android:layout_toEndOf" />
-    <xs:attribute ref="android:layout_alignStart" />
-    <xs:attribute ref="android:layout_alignEnd" />
-    <xs:attribute ref="android:layout_alignParentStart" />
-    <xs:attribute ref="android:layout_alignParentEnd" />
     <xs:attribute ref="android:layout_width" />
     <xs:attribute ref="android:layout_height" />
+    <xs:attribute ref="android:layout_weight" />
+    <xs:attribute ref="android:layout_gravity" />
     <xs:attribute ref="android:layout_margin" />
     <xs:attribute ref="android:layout_marginLeft" />
     <xs:attribute ref="android:layout_marginTop" />
@@ -1471,31 +1451,10 @@
     <xs:attribute ref="android:fragmentAllowEnterTransitionOverlap" />
     <xs:attribute ref="android:fragmentAllowReturnTransitionOverlap" />
     <xs:attribute ref="tools:layout" />
-    <xs:attribute ref="android:layout_toLeftOf" />
-    <xs:attribute ref="android:layout_toRightOf" />
-    <xs:attribute ref="android:layout_above" />
-    <xs:attribute ref="android:layout_below" />
-    <xs:attribute ref="android:layout_alignBaseline" />
-    <xs:attribute ref="android:layout_alignLeft" />
-    <xs:attribute ref="android:layout_alignTop" />
-    <xs:attribute ref="android:layout_alignRight" />
-    <xs:attribute ref="android:layout_alignBottom" />
-    <xs:attribute ref="android:layout_alignParentLeft" />
-    <xs:attribute ref="android:layout_alignParentTop" />
-    <xs:attribute ref="android:layout_alignParentRight" />
-    <xs:attribute ref="android:layout_alignParentBottom" />
-    <xs:attribute ref="android:layout_centerInParent" />
-    <xs:attribute ref="android:layout_centerHorizontal" />
-    <xs:attribute ref="android:layout_centerVertical" />
-    <xs:attribute ref="android:layout_alignWithParentIfMissing" />
-    <xs:attribute ref="android:layout_toStartOf" />
-    <xs:attribute ref="android:layout_toEndOf" />
-    <xs:attribute ref="android:layout_alignStart" />
-    <xs:attribute ref="android:layout_alignEnd" />
-    <xs:attribute ref="android:layout_alignParentStart" />
-    <xs:attribute ref="android:layout_alignParentEnd" />
     <xs:attribute ref="android:layout_width" />
     <xs:attribute ref="android:layout_height" />
+    <xs:attribute ref="android:layout_weight" />
+    <xs:attribute ref="android:layout_gravity" />
     <xs:attribute ref="android:layout_margin" />
     <xs:attribute ref="android:layout_marginLeft" />
     <xs:attribute ref="android:layout_marginTop" />
@@ -1512,10 +1471,224 @@
   </xs:element>
   <xs:complexType name="com.vk.sdk.WebView">
     <xs:complexContent mixed="false">
-      <xs:extension base="android.webkit.WebView">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
+      <xs:extension base="android.webkit.WebView" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MvvmCross.Binding.Droid.Views.MvxTableLayout" type="MvvmCross.Binding.Droid.Views.MvxTableLayout">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: MvvmCross.Binding.Droid.Views.MvxTableLayout</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="MvvmCross.Binding.Droid.Views.MvxTableLayout">
+    <xs:complexContent mixed="false">
+      <xs:extension base="TableLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MvvmCross.Binding.Droid.Views.MvxFrameLayout" type="MvvmCross.Binding.Droid.Views.MvxFrameLayout">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: MvvmCross.Binding.Droid.Views.MvxFrameLayout</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="MvvmCross.Binding.Droid.Views.MvxFrameLayout">
+    <xs:complexContent mixed="false">
+      <xs:extension base="FrameLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MvvmCross.Binding.Droid.Views.MvxRelativeLayout" type="MvvmCross.Binding.Droid.Views.MvxRelativeLayout">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: MvvmCross.Binding.Droid.Views.MvxRelativeLayout</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="MvvmCross.Binding.Droid.Views.MvxRelativeLayout">
+    <xs:complexContent mixed="false">
+      <xs:extension base="RelativeLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MvvmCross.Binding.Droid.Views.MvxTimePicker" type="MvvmCross.Binding.Droid.Views.MvxTimePicker">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: MvvmCross.Binding.Droid.Views.MvxTimePicker</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="MvvmCross.Binding.Droid.Views.MvxTimePicker">
+    <xs:complexContent mixed="false">
+      <xs:extension base="TimePicker" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MvvmCross.Binding.Droid.Views.MvxImageView" type="MvvmCross.Binding.Droid.Views.MvxImageView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: MvvmCross.Binding.Droid.Views.MvxImageView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="MvvmCross.Binding.Droid.Views.MvxImageView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ImageView">
+        <xs:attribute ref="app:MvxSource" />
       </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MvvmCross.Binding.Droid.Views.MvxListView" type="MvvmCross.Binding.Droid.Views.MvxListView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: MvvmCross.Binding.Droid.Views.MvxListView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="MvvmCross.Binding.Droid.Views.MvxListView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ListView">
+        <xs:attribute ref="app:MvxItemTemplate" />
+        <xs:attribute ref="app:MvxDropDownItemTemplate" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MvvmCross.Binding.Droid.Views.MvxListItemView" type="MvvmCross.Binding.Droid.Views.MvxListItemView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: MvvmCross.Binding.Droid.Views.MvxListItemView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="MvvmCross.Binding.Droid.Views.MvxListItemView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="FrameLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MvvmCross.Binding.Droid.Views.MvxLinearLayout" type="MvvmCross.Binding.Droid.Views.MvxLinearLayout">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: MvvmCross.Binding.Droid.Views.MvxLinearLayout</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="MvvmCross.Binding.Droid.Views.MvxLinearLayout">
+    <xs:complexContent mixed="false">
+      <xs:extension base="LinearLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MvvmCross.Binding.Droid.Views.MvxSpinner" type="MvvmCross.Binding.Droid.Views.MvxSpinner">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: MvvmCross.Binding.Droid.Views.MvxSpinner</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="MvvmCross.Binding.Droid.Views.MvxSpinner">
+    <xs:complexContent mixed="false">
+      <xs:extension base="Spinner" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MvvmCross.Binding.Droid.Views.MvxRadioGroup" type="MvvmCross.Binding.Droid.Views.MvxRadioGroup">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: MvvmCross.Binding.Droid.Views.MvxRadioGroup</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="MvvmCross.Binding.Droid.Views.MvxRadioGroup">
+    <xs:complexContent mixed="false">
+      <xs:extension base="RadioGroup" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MvvmCross.Binding.Droid.Views.MvxAutoCompleteTextView" type="MvvmCross.Binding.Droid.Views.MvxAutoCompleteTextView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: MvvmCross.Binding.Droid.Views.MvxAutoCompleteTextView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="MvvmCross.Binding.Droid.Views.MvxAutoCompleteTextView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="AutoCompleteTextView" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MvvmCross.Binding.Droid.Views.MvxGridView" type="MvvmCross.Binding.Droid.Views.MvxGridView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: MvvmCross.Binding.Droid.Views.MvxGridView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="MvvmCross.Binding.Droid.Views.MvxGridView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="GridView" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MvvmCross.Binding.Droid.Views.MvxDatePicker" type="MvvmCross.Binding.Droid.Views.MvxDatePicker">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: MvvmCross.Binding.Droid.Views.MvxDatePicker</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="MvvmCross.Binding.Droid.Views.MvxDatePicker">
+    <xs:complexContent mixed="false">
+      <xs:extension base="DatePicker" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MvvmCross.Binding.Droid.Views.MvxFrameControl" type="MvvmCross.Binding.Droid.Views.MvxFrameControl">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: MvvmCross.Binding.Droid.Views.MvxFrameControl</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="MvvmCross.Binding.Droid.Views.MvxFrameControl">
+    <xs:complexContent mixed="false">
+      <xs:extension base="FrameLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MvvmCross.Binding.Droid.Views.MvxExpandableListView" type="MvvmCross.Binding.Droid.Views.MvxExpandableListView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: MvvmCross.Binding.Droid.Views.MvxExpandableListView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="MvvmCross.Binding.Droid.Views.MvxExpandableListView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ExpandableListView">
+        <xs:attribute ref="app:MvxGroupItemTemplate" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MvvmCross.Binding.Droid.Views.MvxBaseListItemView" type="MvvmCross.Binding.Droid.Views.MvxBaseListItemView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: MvvmCross.Binding.Droid.Views.MvxBaseListItemView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="MvvmCross.Binding.Droid.Views.MvxBaseListItemView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="FrameLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MvvmCross.Droid.Support.V7.AppCompat.Widget.MvxAppCompatSpinner" type="MvvmCross.Droid.Support.V7.AppCompat.Widget.MvxAppCompatSpinner">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: MvvmCross.Droid.Support.V7.AppCompat.Widget.MvxAppCompatSpinner</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="MvvmCross.Droid.Support.V7.AppCompat.Widget.MvxAppCompatSpinner">
+    <xs:complexContent mixed="false">
+      <xs:extension base="Spinner" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MvvmCross.Droid.Support.V7.AppCompat.Widget.MvxAppCompatRadioGroup" type="MvvmCross.Droid.Support.V7.AppCompat.Widget.MvxAppCompatRadioGroup">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: MvvmCross.Droid.Support.V7.AppCompat.Widget.MvxAppCompatRadioGroup</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="MvvmCross.Droid.Support.V7.AppCompat.Widget.MvxAppCompatRadioGroup">
+    <xs:complexContent mixed="false">
+      <xs:extension base="RadioGroup" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MvvmCross.Droid.Support.V7.AppCompat.Widget.MvxAppCompatImageView" type="MvvmCross.Droid.Support.V7.AppCompat.Widget.MvxAppCompatImageView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: MvvmCross.Droid.Support.V7.AppCompat.Widget.MvxAppCompatImageView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="MvvmCross.Droid.Support.V7.AppCompat.Widget.MvxAppCompatImageView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ImageView" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MvvmCross.Droid.Support.V7.AppCompat.Widget.MvxAppCompatAutoCompleteTextView" type="MvvmCross.Droid.Support.V7.AppCompat.Widget.MvxAppCompatAutoCompleteTextView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: MvvmCross.Droid.Support.V7.AppCompat.Widget.MvxAppCompatAutoCompleteTextView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="MvvmCross.Droid.Support.V7.AppCompat.Widget.MvxAppCompatAutoCompleteTextView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="AutoCompleteTextView" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MvvmCross.Droid.Support.V4.MvxSwipeRefreshLayout" type="MvvmCross.Droid.Support.V4.MvxSwipeRefreshLayout">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: MvvmCross.Droid.Support.V4.MvxSwipeRefreshLayout</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="MvvmCross.Droid.Support.V4.MvxSwipeRefreshLayout">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ViewGroup" />
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="com.google.android.gms.maps.StreetViewPanoramaView" type="com.google.android.gms.maps.StreetViewPanoramaView">
@@ -1525,10 +1698,7 @@
   </xs:element>
   <xs:complexType name="com.google.android.gms.maps.StreetViewPanoramaView">
     <xs:complexContent mixed="false">
-      <xs:extension base="FrameLayout">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
-      </xs:extension>
+      <xs:extension base="FrameLayout" />
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="com.google.android.gms.maps.MapView" type="com.google.android.gms.maps.MapView">
@@ -1538,10 +1708,7 @@
   </xs:element>
   <xs:complexType name="com.google.android.gms.maps.MapView">
     <xs:complexContent mixed="false">
-      <xs:extension base="FrameLayout">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
-      </xs:extension>
+      <xs:extension base="FrameLayout" />
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="com.google.android.gms.common.SignInButton" type="com.google.android.gms.common.SignInButton">
@@ -1558,482 +1725,6 @@
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:element name="android.support.v4.widget.Space" type="android.support.v4.widget.Space">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V4.Widget.Space</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="android.support.v4.widget.Space">
-    <xs:complexContent mixed="false">
-      <xs:extension base="View">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="android.support.v4.widget.SlidingPaneLayout" type="android.support.v4.widget.SlidingPaneLayout">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V4.Widget.SlidingPaneLayout</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="android.support.v4.widget.SlidingPaneLayout">
-    <xs:complexContent mixed="false">
-      <xs:extension base="ViewGroup">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="android.support.v4.widget.DrawerLayout" type="android.support.v4.widget.DrawerLayout">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V4.Widget.DrawerLayout</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="android.support.v4.widget.DrawerLayout">
-    <xs:complexContent mixed="false">
-      <xs:extension base="ViewGroup">
-        <xs:attribute ref="tools:openDrawer" />
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="android.support.v4.widget.ContentLoadingProgressBar" type="android.support.v4.widget.ContentLoadingProgressBar">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V4.Widget.ContentLoadingProgressBar</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="android.support.v4.widget.ContentLoadingProgressBar">
-    <xs:complexContent mixed="false">
-      <xs:extension base="ProgressBar">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="android.support.v4.widget.SwipeRefreshLayout" type="android.support.v4.widget.SwipeRefreshLayout">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V4.Widget.SwipeRefreshLayout</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="android.support.v4.widget.SwipeRefreshLayout">
-    <xs:complexContent mixed="false">
-      <xs:extension base="ViewGroup">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="android.support.v4.widget.NestedScrollView" type="android.support.v4.widget.NestedScrollView">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V4.Widget.NestedScrollView</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="android.support.v4.widget.NestedScrollView">
-    <xs:complexContent mixed="false">
-      <xs:extension base="FrameLayout">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="android.support.v4.view.PagerTitleStrip" type="android.support.v4.view.PagerTitleStrip">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V4.View.PagerTitleStrip</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="android.support.v4.view.PagerTitleStrip">
-    <xs:complexContent mixed="false">
-      <xs:extension base="ViewGroup">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="android.support.v4.view.PagerTabStrip" type="android.support.v4.view.PagerTabStrip">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V4.View.PagerTabStrip</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="android.support.v4.view.PagerTabStrip">
-    <xs:complexContent mixed="false">
-      <xs:extension base="ViewGroup">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="android.support.v4.view.ViewPager" type="android.support.v4.view.ViewPager">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V4.View.ViewPager</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="android.support.v4.view.ViewPager">
-    <xs:complexContent mixed="false">
-      <xs:extension base="ViewGroup">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="android.support.v4.app.FragmentTabHost" type="android.support.v4.app.FragmentTabHost">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V4.App.FragmentTabHost</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="android.support.v4.app.FragmentTabHost">
-    <xs:complexContent mixed="false">
-      <xs:extension base="TabHost">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="android.support.v7.view.menu.ExpandedMenuView" type="android.support.v7.view.menu.ExpandedMenuView">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V7.View.Menu.ExpandedMenuView</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="android.support.v7.view.menu.ExpandedMenuView">
-    <xs:complexContent mixed="false">
-      <xs:extension base="ListView">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="android.support.v7.view.menu.ListMenuItemView" type="android.support.v7.view.menu.ListMenuItemView">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V7.View.Menu.ListMenuItemView</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="android.support.v7.view.menu.ListMenuItemView">
-    <xs:complexContent mixed="false">
-      <xs:extension base="LinearLayout">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="android.support.v7.widget.ViewStubCompat" type="android.support.v7.widget.ViewStubCompat">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V7.Widget.ViewStubCompat</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="android.support.v7.widget.ViewStubCompat">
-    <xs:complexContent mixed="false">
-      <xs:extension base="View">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="android.support.v7.widget.SwitchCompat" type="android.support.v7.widget.SwitchCompat">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V7.Widget.SwitchCompat</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="android.support.v7.widget.SwitchCompat">
-    <xs:complexContent mixed="false">
-      <xs:extension base="CompoundButton">
-        <xs:attribute ref="app:track" />
-        <xs:attribute ref="app:thumbTextPadding" />
-        <xs:attribute ref="app:switchTextAppearance" />
-        <xs:attribute ref="app:switchMinWidth" />
-        <xs:attribute ref="app:switchPadding" />
-        <xs:attribute ref="app:splitTrack" />
-        <xs:attribute ref="app:showText" />
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="android.support.v7.widget.SearchView" type="android.support.v7.widget.SearchView">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V7.Widget.SearchView</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="android.support.v7.widget.SearchView">
-    <xs:complexContent mixed="false">
-      <xs:extension base="ViewGroup">
-        <xs:attribute ref="app:layout" />
-        <xs:attribute ref="app:iconifiedByDefault" />
-        <xs:attribute ref="app:queryHint" />
-        <xs:attribute ref="app:defaultQueryHint" />
-        <xs:attribute ref="app:closeIcon" />
-        <xs:attribute ref="app:goIcon" />
-        <xs:attribute ref="app:searchIcon" />
-        <xs:attribute ref="app:searchHintIcon" />
-        <xs:attribute ref="app:voiceIcon" />
-        <xs:attribute ref="app:commitIcon" />
-        <xs:attribute ref="app:suggestionRowLayout" />
-        <xs:attribute ref="app:queryBackground" />
-        <xs:attribute ref="app:submitBackground" />
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="android.support.v7.widget.SearchView.SearchAutoComplete" type="android.support.v7.widget.SearchView.SearchAutoComplete">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V7.Widget.SearchView+SearchAutoComplete</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="android.support.v7.widget.SearchView.SearchAutoComplete">
-    <xs:complexContent mixed="false">
-      <xs:extension base="AutoCompleteTextView">
-        <xs:attribute ref="android:popupTheme" />
-        <xs:attribute ref="android:textEditSuggestionContainerLayout" />
-        <xs:attribute ref="android:textEditSuggestionHighlightStyle" />
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="android.support.v7.widget.ScrollingTabContainerView" type="android.support.v7.widget.ScrollingTabContainerView">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V7.Widget.ScrollingTabContainerView</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="android.support.v7.widget.ScrollingTabContainerView">
-    <xs:complexContent mixed="false">
-      <xs:extension base="HorizontalScrollView">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="android.support.v7.widget.ScrollingTabContainerView.TabView" type="android.support.v7.widget.ScrollingTabContainerView.TabView">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V7.Widget.ScrollingTabContainerView+TabView</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="android.support.v7.widget.ScrollingTabContainerView.TabView">
-    <xs:complexContent mixed="false">
-      <xs:extension base="ViewGroup">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="android.support.v7.widget.ListViewCompat" type="android.support.v7.widget.ListViewCompat">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V7.Widget.ListViewCompat</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="android.support.v7.widget.ListViewCompat">
-    <xs:complexContent mixed="false">
-      <xs:extension base="ListView">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="android.support.v7.widget.ListPopupWindow.DropDownListView" type="android.support.v7.widget.ListPopupWindow.DropDownListView">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V7.Widget.ListPopupWindow+DropDownListView</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="android.support.v7.widget.ListPopupWindow.DropDownListView">
-    <xs:complexContent mixed="false">
-      <xs:extension base="ListView">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="android.support.v7.widget.LinearLayoutCompat" type="android.support.v7.widget.LinearLayoutCompat">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V7.Widget.LinearLayoutCompat</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="android.support.v7.widget.LinearLayoutCompat">
-    <xs:complexContent mixed="false">
-      <xs:extension base="ViewGroup">
-        <xs:attribute ref="app:measureWithLargestChild" />
-        <xs:attribute ref="app:divider" />
-        <xs:attribute ref="app:showDividers" />
-        <xs:attribute ref="app:dividerPadding" />
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="android.support.v7.widget.FitWindowsLinearLayout" type="android.support.v7.widget.FitWindowsLinearLayout">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V7.Widget.FitWindowsLinearLayout</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="android.support.v7.widget.FitWindowsLinearLayout">
-    <xs:complexContent mixed="false">
-      <xs:extension base="LinearLayout">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="android.support.v7.widget.FitWindowsFrameLayout" type="android.support.v7.widget.FitWindowsFrameLayout">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V7.Widget.FitWindowsFrameLayout</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="android.support.v7.widget.FitWindowsFrameLayout">
-    <xs:complexContent mixed="false">
-      <xs:extension base="FrameLayout">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="android.support.v7.widget.DialogTitle" type="android.support.v7.widget.DialogTitle">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V7.Widget.DialogTitle</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="android.support.v7.widget.DialogTitle">
-    <xs:complexContent mixed="false">
-      <xs:extension base="TextView">
-        <xs:attribute ref="android:textEditSuggestionContainerLayout" />
-        <xs:attribute ref="android:textEditSuggestionHighlightStyle" />
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="android.support.v7.widget.ContentFrameLayout" type="android.support.v7.widget.ContentFrameLayout">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V7.Widget.ContentFrameLayout</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="android.support.v7.widget.ContentFrameLayout">
-    <xs:complexContent mixed="false">
-      <xs:extension base="FrameLayout">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="android.support.v7.widget.ButtonBarLayout" type="android.support.v7.widget.ButtonBarLayout">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V7.Widget.ButtonBarLayout</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="android.support.v7.widget.ButtonBarLayout">
-    <xs:complexContent mixed="false">
-      <xs:extension base="LinearLayout">
-        <xs:attribute ref="app:allowStacking" />
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="android.support.v7.widget.ActivityChooserView" type="android.support.v7.widget.ActivityChooserView">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V7.Widget.ActivityChooserView</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="android.support.v7.widget.ActivityChooserView">
-    <xs:complexContent mixed="false">
-      <xs:extension base="ViewGroup">
-        <xs:attribute ref="app:initialActivityCount" />
-        <xs:attribute ref="app:expandActivityOverflowButtonDrawable" />
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="android.support.v7.widget.ActivityChooserView.InnerLayout" type="android.support.v7.widget.ActivityChooserView.InnerLayout">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V7.Widget.ActivityChooserView+InnerLayout</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="android.support.v7.widget.ActivityChooserView.InnerLayout">
-    <xs:complexContent mixed="false">
-      <xs:extension base="ViewGroup">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="android.support.v7.widget.ActionMenuView" type="android.support.v7.widget.ActionMenuView">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V7.Widget.ActionMenuView</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="android.support.v7.widget.ActionMenuView">
-    <xs:complexContent mixed="false">
-      <xs:extension base="ViewGroup">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="android.support.v7.widget.ActionBarContainer" type="android.support.v7.widget.ActionBarContainer">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V7.Widget.ActionBarContainer</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="android.support.v7.widget.ActionBarContainer">
-    <xs:complexContent mixed="false">
-      <xs:extension base="FrameLayout">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="android.support.v7.widget.AbsActionBarView" type="android.support.v7.widget.AbsActionBarView">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V7.Widget.AbsActionBarView</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="android.support.v7.widget.AbsActionBarView">
-    <xs:complexContent mixed="false">
-      <xs:extension base="ViewGroup">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="android.support.v7.widget.Toolbar" type="android.support.v7.widget.Toolbar">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V7.Widget.Toolbar</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="android.support.v7.widget.Toolbar">
-    <xs:complexContent mixed="false">
-      <xs:extension base="ViewGroup">
-        <xs:attribute ref="app:titleTextAppearance" />
-        <xs:attribute ref="app:subtitleTextAppearance" />
-        <xs:attribute ref="app:title" />
-        <xs:attribute ref="app:subtitle" />
-        <xs:attribute ref="app:titleMargins" />
-        <xs:attribute ref="app:titleMarginStart" />
-        <xs:attribute ref="app:titleMarginEnd" />
-        <xs:attribute ref="app:titleMarginTop" />
-        <xs:attribute ref="app:titleMarginBottom" />
-        <xs:attribute ref="app:contentInsetStart" />
-        <xs:attribute ref="app:contentInsetEnd" />
-        <xs:attribute ref="app:contentInsetLeft" />
-        <xs:attribute ref="app:contentInsetRight" />
-        <xs:attribute ref="app:maxButtonHeight" />
-        <xs:attribute ref="app:collapseIcon" />
-        <xs:attribute ref="app:collapseContentDescription" />
-        <xs:attribute ref="app:popupTheme" />
-        <xs:attribute ref="app:navigationIcon" />
-        <xs:attribute ref="app:navigationContentDescription" />
-        <xs:attribute ref="app:logo" />
-        <xs:attribute ref="app:logoDescription" />
-        <xs:attribute ref="app:titleTextColor" />
-        <xs:attribute ref="app:subtitleTextColor" />
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="android.support.v7.widget.RecyclerView" type="android.support.v7.widget.RecyclerView">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V7.Widget.RecyclerView</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="android.support.v7.widget.RecyclerView">
-    <xs:complexContent mixed="false">
-      <xs:extension base="ViewGroup">
-        <xs:attribute ref="app:layoutManager" />
-        <xs:attribute ref="app:spanCount" />
-        <xs:attribute ref="app:reverseLayout" />
-        <xs:attribute ref="app:stackFromEnd" />
-        <xs:attribute ref="tools:listitem" />
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
   <xs:element name="android.support.design.widget.VisibilityAwareImageButton" type="android.support.design.widget.VisibilityAwareImageButton">
     <xs:annotation>
       <xs:documentation>Runtime Type: Android.Support.Design.Widget.VisibilityAwareImageButton</xs:documentation>
@@ -2041,10 +1732,7 @@
   </xs:element>
   <xs:complexType name="android.support.design.widget.VisibilityAwareImageButton">
     <xs:complexContent mixed="false">
-      <xs:extension base="ImageButton">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
-      </xs:extension>
+      <xs:extension base="ImageButton" />
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="android.support.design.widget.TextInputLayout" type="android.support.design.widget.TextInputLayout">
@@ -2074,12 +1762,7 @@
   </xs:element>
   <xs:complexType name="android.support.design.widget.TextInputEditText">
     <xs:complexContent mixed="false">
-      <xs:extension base="EditText">
-        <xs:attribute ref="android:textEditSuggestionContainerLayout" />
-        <xs:attribute ref="android:textEditSuggestionHighlightStyle" />
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
-      </xs:extension>
+      <xs:extension base="EditText" />
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="android.support.design.widget.TabLayout" type="android.support.design.widget.TabLayout">
@@ -2116,10 +1799,7 @@
   </xs:element>
   <xs:complexType name="android.support.design.widget.TabLayout.TabView">
     <xs:complexContent mixed="false">
-      <xs:extension base="LinearLayout">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
-      </xs:extension>
+      <xs:extension base="LinearLayout" />
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="android.support.design.widget.TabLayout.SlidingTabStrip" type="android.support.design.widget.TabLayout.SlidingTabStrip">
@@ -2129,10 +1809,7 @@
   </xs:element>
   <xs:complexType name="android.support.design.widget.TabLayout.SlidingTabStrip">
     <xs:complexContent mixed="false">
-      <xs:extension base="LinearLayout">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
-      </xs:extension>
+      <xs:extension base="LinearLayout" />
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="android.support.design.widget.TabItem" type="android.support.design.widget.TabItem">
@@ -2142,10 +1819,7 @@
   </xs:element>
   <xs:complexType name="android.support.design.widget.TabItem">
     <xs:complexContent mixed="false">
-      <xs:extension base="View">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
-      </xs:extension>
+      <xs:extension base="View" />
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="android.support.design.widget.NavigationView" type="android.support.design.widget.NavigationView">
@@ -2268,10 +1942,7 @@
   </xs:element>
   <xs:complexType name="android.support.design.internal.NavigationMenuView">
     <xs:complexContent mixed="false">
-      <xs:extension base="ViewGroup">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
-      </xs:extension>
+      <xs:extension base="ViewGroup" />
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="android.support.design.internal.NavigationMenuItemView" type="android.support.design.internal.NavigationMenuItemView">
@@ -2281,10 +1952,7 @@
   </xs:element>
   <xs:complexType name="android.support.design.internal.NavigationMenuItemView">
     <xs:complexContent mixed="false">
-      <xs:extension base="ViewGroup">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
-      </xs:extension>
+      <xs:extension base="ViewGroup" />
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="android.support.design.internal.ForegroundLinearLayout" type="android.support.design.internal.ForegroundLinearLayout">
@@ -2299,280 +1967,419 @@
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:element name="MvvmCross.Droid.Support.V7.AppCompat.Widget.MvxAppCompatSpinner" type="MvvmCross.Droid.Support.V7.AppCompat.Widget.MvxAppCompatSpinner">
+  <xs:element name="android.support.v4.widget.Space" type="android.support.v4.widget.Space">
     <xs:annotation>
-      <xs:documentation>Runtime Type: MvvmCross.Droid.Support.V7.AppCompat.Widget.MvxAppCompatSpinner</xs:documentation>
+      <xs:documentation>Runtime Type: Android.Support.V4.Widget.Space</xs:documentation>
     </xs:annotation>
   </xs:element>
-  <xs:complexType name="MvvmCross.Droid.Support.V7.AppCompat.Widget.MvxAppCompatSpinner">
+  <xs:complexType name="android.support.v4.widget.Space">
     <xs:complexContent mixed="false">
-      <xs:extension base="Spinner">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
-      </xs:extension>
+      <xs:extension base="View" />
     </xs:complexContent>
   </xs:complexType>
-  <xs:element name="MvvmCross.Droid.Support.V7.AppCompat.Widget.MvxAppCompatRadioGroup" type="MvvmCross.Droid.Support.V7.AppCompat.Widget.MvxAppCompatRadioGroup">
+  <xs:element name="android.support.v4.widget.SlidingPaneLayout" type="android.support.v4.widget.SlidingPaneLayout">
     <xs:annotation>
-      <xs:documentation>Runtime Type: MvvmCross.Droid.Support.V7.AppCompat.Widget.MvxAppCompatRadioGroup</xs:documentation>
+      <xs:documentation>Runtime Type: Android.Support.V4.Widget.SlidingPaneLayout</xs:documentation>
     </xs:annotation>
   </xs:element>
-  <xs:complexType name="MvvmCross.Droid.Support.V7.AppCompat.Widget.MvxAppCompatRadioGroup">
+  <xs:complexType name="android.support.v4.widget.SlidingPaneLayout">
     <xs:complexContent mixed="false">
-      <xs:extension base="RadioGroup">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
-      </xs:extension>
+      <xs:extension base="ViewGroup" />
     </xs:complexContent>
   </xs:complexType>
-  <xs:element name="MvvmCross.Droid.Support.V7.AppCompat.Widget.MvxAppCompatImageView" type="MvvmCross.Droid.Support.V7.AppCompat.Widget.MvxAppCompatImageView">
+  <xs:element name="android.support.v4.widget.DrawerLayout" type="android.support.v4.widget.DrawerLayout">
     <xs:annotation>
-      <xs:documentation>Runtime Type: MvvmCross.Droid.Support.V7.AppCompat.Widget.MvxAppCompatImageView</xs:documentation>
+      <xs:documentation>Runtime Type: Android.Support.V4.Widget.DrawerLayout</xs:documentation>
     </xs:annotation>
   </xs:element>
-  <xs:complexType name="MvvmCross.Droid.Support.V7.AppCompat.Widget.MvxAppCompatImageView">
-    <xs:complexContent mixed="false">
-      <xs:extension base="ImageView">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="MvvmCross.Droid.Support.V7.AppCompat.Widget.MvxAppCompatAutoCompleteTextView" type="MvvmCross.Droid.Support.V7.AppCompat.Widget.MvxAppCompatAutoCompleteTextView">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: MvvmCross.Droid.Support.V7.AppCompat.Widget.MvxAppCompatAutoCompleteTextView</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="MvvmCross.Droid.Support.V7.AppCompat.Widget.MvxAppCompatAutoCompleteTextView">
-    <xs:complexContent mixed="false">
-      <xs:extension base="AutoCompleteTextView">
-        <xs:attribute ref="android:popupTheme" />
-        <xs:attribute ref="android:textEditSuggestionContainerLayout" />
-        <xs:attribute ref="android:textEditSuggestionHighlightStyle" />
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="MvvmCross.Droid.Support.V4.MvxSwipeRefreshLayout" type="MvvmCross.Droid.Support.V4.MvxSwipeRefreshLayout">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: MvvmCross.Droid.Support.V4.MvxSwipeRefreshLayout</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="MvvmCross.Droid.Support.V4.MvxSwipeRefreshLayout">
+  <xs:complexType name="android.support.v4.widget.DrawerLayout">
     <xs:complexContent mixed="false">
       <xs:extension base="ViewGroup">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
+        <xs:attribute ref="tools:openDrawer" />
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:element name="MvvmCross.Binding.Droid.Views.MvxTableLayout" type="MvvmCross.Binding.Droid.Views.MvxTableLayout">
+  <xs:element name="android.support.v4.widget.ContentLoadingProgressBar" type="android.support.v4.widget.ContentLoadingProgressBar">
     <xs:annotation>
-      <xs:documentation>Runtime Type: MvvmCross.Binding.Droid.Views.MvxTableLayout</xs:documentation>
+      <xs:documentation>Runtime Type: Android.Support.V4.Widget.ContentLoadingProgressBar</xs:documentation>
     </xs:annotation>
   </xs:element>
-  <xs:complexType name="MvvmCross.Binding.Droid.Views.MvxTableLayout">
+  <xs:complexType name="android.support.v4.widget.ContentLoadingProgressBar">
     <xs:complexContent mixed="false">
-      <xs:extension base="TableLayout">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
-      </xs:extension>
+      <xs:extension base="ProgressBar" />
     </xs:complexContent>
   </xs:complexType>
-  <xs:element name="MvvmCross.Binding.Droid.Views.MvxFrameLayout" type="MvvmCross.Binding.Droid.Views.MvxFrameLayout">
+  <xs:element name="android.support.v4.widget.SwipeRefreshLayout" type="android.support.v4.widget.SwipeRefreshLayout">
     <xs:annotation>
-      <xs:documentation>Runtime Type: MvvmCross.Binding.Droid.Views.MvxFrameLayout</xs:documentation>
+      <xs:documentation>Runtime Type: Android.Support.V4.Widget.SwipeRefreshLayout</xs:documentation>
     </xs:annotation>
   </xs:element>
-  <xs:complexType name="MvvmCross.Binding.Droid.Views.MvxFrameLayout">
+  <xs:complexType name="android.support.v4.widget.SwipeRefreshLayout">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ViewGroup" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="android.support.v4.widget.NestedScrollView" type="android.support.v4.widget.NestedScrollView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Android.Support.V4.Widget.NestedScrollView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="android.support.v4.widget.NestedScrollView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="FrameLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="android.support.v4.view.PagerTitleStrip" type="android.support.v4.view.PagerTitleStrip">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Android.Support.V4.View.PagerTitleStrip</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="android.support.v4.view.PagerTitleStrip">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ViewGroup" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="android.support.v4.view.PagerTabStrip" type="android.support.v4.view.PagerTabStrip">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Android.Support.V4.View.PagerTabStrip</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="android.support.v4.view.PagerTabStrip">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ViewGroup" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="android.support.v4.view.ViewPager" type="android.support.v4.view.ViewPager">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Android.Support.V4.View.ViewPager</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="android.support.v4.view.ViewPager">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ViewGroup" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="android.support.v4.app.FragmentTabHost" type="android.support.v4.app.FragmentTabHost">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Android.Support.V4.App.FragmentTabHost</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="android.support.v4.app.FragmentTabHost">
+    <xs:complexContent mixed="false">
+      <xs:extension base="TabHost" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="android.support.v7.view.menu.ExpandedMenuView" type="android.support.v7.view.menu.ExpandedMenuView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Android.Support.V7.View.Menu.ExpandedMenuView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="android.support.v7.view.menu.ExpandedMenuView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ListView" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="android.support.v7.view.menu.ListMenuItemView" type="android.support.v7.view.menu.ListMenuItemView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Android.Support.V7.View.Menu.ListMenuItemView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="android.support.v7.view.menu.ListMenuItemView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="LinearLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="android.support.v7.widget.CardView" type="android.support.v7.widget.CardView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Android.Support.V7.Widget.CardView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="android.support.v7.widget.CardView">
     <xs:complexContent mixed="false">
       <xs:extension base="FrameLayout">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
+        <xs:attribute ref="app:cardBackgroundColor" />
+        <xs:attribute ref="app:cardCornerRadius" />
+        <xs:attribute ref="app:cardElevation" />
+        <xs:attribute ref="app:cardMaxElevation" />
+        <xs:attribute ref="app:cardUseCompatPadding" />
+        <xs:attribute ref="app:cardPreventCornerOverlap" />
+        <xs:attribute ref="app:contentPadding" />
+        <xs:attribute ref="app:contentPaddingLeft" />
+        <xs:attribute ref="app:contentPaddingRight" />
+        <xs:attribute ref="app:contentPaddingTop" />
+        <xs:attribute ref="app:contentPaddingBottom" />
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:element name="MvvmCross.Binding.Droid.Views.MvxRelativeLayout" type="MvvmCross.Binding.Droid.Views.MvxRelativeLayout">
+  <xs:element name="android.support.v7.widget.ViewStubCompat" type="android.support.v7.widget.ViewStubCompat">
     <xs:annotation>
-      <xs:documentation>Runtime Type: MvvmCross.Binding.Droid.Views.MvxRelativeLayout</xs:documentation>
+      <xs:documentation>Runtime Type: Android.Support.V7.Widget.ViewStubCompat</xs:documentation>
     </xs:annotation>
   </xs:element>
-  <xs:complexType name="MvvmCross.Binding.Droid.Views.MvxRelativeLayout">
+  <xs:complexType name="android.support.v7.widget.ViewStubCompat">
     <xs:complexContent mixed="false">
-      <xs:extension base="RelativeLayout">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
-      </xs:extension>
+      <xs:extension base="View" />
     </xs:complexContent>
   </xs:complexType>
-  <xs:element name="MvvmCross.Binding.Droid.Views.MvxTimePicker" type="MvvmCross.Binding.Droid.Views.MvxTimePicker">
+  <xs:element name="android.support.v7.widget.SwitchCompat" type="android.support.v7.widget.SwitchCompat">
     <xs:annotation>
-      <xs:documentation>Runtime Type: MvvmCross.Binding.Droid.Views.MvxTimePicker</xs:documentation>
+      <xs:documentation>Runtime Type: Android.Support.V7.Widget.SwitchCompat</xs:documentation>
     </xs:annotation>
   </xs:element>
-  <xs:complexType name="MvvmCross.Binding.Droid.Views.MvxTimePicker">
+  <xs:complexType name="android.support.v7.widget.SwitchCompat">
     <xs:complexContent mixed="false">
-      <xs:extension base="TimePicker">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
+      <xs:extension base="CompoundButton">
+        <xs:attribute ref="app:track" />
+        <xs:attribute ref="app:thumbTextPadding" />
+        <xs:attribute ref="app:switchTextAppearance" />
+        <xs:attribute ref="app:switchMinWidth" />
+        <xs:attribute ref="app:switchPadding" />
+        <xs:attribute ref="app:splitTrack" />
+        <xs:attribute ref="app:showText" />
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:element name="MvvmCross.Binding.Droid.Views.MvxImageView" type="MvvmCross.Binding.Droid.Views.MvxImageView">
+  <xs:element name="android.support.v7.widget.SearchView" type="android.support.v7.widget.SearchView">
     <xs:annotation>
-      <xs:documentation>Runtime Type: MvvmCross.Binding.Droid.Views.MvxImageView</xs:documentation>
+      <xs:documentation>Runtime Type: Android.Support.V7.Widget.SearchView</xs:documentation>
     </xs:annotation>
   </xs:element>
-  <xs:complexType name="MvvmCross.Binding.Droid.Views.MvxImageView">
+  <xs:complexType name="android.support.v7.widget.SearchView">
     <xs:complexContent mixed="false">
-      <xs:extension base="ImageView">
-        <xs:attribute ref="app:MvxSource" />
+      <xs:extension base="ViewGroup">
+        <xs:attribute ref="app:layout" />
+        <xs:attribute ref="app:iconifiedByDefault" />
+        <xs:attribute ref="app:queryHint" />
+        <xs:attribute ref="app:defaultQueryHint" />
+        <xs:attribute ref="app:closeIcon" />
+        <xs:attribute ref="app:goIcon" />
+        <xs:attribute ref="app:searchIcon" />
+        <xs:attribute ref="app:searchHintIcon" />
+        <xs:attribute ref="app:voiceIcon" />
+        <xs:attribute ref="app:commitIcon" />
+        <xs:attribute ref="app:suggestionRowLayout" />
+        <xs:attribute ref="app:queryBackground" />
+        <xs:attribute ref="app:submitBackground" />
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:element name="MvvmCross.Binding.Droid.Views.MvxListView" type="MvvmCross.Binding.Droid.Views.MvxListView">
+  <xs:element name="android.support.v7.widget.SearchView.SearchAutoComplete" type="android.support.v7.widget.SearchView.SearchAutoComplete">
     <xs:annotation>
-      <xs:documentation>Runtime Type: MvvmCross.Binding.Droid.Views.MvxListView</xs:documentation>
+      <xs:documentation>Runtime Type: Android.Support.V7.Widget.SearchView+SearchAutoComplete</xs:documentation>
     </xs:annotation>
   </xs:element>
-  <xs:complexType name="MvvmCross.Binding.Droid.Views.MvxListView">
+  <xs:complexType name="android.support.v7.widget.SearchView.SearchAutoComplete">
     <xs:complexContent mixed="false">
-      <xs:extension base="ListView">
-        <xs:attribute ref="app:MvxItemTemplate" />
-        <xs:attribute ref="app:MvxDropDownItemTemplate" />
-      </xs:extension>
+      <xs:extension base="AutoCompleteTextView" />
     </xs:complexContent>
   </xs:complexType>
-  <xs:element name="MvvmCross.Binding.Droid.Views.MvxListItemView" type="MvvmCross.Binding.Droid.Views.MvxListItemView">
+  <xs:element name="android.support.v7.widget.ScrollingTabContainerView" type="android.support.v7.widget.ScrollingTabContainerView">
     <xs:annotation>
-      <xs:documentation>Runtime Type: MvvmCross.Binding.Droid.Views.MvxListItemView</xs:documentation>
+      <xs:documentation>Runtime Type: Android.Support.V7.Widget.ScrollingTabContainerView</xs:documentation>
     </xs:annotation>
   </xs:element>
-  <xs:complexType name="MvvmCross.Binding.Droid.Views.MvxListItemView">
+  <xs:complexType name="android.support.v7.widget.ScrollingTabContainerView">
     <xs:complexContent mixed="false">
-      <xs:extension base="FrameLayout">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
+      <xs:extension base="HorizontalScrollView" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="android.support.v7.widget.ScrollingTabContainerView.TabView" type="android.support.v7.widget.ScrollingTabContainerView.TabView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Android.Support.V7.Widget.ScrollingTabContainerView+TabView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="android.support.v7.widget.ScrollingTabContainerView.TabView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ViewGroup" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="android.support.v7.widget.ListViewCompat" type="android.support.v7.widget.ListViewCompat">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Android.Support.V7.Widget.ListViewCompat</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="android.support.v7.widget.ListViewCompat">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ListView" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="android.support.v7.widget.ListPopupWindow.DropDownListView" type="android.support.v7.widget.ListPopupWindow.DropDownListView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Android.Support.V7.Widget.ListPopupWindow+DropDownListView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="android.support.v7.widget.ListPopupWindow.DropDownListView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ListView" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="android.support.v7.widget.LinearLayoutCompat" type="android.support.v7.widget.LinearLayoutCompat">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Android.Support.V7.Widget.LinearLayoutCompat</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="android.support.v7.widget.LinearLayoutCompat">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ViewGroup">
+        <xs:attribute ref="app:measureWithLargestChild" />
+        <xs:attribute ref="app:divider" />
+        <xs:attribute ref="app:showDividers" />
+        <xs:attribute ref="app:dividerPadding" />
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:element name="MvvmCross.Binding.Droid.Views.MvxLinearLayout" type="MvvmCross.Binding.Droid.Views.MvxLinearLayout">
+  <xs:element name="android.support.v7.widget.FitWindowsLinearLayout" type="android.support.v7.widget.FitWindowsLinearLayout">
     <xs:annotation>
-      <xs:documentation>Runtime Type: MvvmCross.Binding.Droid.Views.MvxLinearLayout</xs:documentation>
+      <xs:documentation>Runtime Type: Android.Support.V7.Widget.FitWindowsLinearLayout</xs:documentation>
     </xs:annotation>
   </xs:element>
-  <xs:complexType name="MvvmCross.Binding.Droid.Views.MvxLinearLayout">
+  <xs:complexType name="android.support.v7.widget.FitWindowsLinearLayout">
+    <xs:complexContent mixed="false">
+      <xs:extension base="LinearLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="android.support.v7.widget.FitWindowsFrameLayout" type="android.support.v7.widget.FitWindowsFrameLayout">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Android.Support.V7.Widget.FitWindowsFrameLayout</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="android.support.v7.widget.FitWindowsFrameLayout">
+    <xs:complexContent mixed="false">
+      <xs:extension base="FrameLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="android.support.v7.widget.DialogTitle" type="android.support.v7.widget.DialogTitle">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Android.Support.V7.Widget.DialogTitle</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="android.support.v7.widget.DialogTitle">
+    <xs:complexContent mixed="false">
+      <xs:extension base="TextView" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="android.support.v7.widget.ContentFrameLayout" type="android.support.v7.widget.ContentFrameLayout">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Android.Support.V7.Widget.ContentFrameLayout</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="android.support.v7.widget.ContentFrameLayout">
+    <xs:complexContent mixed="false">
+      <xs:extension base="FrameLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="android.support.v7.widget.ButtonBarLayout" type="android.support.v7.widget.ButtonBarLayout">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Android.Support.V7.Widget.ButtonBarLayout</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="android.support.v7.widget.ButtonBarLayout">
     <xs:complexContent mixed="false">
       <xs:extension base="LinearLayout">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
+        <xs:attribute ref="app:allowStacking" />
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:element name="MvvmCross.Binding.Droid.Views.MvxSpinner" type="MvvmCross.Binding.Droid.Views.MvxSpinner">
+  <xs:element name="android.support.v7.widget.ActivityChooserView" type="android.support.v7.widget.ActivityChooserView">
     <xs:annotation>
-      <xs:documentation>Runtime Type: MvvmCross.Binding.Droid.Views.MvxSpinner</xs:documentation>
+      <xs:documentation>Runtime Type: Android.Support.V7.Widget.ActivityChooserView</xs:documentation>
     </xs:annotation>
   </xs:element>
-  <xs:complexType name="MvvmCross.Binding.Droid.Views.MvxSpinner">
+  <xs:complexType name="android.support.v7.widget.ActivityChooserView">
     <xs:complexContent mixed="false">
-      <xs:extension base="Spinner">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
+      <xs:extension base="ViewGroup">
+        <xs:attribute ref="app:initialActivityCount" />
+        <xs:attribute ref="app:expandActivityOverflowButtonDrawable" />
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:element name="MvvmCross.Binding.Droid.Views.MvxRadioGroup" type="MvvmCross.Binding.Droid.Views.MvxRadioGroup">
+  <xs:element name="android.support.v7.widget.ActivityChooserView.InnerLayout" type="android.support.v7.widget.ActivityChooserView.InnerLayout">
     <xs:annotation>
-      <xs:documentation>Runtime Type: MvvmCross.Binding.Droid.Views.MvxRadioGroup</xs:documentation>
+      <xs:documentation>Runtime Type: Android.Support.V7.Widget.ActivityChooserView+InnerLayout</xs:documentation>
     </xs:annotation>
   </xs:element>
-  <xs:complexType name="MvvmCross.Binding.Droid.Views.MvxRadioGroup">
+  <xs:complexType name="android.support.v7.widget.ActivityChooserView.InnerLayout">
     <xs:complexContent mixed="false">
-      <xs:extension base="RadioGroup">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
+      <xs:extension base="ViewGroup" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="android.support.v7.widget.ActionMenuView" type="android.support.v7.widget.ActionMenuView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Android.Support.V7.Widget.ActionMenuView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="android.support.v7.widget.ActionMenuView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ViewGroup" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="android.support.v7.widget.ActionBarContainer" type="android.support.v7.widget.ActionBarContainer">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Android.Support.V7.Widget.ActionBarContainer</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="android.support.v7.widget.ActionBarContainer">
+    <xs:complexContent mixed="false">
+      <xs:extension base="FrameLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="android.support.v7.widget.AbsActionBarView" type="android.support.v7.widget.AbsActionBarView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Android.Support.V7.Widget.AbsActionBarView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="android.support.v7.widget.AbsActionBarView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ViewGroup" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="android.support.v7.widget.Toolbar" type="android.support.v7.widget.Toolbar">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Android.Support.V7.Widget.Toolbar</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="android.support.v7.widget.Toolbar">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ViewGroup">
+        <xs:attribute ref="app:titleTextAppearance" />
+        <xs:attribute ref="app:subtitleTextAppearance" />
+        <xs:attribute ref="app:title" />
+        <xs:attribute ref="app:subtitle" />
+        <xs:attribute ref="app:titleMargins" />
+        <xs:attribute ref="app:titleMarginStart" />
+        <xs:attribute ref="app:titleMarginEnd" />
+        <xs:attribute ref="app:titleMarginTop" />
+        <xs:attribute ref="app:titleMarginBottom" />
+        <xs:attribute ref="app:contentInsetStart" />
+        <xs:attribute ref="app:contentInsetEnd" />
+        <xs:attribute ref="app:contentInsetLeft" />
+        <xs:attribute ref="app:contentInsetRight" />
+        <xs:attribute ref="app:maxButtonHeight" />
+        <xs:attribute ref="app:collapseIcon" />
+        <xs:attribute ref="app:collapseContentDescription" />
+        <xs:attribute ref="app:popupTheme" />
+        <xs:attribute ref="app:navigationIcon" />
+        <xs:attribute ref="app:navigationContentDescription" />
+        <xs:attribute ref="app:logo" />
+        <xs:attribute ref="app:logoDescription" />
+        <xs:attribute ref="app:titleTextColor" />
+        <xs:attribute ref="app:subtitleTextColor" />
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:element name="MvvmCross.Binding.Droid.Views.MvxAutoCompleteTextView" type="MvvmCross.Binding.Droid.Views.MvxAutoCompleteTextView">
+  <xs:element name="android.support.v7.widget.RecyclerView" type="android.support.v7.widget.RecyclerView">
     <xs:annotation>
-      <xs:documentation>Runtime Type: MvvmCross.Binding.Droid.Views.MvxAutoCompleteTextView</xs:documentation>
+      <xs:documentation>Runtime Type: Android.Support.V7.Widget.RecyclerView</xs:documentation>
     </xs:annotation>
   </xs:element>
-  <xs:complexType name="MvvmCross.Binding.Droid.Views.MvxAutoCompleteTextView">
+  <xs:complexType name="android.support.v7.widget.RecyclerView">
     <xs:complexContent mixed="false">
-      <xs:extension base="AutoCompleteTextView">
-        <xs:attribute ref="android:popupTheme" />
-        <xs:attribute ref="android:textEditSuggestionContainerLayout" />
-        <xs:attribute ref="android:textEditSuggestionHighlightStyle" />
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="MvvmCross.Binding.Droid.Views.MvxGridView" type="MvvmCross.Binding.Droid.Views.MvxGridView">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: MvvmCross.Binding.Droid.Views.MvxGridView</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="MvvmCross.Binding.Droid.Views.MvxGridView">
-    <xs:complexContent mixed="false">
-      <xs:extension base="GridView">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="MvvmCross.Binding.Droid.Views.MvxDatePicker" type="MvvmCross.Binding.Droid.Views.MvxDatePicker">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: MvvmCross.Binding.Droid.Views.MvxDatePicker</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="MvvmCross.Binding.Droid.Views.MvxDatePicker">
-    <xs:complexContent mixed="false">
-      <xs:extension base="DatePicker">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="MvvmCross.Binding.Droid.Views.MvxFrameControl" type="MvvmCross.Binding.Droid.Views.MvxFrameControl">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: MvvmCross.Binding.Droid.Views.MvxFrameControl</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="MvvmCross.Binding.Droid.Views.MvxFrameControl">
-    <xs:complexContent mixed="false">
-      <xs:extension base="FrameLayout">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="MvvmCross.Binding.Droid.Views.MvxExpandableListView" type="MvvmCross.Binding.Droid.Views.MvxExpandableListView">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: MvvmCross.Binding.Droid.Views.MvxExpandableListView</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="MvvmCross.Binding.Droid.Views.MvxExpandableListView">
-    <xs:complexContent mixed="false">
-      <xs:extension base="ExpandableListView">
-        <xs:attribute ref="app:MvxGroupItemTemplate" />
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="MvvmCross.Binding.Droid.Views.MvxBaseListItemView" type="MvvmCross.Binding.Droid.Views.MvxBaseListItemView">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: MvvmCross.Binding.Droid.Views.MvxBaseListItemView</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="MvvmCross.Binding.Droid.Views.MvxBaseListItemView">
-    <xs:complexContent mixed="false">
-      <xs:extension base="FrameLayout">
-        <xs:attribute ref="android:pointerIcon" />
-        <xs:attribute ref="android:forceHasOverlappingRendering" />
+      <xs:extension base="ViewGroup">
+        <xs:attribute ref="app:layoutManager" />
+        <xs:attribute ref="app:spanCount" />
+        <xs:attribute ref="app:reverseLayout" />
+        <xs:attribute ref="app:stackFromEnd" />
+        <xs:attribute ref="tools:listitem" />
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>

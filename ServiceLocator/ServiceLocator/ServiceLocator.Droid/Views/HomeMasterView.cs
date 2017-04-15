@@ -65,7 +65,6 @@ namespace ServiceLocator.Droid.Views
             nameUser.Text = user.first_name + " " + user.last_name;
             imageLoader.DisplayImage(user.photo_max_orig, photoUser);
 
-
             _drawerLayout = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
 
             _navigationView = FindViewById<NavigationView>(Resource.Id.nav_view);

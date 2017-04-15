@@ -26,7 +26,9 @@
       </intent-filter>
     </activity>
     <activity android:name="md5125ebd17ef9509e4cbe1fe290f2647c9.TypeUserView" />
-    <activity android:name="md5e187c0d02747d8043bdf48cfd714108a.FirstMasterView" />
+    <activity android:label="Master" android:parentActivityName="md5e187c0d02747d8043bdf48cfd714108a.FirstMasterView" android:name="md5e187c0d02747d8043bdf48cfd714108a.FirstMasterView">
+      <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="navdrawer.activities.FirstMasterView" />
+    </activity>
     <activity android:name="md5e187c0d02747d8043bdf48cfd714108a.HomeMasterView" />
     <activity android:icon="@drawable/icon" android:label="ServiceLocatorApplication.Droid" android:noHistory="true" android:screenOrientation="portrait" android:theme="@style/Theme.Splash" android:name="md5e187c0d02747d8043bdf48cfd714108a.SplashScreenView">
       <intent-filter>

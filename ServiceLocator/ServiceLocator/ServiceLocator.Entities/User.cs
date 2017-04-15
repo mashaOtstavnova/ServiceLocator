@@ -20,6 +20,7 @@ namespace ServiceLocator.Entities
         public string bdate { get; set; }
         public City city { get; set; }
         public string photo_50 { get; set; }
+        public string photo_100 { get; set; }
         public string photo_max_orig { get; set; }
     }
 

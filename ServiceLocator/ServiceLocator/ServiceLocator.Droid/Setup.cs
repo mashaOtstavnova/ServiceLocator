@@ -40,6 +40,7 @@ namespace ServiceLocator.Droid
             Mvx.RegisterSingleton<IDataLoaderService>(() => new DataLoaderService());
 
             Mvx.RegisterSingleton<IProfileService>(() => new ProfileService());
+            Mvx.RegisterSingleton<IGetProfileService>(() => new GetProfileService());
         }
     }
 }
