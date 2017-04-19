@@ -204,6 +204,9 @@
     <AndroidResource Include="Resources\layout\first_master_view.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\layout3.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\strings.xml" />
@@ -324,6 +327,7 @@
     <AndroidResource Include="Resources\drawable\background1.png" />
     <AndroidResource Include="Resources\drawable\circle.xml" />
     <AndroidResource Include="Resources\drawable\img.xml" />
+    <AndroidResource Include="Resources\drawable\linearBorder.xml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ServiceLocator.Core\ServiceLocator.Core.csproj">

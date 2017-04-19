@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     android:background="@drawable/background1">
     <android.support.design.widget.AppBarLayout
+        android:layout_gravity="start|top"
+        android:layout_alignParentTop="true"
         android:id="@+id/appbar"
         android:layout_width="match_parent"
         android:layout_height="256dp"
@@ -48,4 +52,62 @@
                 local:layout_collapseMode="pin" />
         </android.support.design.widget.CollapsingToolbarLayout>
     </android.support.design.widget.AppBarLayout>
-</LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/appbar"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+        <android.support.design.widget.TextInputLayout
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="8dp"
+            android:id="@+id/category">
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Услуга"
+                android:imeOptions="actionNext"
+                android:drawableLeft="@drawable/ic_discuss"
+                android:textColor="@android:color/white"
+                android:textCursorDrawable="@null"
+                local:backgroundTint="@android:color/gray"
+                local:MvxBind="Text Description"
+                android:ems="10" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/appbar"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+        <android.support.design.widget.TextInputLayout
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="8dp"
+            android:id="@+id/category">
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Услуга"
+                android:imeOptions="actionNext"
+                android:drawableLeft="@drawable/ic_discuss"
+                android:textColor="@android:color/white"
+                android:textCursorDrawable="@null"
+                local:backgroundTint="@android:color/white"
+                local:MvxBind="Text Description"
+                android:ems="10" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
