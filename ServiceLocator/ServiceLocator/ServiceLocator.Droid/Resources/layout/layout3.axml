@@ -34,7 +34,7 @@
                 android:drawableLeft="@drawable/ic_discuss"
                 android:textColor="@android:color/white"
                 android:textCursorDrawable="@null"
-                local:backgroundTint="@android:color/gray"
+                local:backgroundTint="@android:color/white"
                 local:MvxBind="Text Description"
                 android:ems="10" />
         </android.support.design.widget.TextInputLayout>

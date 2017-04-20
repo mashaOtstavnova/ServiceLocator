@@ -19,6 +19,10 @@ using VKontakte.API;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
 using ServiceLocator.Core.IServices;
 using Android.Graphics;
+using ServiceLocator.Droid.Views.Dialogs;
+
+using MvvmCross.Binding.BindingContext;
+using MvvmCross.Droid.Support.V7.AppCompat;
 
 namespace ServiceLocator.Droid.Views
 {
@@ -70,7 +74,14 @@ namespace ServiceLocator.Droid.Views
             {
                 var m =ex.Message;
             }
-            
+            var buttonForCategory = (Button)FindViewById(Resource.Id.category);
+            buttonForCategory.Click += OnCategoryClick;
+        }
+        private void OnCategoryClick(object sender, EventArgs eventArgs)
+        {
+            var dialog4 = new CategoryServiceDialog ();
+            dialog4.Show(SupportFragmentManager, "PrintedAndNotServedDialog");
+
         }
     }
 }

@@ -30,6 +30,10 @@ ServiceLocator.Droid.Views.SplashScreenView, ServiceLocator.Droid;md5e187c0d0274
 ServiceLocator.Droid.Views.SplashScreenView, ServiceLocator.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5e187c0d02747d8043bdf48cfd714108a.SplashScreenView
 ServiceLocator.Droid.Views.SplashScreenView;md5e187c0d02747d8043bdf48cfd714108a.SplashScreenView
 servicelocator.droid.views.SplashScreenView;md5e187c0d02747d8043bdf48cfd714108a.SplashScreenView
+ServiceLocator.Droid.Views.Dialogs.CategoryServiceDialog, ServiceLocator.Droid;md5d858ccb213f1b7baa8a38afe447463c3.CategoryServiceDialog
+ServiceLocator.Droid.Views.Dialogs.CategoryServiceDialog, ServiceLocator.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5d858ccb213f1b7baa8a38afe447463c3.CategoryServiceDialog
+ServiceLocator.Droid.Views.Dialogs.CategoryServiceDialog;md5d858ccb213f1b7baa8a38afe447463c3.CategoryServiceDialog
+servicelocator.droid.views.dialogs.CategoryServiceDialog;md5d858ccb213f1b7baa8a38afe447463c3.CategoryServiceDialog
 MvvmCross.Binding.Droid.Views.MvxBaseListItemView, MvvmCross.Binding.Droid;md5bf0126c95bf9fc0db24c02c9adb4cfa7.MvxBaseListItemView
 MvvmCross.Binding.Droid.Views.MvxBaseListItemView, MvvmCross.Binding.Droid, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null;md5bf0126c95bf9fc0db24c02c9adb4cfa7.MvxBaseListItemView
 MvvmCross.Binding.Droid.Views.MvxBaseListItemView;md5bf0126c95bf9fc0db24c02c9adb4cfa7.MvxBaseListItemView
