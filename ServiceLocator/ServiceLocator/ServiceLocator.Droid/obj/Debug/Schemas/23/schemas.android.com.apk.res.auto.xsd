@@ -2,7 +2,7 @@
 <xs:schema xmlns:app="http://schemas.android.com/apk/res-auto" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res-auto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v23</xs:documentation>
-    <xs:documentation>19.04.2017 16:10:59</xs:documentation>
+    <xs:documentation>25.04.2017 9:45:33</xs:documentation>
   </xs:annotation>
   <xs:attribute name="allowStacking">
     <xs:annotation>
@@ -331,6 +331,7 @@
             <xs:enumeration value="@drawable/background" />
             <xs:enumeration value="@drawable/background1" />
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/border_bottom" />
             <xs:enumeration value="@drawable/button_selector" />
             <xs:enumeration value="@drawable/circle" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -380,7 +381,9 @@
             <xs:enumeration value="@drawable/ic_ab_app" />
             <xs:enumeration value="@drawable/ic_ab_done" />
             <xs:enumeration value="@drawable/ic_add" />
+            <xs:enumeration value="@drawable/ic_assignment" />
             <xs:enumeration value="@drawable/ic_browser" />
+            <xs:enumeration value="@drawable/ic_build" />
             <xs:enumeration value="@drawable/ic_dashboard" />
             <xs:enumeration value="@drawable/ic_discuss" />
             <xs:enumeration value="@drawable/ic_done" />
@@ -392,6 +395,7 @@
             <xs:enumeration value="@drawable/ic_home" />
             <xs:enumeration value="@drawable/ic_info" />
             <xs:enumeration value="@drawable/ic_keyboard" />
+            <xs:enumeration value="@drawable/ic_keyboard_arrow" />
             <xs:enumeration value="@drawable/ic_launcher" />
             <xs:enumeration value="@drawable/ic_lock" />
             <xs:enumeration value="@drawable/ic_menu" />
@@ -673,6 +677,7 @@
             <xs:enumeration value="@color/bright_foreground_inverse_material_light" />
             <xs:enumeration value="@color/bright_foreground_material_dark" />
             <xs:enumeration value="@color/bright_foreground_material_light" />
+            <xs:enumeration value="@color/button" />
             <xs:enumeration value="@color/button_material_dark" />
             <xs:enumeration value="@color/button_material_light" />
             <xs:enumeration value="@color/cardview_dark_background" />
@@ -710,6 +715,7 @@
             <xs:enumeration value="@color/design_snackbar_background_color" />
             <xs:enumeration value="@color/design_textinput_error_color_dark" />
             <xs:enumeration value="@color/design_textinput_error_color_light" />
+            <xs:enumeration value="@color/dialog" />
             <xs:enumeration value="@color/dim_foreground_disabled_material_dark" />
             <xs:enumeration value="@color/dim_foreground_disabled_material_light" />
             <xs:enumeration value="@color/dim_foreground_material_dark" />
@@ -759,6 +765,7 @@
             <xs:enumeration value="@color/switch_thumb_material_light" />
             <xs:enumeration value="@color/switch_thumb_normal_material_dark" />
             <xs:enumeration value="@color/switch_thumb_normal_material_light" />
+            <xs:enumeration value="@color/textHite" />
             <xs:enumeration value="@color/textIcon" />
             <xs:enumeration value="@color/vk_black" />
             <xs:enumeration value="@color/vk_black_pressed" />
@@ -1535,6 +1542,7 @@
             <xs:enumeration value="@drawable/background" />
             <xs:enumeration value="@drawable/background1" />
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/border_bottom" />
             <xs:enumeration value="@drawable/button_selector" />
             <xs:enumeration value="@drawable/circle" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -1584,7 +1592,9 @@
             <xs:enumeration value="@drawable/ic_ab_app" />
             <xs:enumeration value="@drawable/ic_ab_done" />
             <xs:enumeration value="@drawable/ic_add" />
+            <xs:enumeration value="@drawable/ic_assignment" />
             <xs:enumeration value="@drawable/ic_browser" />
+            <xs:enumeration value="@drawable/ic_build" />
             <xs:enumeration value="@drawable/ic_dashboard" />
             <xs:enumeration value="@drawable/ic_discuss" />
             <xs:enumeration value="@drawable/ic_done" />
@@ -1596,6 +1606,7 @@
             <xs:enumeration value="@drawable/ic_home" />
             <xs:enumeration value="@drawable/ic_info" />
             <xs:enumeration value="@drawable/ic_keyboard" />
+            <xs:enumeration value="@drawable/ic_keyboard_arrow" />
             <xs:enumeration value="@drawable/ic_launcher" />
             <xs:enumeration value="@drawable/ic_lock" />
             <xs:enumeration value="@drawable/ic_menu" />
@@ -2055,6 +2066,7 @@
             <xs:enumeration value="@drawable/background" />
             <xs:enumeration value="@drawable/background1" />
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/border_bottom" />
             <xs:enumeration value="@drawable/button_selector" />
             <xs:enumeration value="@drawable/circle" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -2104,7 +2116,9 @@
             <xs:enumeration value="@drawable/ic_ab_app" />
             <xs:enumeration value="@drawable/ic_ab_done" />
             <xs:enumeration value="@drawable/ic_add" />
+            <xs:enumeration value="@drawable/ic_assignment" />
             <xs:enumeration value="@drawable/ic_browser" />
+            <xs:enumeration value="@drawable/ic_build" />
             <xs:enumeration value="@drawable/ic_dashboard" />
             <xs:enumeration value="@drawable/ic_discuss" />
             <xs:enumeration value="@drawable/ic_done" />
@@ -2116,6 +2130,7 @@
             <xs:enumeration value="@drawable/ic_home" />
             <xs:enumeration value="@drawable/ic_info" />
             <xs:enumeration value="@drawable/ic_keyboard" />
+            <xs:enumeration value="@drawable/ic_keyboard_arrow" />
             <xs:enumeration value="@drawable/ic_launcher" />
             <xs:enumeration value="@drawable/ic_lock" />
             <xs:enumeration value="@drawable/ic_menu" />
@@ -2447,6 +2462,7 @@
             <xs:enumeration value="@drawable/background" />
             <xs:enumeration value="@drawable/background1" />
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/border_bottom" />
             <xs:enumeration value="@drawable/button_selector" />
             <xs:enumeration value="@drawable/circle" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -2496,7 +2512,9 @@
             <xs:enumeration value="@drawable/ic_ab_app" />
             <xs:enumeration value="@drawable/ic_ab_done" />
             <xs:enumeration value="@drawable/ic_add" />
+            <xs:enumeration value="@drawable/ic_assignment" />
             <xs:enumeration value="@drawable/ic_browser" />
+            <xs:enumeration value="@drawable/ic_build" />
             <xs:enumeration value="@drawable/ic_dashboard" />
             <xs:enumeration value="@drawable/ic_discuss" />
             <xs:enumeration value="@drawable/ic_done" />
@@ -2508,6 +2526,7 @@
             <xs:enumeration value="@drawable/ic_home" />
             <xs:enumeration value="@drawable/ic_info" />
             <xs:enumeration value="@drawable/ic_keyboard" />
+            <xs:enumeration value="@drawable/ic_keyboard_arrow" />
             <xs:enumeration value="@drawable/ic_launcher" />
             <xs:enumeration value="@drawable/ic_lock" />
             <xs:enumeration value="@drawable/ic_menu" />
@@ -2842,6 +2861,7 @@
             <xs:enumeration value="@drawable/background" />
             <xs:enumeration value="@drawable/background1" />
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/border_bottom" />
             <xs:enumeration value="@drawable/button_selector" />
             <xs:enumeration value="@drawable/circle" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -2891,7 +2911,9 @@
             <xs:enumeration value="@drawable/ic_ab_app" />
             <xs:enumeration value="@drawable/ic_ab_done" />
             <xs:enumeration value="@drawable/ic_add" />
+            <xs:enumeration value="@drawable/ic_assignment" />
             <xs:enumeration value="@drawable/ic_browser" />
+            <xs:enumeration value="@drawable/ic_build" />
             <xs:enumeration value="@drawable/ic_dashboard" />
             <xs:enumeration value="@drawable/ic_discuss" />
             <xs:enumeration value="@drawable/ic_done" />
@@ -2903,6 +2925,7 @@
             <xs:enumeration value="@drawable/ic_home" />
             <xs:enumeration value="@drawable/ic_info" />
             <xs:enumeration value="@drawable/ic_keyboard" />
+            <xs:enumeration value="@drawable/ic_keyboard_arrow" />
             <xs:enumeration value="@drawable/ic_launcher" />
             <xs:enumeration value="@drawable/ic_lock" />
             <xs:enumeration value="@drawable/ic_menu" />
@@ -3234,6 +3257,7 @@
             <xs:enumeration value="@drawable/background" />
             <xs:enumeration value="@drawable/background1" />
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/border_bottom" />
             <xs:enumeration value="@drawable/button_selector" />
             <xs:enumeration value="@drawable/circle" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -3283,7 +3307,9 @@
             <xs:enumeration value="@drawable/ic_ab_app" />
             <xs:enumeration value="@drawable/ic_ab_done" />
             <xs:enumeration value="@drawable/ic_add" />
+            <xs:enumeration value="@drawable/ic_assignment" />
             <xs:enumeration value="@drawable/ic_browser" />
+            <xs:enumeration value="@drawable/ic_build" />
             <xs:enumeration value="@drawable/ic_dashboard" />
             <xs:enumeration value="@drawable/ic_discuss" />
             <xs:enumeration value="@drawable/ic_done" />
@@ -3295,6 +3321,7 @@
             <xs:enumeration value="@drawable/ic_home" />
             <xs:enumeration value="@drawable/ic_info" />
             <xs:enumeration value="@drawable/ic_keyboard" />
+            <xs:enumeration value="@drawable/ic_keyboard_arrow" />
             <xs:enumeration value="@drawable/ic_launcher" />
             <xs:enumeration value="@drawable/ic_lock" />
             <xs:enumeration value="@drawable/ic_menu" />
@@ -5070,6 +5097,7 @@
             <xs:enumeration value="@color/bright_foreground_inverse_material_light" />
             <xs:enumeration value="@color/bright_foreground_material_dark" />
             <xs:enumeration value="@color/bright_foreground_material_light" />
+            <xs:enumeration value="@color/button" />
             <xs:enumeration value="@color/button_material_dark" />
             <xs:enumeration value="@color/button_material_light" />
             <xs:enumeration value="@color/cardview_dark_background" />
@@ -5107,6 +5135,7 @@
             <xs:enumeration value="@color/design_snackbar_background_color" />
             <xs:enumeration value="@color/design_textinput_error_color_dark" />
             <xs:enumeration value="@color/design_textinput_error_color_light" />
+            <xs:enumeration value="@color/dialog" />
             <xs:enumeration value="@color/dim_foreground_disabled_material_dark" />
             <xs:enumeration value="@color/dim_foreground_disabled_material_light" />
             <xs:enumeration value="@color/dim_foreground_material_dark" />
@@ -5156,6 +5185,7 @@
             <xs:enumeration value="@color/switch_thumb_material_light" />
             <xs:enumeration value="@color/switch_thumb_normal_material_dark" />
             <xs:enumeration value="@color/switch_thumb_normal_material_light" />
+            <xs:enumeration value="@color/textHite" />
             <xs:enumeration value="@color/textIcon" />
             <xs:enumeration value="@color/vk_black" />
             <xs:enumeration value="@color/vk_black_pressed" />
@@ -5414,6 +5444,7 @@
             <xs:enumeration value="@drawable/background" />
             <xs:enumeration value="@drawable/background1" />
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/border_bottom" />
             <xs:enumeration value="@drawable/button_selector" />
             <xs:enumeration value="@drawable/circle" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -5463,7 +5494,9 @@
             <xs:enumeration value="@drawable/ic_ab_app" />
             <xs:enumeration value="@drawable/ic_ab_done" />
             <xs:enumeration value="@drawable/ic_add" />
+            <xs:enumeration value="@drawable/ic_assignment" />
             <xs:enumeration value="@drawable/ic_browser" />
+            <xs:enumeration value="@drawable/ic_build" />
             <xs:enumeration value="@drawable/ic_dashboard" />
             <xs:enumeration value="@drawable/ic_discuss" />
             <xs:enumeration value="@drawable/ic_done" />
@@ -5475,6 +5508,7 @@
             <xs:enumeration value="@drawable/ic_home" />
             <xs:enumeration value="@drawable/ic_info" />
             <xs:enumeration value="@drawable/ic_keyboard" />
+            <xs:enumeration value="@drawable/ic_keyboard_arrow" />
             <xs:enumeration value="@drawable/ic_launcher" />
             <xs:enumeration value="@drawable/ic_lock" />
             <xs:enumeration value="@drawable/ic_menu" />
@@ -5806,6 +5840,7 @@
             <xs:enumeration value="@drawable/background" />
             <xs:enumeration value="@drawable/background1" />
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/border_bottom" />
             <xs:enumeration value="@drawable/button_selector" />
             <xs:enumeration value="@drawable/circle" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -5855,7 +5890,9 @@
             <xs:enumeration value="@drawable/ic_ab_app" />
             <xs:enumeration value="@drawable/ic_ab_done" />
             <xs:enumeration value="@drawable/ic_add" />
+            <xs:enumeration value="@drawable/ic_assignment" />
             <xs:enumeration value="@drawable/ic_browser" />
+            <xs:enumeration value="@drawable/ic_build" />
             <xs:enumeration value="@drawable/ic_dashboard" />
             <xs:enumeration value="@drawable/ic_discuss" />
             <xs:enumeration value="@drawable/ic_done" />
@@ -5867,6 +5904,7 @@
             <xs:enumeration value="@drawable/ic_home" />
             <xs:enumeration value="@drawable/ic_info" />
             <xs:enumeration value="@drawable/ic_keyboard" />
+            <xs:enumeration value="@drawable/ic_keyboard_arrow" />
             <xs:enumeration value="@drawable/ic_launcher" />
             <xs:enumeration value="@drawable/ic_lock" />
             <xs:enumeration value="@drawable/ic_menu" />
@@ -6303,6 +6341,7 @@
             <xs:enumeration value="@drawable/background" />
             <xs:enumeration value="@drawable/background1" />
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/border_bottom" />
             <xs:enumeration value="@drawable/button_selector" />
             <xs:enumeration value="@drawable/circle" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -6352,7 +6391,9 @@
             <xs:enumeration value="@drawable/ic_ab_app" />
             <xs:enumeration value="@drawable/ic_ab_done" />
             <xs:enumeration value="@drawable/ic_add" />
+            <xs:enumeration value="@drawable/ic_assignment" />
             <xs:enumeration value="@drawable/ic_browser" />
+            <xs:enumeration value="@drawable/ic_build" />
             <xs:enumeration value="@drawable/ic_dashboard" />
             <xs:enumeration value="@drawable/ic_discuss" />
             <xs:enumeration value="@drawable/ic_done" />
@@ -6364,6 +6405,7 @@
             <xs:enumeration value="@drawable/ic_home" />
             <xs:enumeration value="@drawable/ic_info" />
             <xs:enumeration value="@drawable/ic_keyboard" />
+            <xs:enumeration value="@drawable/ic_keyboard_arrow" />
             <xs:enumeration value="@drawable/ic_launcher" />
             <xs:enumeration value="@drawable/ic_lock" />
             <xs:enumeration value="@drawable/ic_menu" />
@@ -6921,6 +6963,7 @@
             <xs:enumeration value="@drawable/background" />
             <xs:enumeration value="@drawable/background1" />
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/border_bottom" />
             <xs:enumeration value="@drawable/button_selector" />
             <xs:enumeration value="@drawable/circle" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -6970,7 +7013,9 @@
             <xs:enumeration value="@drawable/ic_ab_app" />
             <xs:enumeration value="@drawable/ic_ab_done" />
             <xs:enumeration value="@drawable/ic_add" />
+            <xs:enumeration value="@drawable/ic_assignment" />
             <xs:enumeration value="@drawable/ic_browser" />
+            <xs:enumeration value="@drawable/ic_build" />
             <xs:enumeration value="@drawable/ic_dashboard" />
             <xs:enumeration value="@drawable/ic_discuss" />
             <xs:enumeration value="@drawable/ic_done" />
@@ -6982,6 +7027,7 @@
             <xs:enumeration value="@drawable/ic_home" />
             <xs:enumeration value="@drawable/ic_info" />
             <xs:enumeration value="@drawable/ic_keyboard" />
+            <xs:enumeration value="@drawable/ic_keyboard_arrow" />
             <xs:enumeration value="@drawable/ic_launcher" />
             <xs:enumeration value="@drawable/ic_lock" />
             <xs:enumeration value="@drawable/ic_menu" />
@@ -7313,6 +7359,7 @@
             <xs:enumeration value="@drawable/background" />
             <xs:enumeration value="@drawable/background1" />
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/border_bottom" />
             <xs:enumeration value="@drawable/button_selector" />
             <xs:enumeration value="@drawable/circle" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -7362,7 +7409,9 @@
             <xs:enumeration value="@drawable/ic_ab_app" />
             <xs:enumeration value="@drawable/ic_ab_done" />
             <xs:enumeration value="@drawable/ic_add" />
+            <xs:enumeration value="@drawable/ic_assignment" />
             <xs:enumeration value="@drawable/ic_browser" />
+            <xs:enumeration value="@drawable/ic_build" />
             <xs:enumeration value="@drawable/ic_dashboard" />
             <xs:enumeration value="@drawable/ic_discuss" />
             <xs:enumeration value="@drawable/ic_done" />
@@ -7374,6 +7423,7 @@
             <xs:enumeration value="@drawable/ic_home" />
             <xs:enumeration value="@drawable/ic_info" />
             <xs:enumeration value="@drawable/ic_keyboard" />
+            <xs:enumeration value="@drawable/ic_keyboard_arrow" />
             <xs:enumeration value="@drawable/ic_launcher" />
             <xs:enumeration value="@drawable/ic_lock" />
             <xs:enumeration value="@drawable/ic_menu" />
@@ -8606,6 +8656,7 @@
             <xs:enumeration value="@drawable/background" />
             <xs:enumeration value="@drawable/background1" />
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/border_bottom" />
             <xs:enumeration value="@drawable/button_selector" />
             <xs:enumeration value="@drawable/circle" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -8655,7 +8706,9 @@
             <xs:enumeration value="@drawable/ic_ab_app" />
             <xs:enumeration value="@drawable/ic_ab_done" />
             <xs:enumeration value="@drawable/ic_add" />
+            <xs:enumeration value="@drawable/ic_assignment" />
             <xs:enumeration value="@drawable/ic_browser" />
+            <xs:enumeration value="@drawable/ic_build" />
             <xs:enumeration value="@drawable/ic_dashboard" />
             <xs:enumeration value="@drawable/ic_discuss" />
             <xs:enumeration value="@drawable/ic_done" />
@@ -8667,6 +8720,7 @@
             <xs:enumeration value="@drawable/ic_home" />
             <xs:enumeration value="@drawable/ic_info" />
             <xs:enumeration value="@drawable/ic_keyboard" />
+            <xs:enumeration value="@drawable/ic_keyboard_arrow" />
             <xs:enumeration value="@drawable/ic_launcher" />
             <xs:enumeration value="@drawable/ic_lock" />
             <xs:enumeration value="@drawable/ic_menu" />
@@ -9061,6 +9115,7 @@
             <xs:enumeration value="@drawable/background" />
             <xs:enumeration value="@drawable/background1" />
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/border_bottom" />
             <xs:enumeration value="@drawable/button_selector" />
             <xs:enumeration value="@drawable/circle" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -9110,7 +9165,9 @@
             <xs:enumeration value="@drawable/ic_ab_app" />
             <xs:enumeration value="@drawable/ic_ab_done" />
             <xs:enumeration value="@drawable/ic_add" />
+            <xs:enumeration value="@drawable/ic_assignment" />
             <xs:enumeration value="@drawable/ic_browser" />
+            <xs:enumeration value="@drawable/ic_build" />
             <xs:enumeration value="@drawable/ic_dashboard" />
             <xs:enumeration value="@drawable/ic_discuss" />
             <xs:enumeration value="@drawable/ic_done" />
@@ -9122,6 +9179,7 @@
             <xs:enumeration value="@drawable/ic_home" />
             <xs:enumeration value="@drawable/ic_info" />
             <xs:enumeration value="@drawable/ic_keyboard" />
+            <xs:enumeration value="@drawable/ic_keyboard_arrow" />
             <xs:enumeration value="@drawable/ic_launcher" />
             <xs:enumeration value="@drawable/ic_lock" />
             <xs:enumeration value="@drawable/ic_menu" />
@@ -9453,6 +9511,7 @@
             <xs:enumeration value="@drawable/background" />
             <xs:enumeration value="@drawable/background1" />
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/border_bottom" />
             <xs:enumeration value="@drawable/button_selector" />
             <xs:enumeration value="@drawable/circle" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -9502,7 +9561,9 @@
             <xs:enumeration value="@drawable/ic_ab_app" />
             <xs:enumeration value="@drawable/ic_ab_done" />
             <xs:enumeration value="@drawable/ic_add" />
+            <xs:enumeration value="@drawable/ic_assignment" />
             <xs:enumeration value="@drawable/ic_browser" />
+            <xs:enumeration value="@drawable/ic_build" />
             <xs:enumeration value="@drawable/ic_dashboard" />
             <xs:enumeration value="@drawable/ic_discuss" />
             <xs:enumeration value="@drawable/ic_done" />
@@ -9514,6 +9575,7 @@
             <xs:enumeration value="@drawable/ic_home" />
             <xs:enumeration value="@drawable/ic_info" />
             <xs:enumeration value="@drawable/ic_keyboard" />
+            <xs:enumeration value="@drawable/ic_keyboard_arrow" />
             <xs:enumeration value="@drawable/ic_launcher" />
             <xs:enumeration value="@drawable/ic_lock" />
             <xs:enumeration value="@drawable/ic_menu" />
@@ -9941,6 +10003,7 @@
             <xs:enumeration value="@drawable/background" />
             <xs:enumeration value="@drawable/background1" />
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/border_bottom" />
             <xs:enumeration value="@drawable/button_selector" />
             <xs:enumeration value="@drawable/circle" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -9990,7 +10053,9 @@
             <xs:enumeration value="@drawable/ic_ab_app" />
             <xs:enumeration value="@drawable/ic_ab_done" />
             <xs:enumeration value="@drawable/ic_add" />
+            <xs:enumeration value="@drawable/ic_assignment" />
             <xs:enumeration value="@drawable/ic_browser" />
+            <xs:enumeration value="@drawable/ic_build" />
             <xs:enumeration value="@drawable/ic_dashboard" />
             <xs:enumeration value="@drawable/ic_discuss" />
             <xs:enumeration value="@drawable/ic_done" />
@@ -10002,6 +10067,7 @@
             <xs:enumeration value="@drawable/ic_home" />
             <xs:enumeration value="@drawable/ic_info" />
             <xs:enumeration value="@drawable/ic_keyboard" />
+            <xs:enumeration value="@drawable/ic_keyboard_arrow" />
             <xs:enumeration value="@drawable/ic_launcher" />
             <xs:enumeration value="@drawable/ic_lock" />
             <xs:enumeration value="@drawable/ic_menu" />
@@ -10436,6 +10502,7 @@
             <xs:enumeration value="@color/bright_foreground_inverse_material_light" />
             <xs:enumeration value="@color/bright_foreground_material_dark" />
             <xs:enumeration value="@color/bright_foreground_material_light" />
+            <xs:enumeration value="@color/button" />
             <xs:enumeration value="@color/button_material_dark" />
             <xs:enumeration value="@color/button_material_light" />
             <xs:enumeration value="@color/cardview_dark_background" />
@@ -10473,6 +10540,7 @@
             <xs:enumeration value="@color/design_snackbar_background_color" />
             <xs:enumeration value="@color/design_textinput_error_color_dark" />
             <xs:enumeration value="@color/design_textinput_error_color_light" />
+            <xs:enumeration value="@color/dialog" />
             <xs:enumeration value="@color/dim_foreground_disabled_material_dark" />
             <xs:enumeration value="@color/dim_foreground_disabled_material_light" />
             <xs:enumeration value="@color/dim_foreground_material_dark" />
@@ -10522,6 +10590,7 @@
             <xs:enumeration value="@color/switch_thumb_material_light" />
             <xs:enumeration value="@color/switch_thumb_normal_material_dark" />
             <xs:enumeration value="@color/switch_thumb_normal_material_light" />
+            <xs:enumeration value="@color/textHite" />
             <xs:enumeration value="@color/textIcon" />
             <xs:enumeration value="@color/vk_black" />
             <xs:enumeration value="@color/vk_black_pressed" />
@@ -10613,6 +10682,7 @@
             <xs:enumeration value="@drawable/background" />
             <xs:enumeration value="@drawable/background1" />
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/border_bottom" />
             <xs:enumeration value="@drawable/button_selector" />
             <xs:enumeration value="@drawable/circle" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -10662,7 +10732,9 @@
             <xs:enumeration value="@drawable/ic_ab_app" />
             <xs:enumeration value="@drawable/ic_ab_done" />
             <xs:enumeration value="@drawable/ic_add" />
+            <xs:enumeration value="@drawable/ic_assignment" />
             <xs:enumeration value="@drawable/ic_browser" />
+            <xs:enumeration value="@drawable/ic_build" />
             <xs:enumeration value="@drawable/ic_dashboard" />
             <xs:enumeration value="@drawable/ic_discuss" />
             <xs:enumeration value="@drawable/ic_done" />
@@ -10674,6 +10746,7 @@
             <xs:enumeration value="@drawable/ic_home" />
             <xs:enumeration value="@drawable/ic_info" />
             <xs:enumeration value="@drawable/ic_keyboard" />
+            <xs:enumeration value="@drawable/ic_keyboard_arrow" />
             <xs:enumeration value="@drawable/ic_launcher" />
             <xs:enumeration value="@drawable/ic_lock" />
             <xs:enumeration value="@drawable/ic_menu" />
@@ -11083,6 +11156,7 @@
             <xs:enumeration value="@drawable/background" />
             <xs:enumeration value="@drawable/background1" />
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/border_bottom" />
             <xs:enumeration value="@drawable/button_selector" />
             <xs:enumeration value="@drawable/circle" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -11132,7 +11206,9 @@
             <xs:enumeration value="@drawable/ic_ab_app" />
             <xs:enumeration value="@drawable/ic_ab_done" />
             <xs:enumeration value="@drawable/ic_add" />
+            <xs:enumeration value="@drawable/ic_assignment" />
             <xs:enumeration value="@drawable/ic_browser" />
+            <xs:enumeration value="@drawable/ic_build" />
             <xs:enumeration value="@drawable/ic_dashboard" />
             <xs:enumeration value="@drawable/ic_discuss" />
             <xs:enumeration value="@drawable/ic_done" />
@@ -11144,6 +11220,7 @@
             <xs:enumeration value="@drawable/ic_home" />
             <xs:enumeration value="@drawable/ic_info" />
             <xs:enumeration value="@drawable/ic_keyboard" />
+            <xs:enumeration value="@drawable/ic_keyboard_arrow" />
             <xs:enumeration value="@drawable/ic_launcher" />
             <xs:enumeration value="@drawable/ic_lock" />
             <xs:enumeration value="@drawable/ic_menu" />
@@ -11425,6 +11502,7 @@
             <xs:enumeration value="@color/bright_foreground_inverse_material_light" />
             <xs:enumeration value="@color/bright_foreground_material_dark" />
             <xs:enumeration value="@color/bright_foreground_material_light" />
+            <xs:enumeration value="@color/button" />
             <xs:enumeration value="@color/button_material_dark" />
             <xs:enumeration value="@color/button_material_light" />
             <xs:enumeration value="@color/cardview_dark_background" />
@@ -11462,6 +11540,7 @@
             <xs:enumeration value="@color/design_snackbar_background_color" />
             <xs:enumeration value="@color/design_textinput_error_color_dark" />
             <xs:enumeration value="@color/design_textinput_error_color_light" />
+            <xs:enumeration value="@color/dialog" />
             <xs:enumeration value="@color/dim_foreground_disabled_material_dark" />
             <xs:enumeration value="@color/dim_foreground_disabled_material_light" />
             <xs:enumeration value="@color/dim_foreground_material_dark" />
@@ -11511,6 +11590,7 @@
             <xs:enumeration value="@color/switch_thumb_material_light" />
             <xs:enumeration value="@color/switch_thumb_normal_material_dark" />
             <xs:enumeration value="@color/switch_thumb_normal_material_light" />
+            <xs:enumeration value="@color/textHite" />
             <xs:enumeration value="@color/textIcon" />
             <xs:enumeration value="@color/vk_black" />
             <xs:enumeration value="@color/vk_black_pressed" />
@@ -11693,6 +11773,7 @@
             <xs:enumeration value="@drawable/background" />
             <xs:enumeration value="@drawable/background1" />
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/border_bottom" />
             <xs:enumeration value="@drawable/button_selector" />
             <xs:enumeration value="@drawable/circle" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -11742,7 +11823,9 @@
             <xs:enumeration value="@drawable/ic_ab_app" />
             <xs:enumeration value="@drawable/ic_ab_done" />
             <xs:enumeration value="@drawable/ic_add" />
+            <xs:enumeration value="@drawable/ic_assignment" />
             <xs:enumeration value="@drawable/ic_browser" />
+            <xs:enumeration value="@drawable/ic_build" />
             <xs:enumeration value="@drawable/ic_dashboard" />
             <xs:enumeration value="@drawable/ic_discuss" />
             <xs:enumeration value="@drawable/ic_done" />
@@ -11754,6 +11837,7 @@
             <xs:enumeration value="@drawable/ic_home" />
             <xs:enumeration value="@drawable/ic_info" />
             <xs:enumeration value="@drawable/ic_keyboard" />
+            <xs:enumeration value="@drawable/ic_keyboard_arrow" />
             <xs:enumeration value="@drawable/ic_launcher" />
             <xs:enumeration value="@drawable/ic_lock" />
             <xs:enumeration value="@drawable/ic_menu" />
@@ -12035,6 +12119,7 @@
             <xs:enumeration value="@color/bright_foreground_inverse_material_light" />
             <xs:enumeration value="@color/bright_foreground_material_dark" />
             <xs:enumeration value="@color/bright_foreground_material_light" />
+            <xs:enumeration value="@color/button" />
             <xs:enumeration value="@color/button_material_dark" />
             <xs:enumeration value="@color/button_material_light" />
             <xs:enumeration value="@color/cardview_dark_background" />
@@ -12072,6 +12157,7 @@
             <xs:enumeration value="@color/design_snackbar_background_color" />
             <xs:enumeration value="@color/design_textinput_error_color_dark" />
             <xs:enumeration value="@color/design_textinput_error_color_light" />
+            <xs:enumeration value="@color/dialog" />
             <xs:enumeration value="@color/dim_foreground_disabled_material_dark" />
             <xs:enumeration value="@color/dim_foreground_disabled_material_light" />
             <xs:enumeration value="@color/dim_foreground_material_dark" />
@@ -12121,6 +12207,7 @@
             <xs:enumeration value="@color/switch_thumb_material_light" />
             <xs:enumeration value="@color/switch_thumb_normal_material_dark" />
             <xs:enumeration value="@color/switch_thumb_normal_material_light" />
+            <xs:enumeration value="@color/textHite" />
             <xs:enumeration value="@color/textIcon" />
             <xs:enumeration value="@color/vk_black" />
             <xs:enumeration value="@color/vk_black_pressed" />
@@ -12303,6 +12390,7 @@
             <xs:enumeration value="@drawable/background" />
             <xs:enumeration value="@drawable/background1" />
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/border_bottom" />
             <xs:enumeration value="@drawable/button_selector" />
             <xs:enumeration value="@drawable/circle" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -12352,7 +12440,9 @@
             <xs:enumeration value="@drawable/ic_ab_app" />
             <xs:enumeration value="@drawable/ic_ab_done" />
             <xs:enumeration value="@drawable/ic_add" />
+            <xs:enumeration value="@drawable/ic_assignment" />
             <xs:enumeration value="@drawable/ic_browser" />
+            <xs:enumeration value="@drawable/ic_build" />
             <xs:enumeration value="@drawable/ic_dashboard" />
             <xs:enumeration value="@drawable/ic_discuss" />
             <xs:enumeration value="@drawable/ic_done" />
@@ -12364,6 +12454,7 @@
             <xs:enumeration value="@drawable/ic_home" />
             <xs:enumeration value="@drawable/ic_info" />
             <xs:enumeration value="@drawable/ic_keyboard" />
+            <xs:enumeration value="@drawable/ic_keyboard_arrow" />
             <xs:enumeration value="@drawable/ic_launcher" />
             <xs:enumeration value="@drawable/ic_lock" />
             <xs:enumeration value="@drawable/ic_menu" />
@@ -12695,6 +12786,7 @@
             <xs:enumeration value="@drawable/background" />
             <xs:enumeration value="@drawable/background1" />
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/border_bottom" />
             <xs:enumeration value="@drawable/button_selector" />
             <xs:enumeration value="@drawable/circle" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -12744,7 +12836,9 @@
             <xs:enumeration value="@drawable/ic_ab_app" />
             <xs:enumeration value="@drawable/ic_ab_done" />
             <xs:enumeration value="@drawable/ic_add" />
+            <xs:enumeration value="@drawable/ic_assignment" />
             <xs:enumeration value="@drawable/ic_browser" />
+            <xs:enumeration value="@drawable/ic_build" />
             <xs:enumeration value="@drawable/ic_dashboard" />
             <xs:enumeration value="@drawable/ic_discuss" />
             <xs:enumeration value="@drawable/ic_done" />
@@ -12756,6 +12850,7 @@
             <xs:enumeration value="@drawable/ic_home" />
             <xs:enumeration value="@drawable/ic_info" />
             <xs:enumeration value="@drawable/ic_keyboard" />
+            <xs:enumeration value="@drawable/ic_keyboard_arrow" />
             <xs:enumeration value="@drawable/ic_launcher" />
             <xs:enumeration value="@drawable/ic_lock" />
             <xs:enumeration value="@drawable/ic_menu" />
@@ -13192,6 +13287,7 @@
             <xs:enumeration value="@drawable/background" />
             <xs:enumeration value="@drawable/background1" />
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/border_bottom" />
             <xs:enumeration value="@drawable/button_selector" />
             <xs:enumeration value="@drawable/circle" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -13241,7 +13337,9 @@
             <xs:enumeration value="@drawable/ic_ab_app" />
             <xs:enumeration value="@drawable/ic_ab_done" />
             <xs:enumeration value="@drawable/ic_add" />
+            <xs:enumeration value="@drawable/ic_assignment" />
             <xs:enumeration value="@drawable/ic_browser" />
+            <xs:enumeration value="@drawable/ic_build" />
             <xs:enumeration value="@drawable/ic_dashboard" />
             <xs:enumeration value="@drawable/ic_discuss" />
             <xs:enumeration value="@drawable/ic_done" />
@@ -13253,6 +13351,7 @@
             <xs:enumeration value="@drawable/ic_home" />
             <xs:enumeration value="@drawable/ic_info" />
             <xs:enumeration value="@drawable/ic_keyboard" />
+            <xs:enumeration value="@drawable/ic_keyboard_arrow" />
             <xs:enumeration value="@drawable/ic_launcher" />
             <xs:enumeration value="@drawable/ic_lock" />
             <xs:enumeration value="@drawable/ic_menu" />
@@ -14069,6 +14168,7 @@
             <xs:enumeration value="@drawable/background" />
             <xs:enumeration value="@drawable/background1" />
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/border_bottom" />
             <xs:enumeration value="@drawable/button_selector" />
             <xs:enumeration value="@drawable/circle" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -14118,7 +14218,9 @@
             <xs:enumeration value="@drawable/ic_ab_app" />
             <xs:enumeration value="@drawable/ic_ab_done" />
             <xs:enumeration value="@drawable/ic_add" />
+            <xs:enumeration value="@drawable/ic_assignment" />
             <xs:enumeration value="@drawable/ic_browser" />
+            <xs:enumeration value="@drawable/ic_build" />
             <xs:enumeration value="@drawable/ic_dashboard" />
             <xs:enumeration value="@drawable/ic_discuss" />
             <xs:enumeration value="@drawable/ic_done" />
@@ -14130,6 +14232,7 @@
             <xs:enumeration value="@drawable/ic_home" />
             <xs:enumeration value="@drawable/ic_info" />
             <xs:enumeration value="@drawable/ic_keyboard" />
+            <xs:enumeration value="@drawable/ic_keyboard_arrow" />
             <xs:enumeration value="@drawable/ic_launcher" />
             <xs:enumeration value="@drawable/ic_lock" />
             <xs:enumeration value="@drawable/ic_menu" />
@@ -14986,6 +15089,7 @@
             <xs:enumeration value="@drawable/background" />
             <xs:enumeration value="@drawable/background1" />
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/border_bottom" />
             <xs:enumeration value="@drawable/button_selector" />
             <xs:enumeration value="@drawable/circle" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -15035,7 +15139,9 @@
             <xs:enumeration value="@drawable/ic_ab_app" />
             <xs:enumeration value="@drawable/ic_ab_done" />
             <xs:enumeration value="@drawable/ic_add" />
+            <xs:enumeration value="@drawable/ic_assignment" />
             <xs:enumeration value="@drawable/ic_browser" />
+            <xs:enumeration value="@drawable/ic_build" />
             <xs:enumeration value="@drawable/ic_dashboard" />
             <xs:enumeration value="@drawable/ic_discuss" />
             <xs:enumeration value="@drawable/ic_done" />
@@ -15047,6 +15153,7 @@
             <xs:enumeration value="@drawable/ic_home" />
             <xs:enumeration value="@drawable/ic_info" />
             <xs:enumeration value="@drawable/ic_keyboard" />
+            <xs:enumeration value="@drawable/ic_keyboard_arrow" />
             <xs:enumeration value="@drawable/ic_launcher" />
             <xs:enumeration value="@drawable/ic_lock" />
             <xs:enumeration value="@drawable/ic_menu" />
@@ -15378,6 +15485,7 @@
             <xs:enumeration value="@drawable/background" />
             <xs:enumeration value="@drawable/background1" />
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/border_bottom" />
             <xs:enumeration value="@drawable/button_selector" />
             <xs:enumeration value="@drawable/circle" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -15427,7 +15535,9 @@
             <xs:enumeration value="@drawable/ic_ab_app" />
             <xs:enumeration value="@drawable/ic_ab_done" />
             <xs:enumeration value="@drawable/ic_add" />
+            <xs:enumeration value="@drawable/ic_assignment" />
             <xs:enumeration value="@drawable/ic_browser" />
+            <xs:enumeration value="@drawable/ic_build" />
             <xs:enumeration value="@drawable/ic_dashboard" />
             <xs:enumeration value="@drawable/ic_discuss" />
             <xs:enumeration value="@drawable/ic_done" />
@@ -15439,6 +15549,7 @@
             <xs:enumeration value="@drawable/ic_home" />
             <xs:enumeration value="@drawable/ic_info" />
             <xs:enumeration value="@drawable/ic_keyboard" />
+            <xs:enumeration value="@drawable/ic_keyboard_arrow" />
             <xs:enumeration value="@drawable/ic_launcher" />
             <xs:enumeration value="@drawable/ic_lock" />
             <xs:enumeration value="@drawable/ic_menu" />
@@ -15936,6 +16047,7 @@
             <xs:enumeration value="@drawable/background" />
             <xs:enumeration value="@drawable/background1" />
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/border_bottom" />
             <xs:enumeration value="@drawable/button_selector" />
             <xs:enumeration value="@drawable/circle" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -15985,7 +16097,9 @@
             <xs:enumeration value="@drawable/ic_ab_app" />
             <xs:enumeration value="@drawable/ic_ab_done" />
             <xs:enumeration value="@drawable/ic_add" />
+            <xs:enumeration value="@drawable/ic_assignment" />
             <xs:enumeration value="@drawable/ic_browser" />
+            <xs:enumeration value="@drawable/ic_build" />
             <xs:enumeration value="@drawable/ic_dashboard" />
             <xs:enumeration value="@drawable/ic_discuss" />
             <xs:enumeration value="@drawable/ic_done" />
@@ -15997,6 +16111,7 @@
             <xs:enumeration value="@drawable/ic_home" />
             <xs:enumeration value="@drawable/ic_info" />
             <xs:enumeration value="@drawable/ic_keyboard" />
+            <xs:enumeration value="@drawable/ic_keyboard_arrow" />
             <xs:enumeration value="@drawable/ic_launcher" />
             <xs:enumeration value="@drawable/ic_lock" />
             <xs:enumeration value="@drawable/ic_menu" />
@@ -16431,6 +16546,7 @@
             <xs:enumeration value="@color/bright_foreground_inverse_material_light" />
             <xs:enumeration value="@color/bright_foreground_material_dark" />
             <xs:enumeration value="@color/bright_foreground_material_light" />
+            <xs:enumeration value="@color/button" />
             <xs:enumeration value="@color/button_material_dark" />
             <xs:enumeration value="@color/button_material_light" />
             <xs:enumeration value="@color/cardview_dark_background" />
@@ -16468,6 +16584,7 @@
             <xs:enumeration value="@color/design_snackbar_background_color" />
             <xs:enumeration value="@color/design_textinput_error_color_dark" />
             <xs:enumeration value="@color/design_textinput_error_color_light" />
+            <xs:enumeration value="@color/dialog" />
             <xs:enumeration value="@color/dim_foreground_disabled_material_dark" />
             <xs:enumeration value="@color/dim_foreground_disabled_material_light" />
             <xs:enumeration value="@color/dim_foreground_material_dark" />
@@ -16517,6 +16634,7 @@
             <xs:enumeration value="@color/switch_thumb_material_light" />
             <xs:enumeration value="@color/switch_thumb_normal_material_dark" />
             <xs:enumeration value="@color/switch_thumb_normal_material_light" />
+            <xs:enumeration value="@color/textHite" />
             <xs:enumeration value="@color/textIcon" />
             <xs:enumeration value="@color/vk_black" />
             <xs:enumeration value="@color/vk_black_pressed" />
@@ -16699,6 +16817,7 @@
             <xs:enumeration value="@drawable/background" />
             <xs:enumeration value="@drawable/background1" />
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/border_bottom" />
             <xs:enumeration value="@drawable/button_selector" />
             <xs:enumeration value="@drawable/circle" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -16748,7 +16867,9 @@
             <xs:enumeration value="@drawable/ic_ab_app" />
             <xs:enumeration value="@drawable/ic_ab_done" />
             <xs:enumeration value="@drawable/ic_add" />
+            <xs:enumeration value="@drawable/ic_assignment" />
             <xs:enumeration value="@drawable/ic_browser" />
+            <xs:enumeration value="@drawable/ic_build" />
             <xs:enumeration value="@drawable/ic_dashboard" />
             <xs:enumeration value="@drawable/ic_discuss" />
             <xs:enumeration value="@drawable/ic_done" />
@@ -16760,6 +16881,7 @@
             <xs:enumeration value="@drawable/ic_home" />
             <xs:enumeration value="@drawable/ic_info" />
             <xs:enumeration value="@drawable/ic_keyboard" />
+            <xs:enumeration value="@drawable/ic_keyboard_arrow" />
             <xs:enumeration value="@drawable/ic_launcher" />
             <xs:enumeration value="@drawable/ic_lock" />
             <xs:enumeration value="@drawable/ic_menu" />
@@ -17183,6 +17305,7 @@
             <xs:enumeration value="@drawable/background" />
             <xs:enumeration value="@drawable/background1" />
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/border_bottom" />
             <xs:enumeration value="@drawable/button_selector" />
             <xs:enumeration value="@drawable/circle" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -17232,7 +17355,9 @@
             <xs:enumeration value="@drawable/ic_ab_app" />
             <xs:enumeration value="@drawable/ic_ab_done" />
             <xs:enumeration value="@drawable/ic_add" />
+            <xs:enumeration value="@drawable/ic_assignment" />
             <xs:enumeration value="@drawable/ic_browser" />
+            <xs:enumeration value="@drawable/ic_build" />
             <xs:enumeration value="@drawable/ic_dashboard" />
             <xs:enumeration value="@drawable/ic_discuss" />
             <xs:enumeration value="@drawable/ic_done" />
@@ -17244,6 +17369,7 @@
             <xs:enumeration value="@drawable/ic_home" />
             <xs:enumeration value="@drawable/ic_info" />
             <xs:enumeration value="@drawable/ic_keyboard" />
+            <xs:enumeration value="@drawable/ic_keyboard_arrow" />
             <xs:enumeration value="@drawable/ic_launcher" />
             <xs:enumeration value="@drawable/ic_lock" />
             <xs:enumeration value="@drawable/ic_menu" />
@@ -17575,6 +17701,7 @@
             <xs:enumeration value="@drawable/background" />
             <xs:enumeration value="@drawable/background1" />
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/border_bottom" />
             <xs:enumeration value="@drawable/button_selector" />
             <xs:enumeration value="@drawable/circle" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -17624,7 +17751,9 @@
             <xs:enumeration value="@drawable/ic_ab_app" />
             <xs:enumeration value="@drawable/ic_ab_done" />
             <xs:enumeration value="@drawable/ic_add" />
+            <xs:enumeration value="@drawable/ic_assignment" />
             <xs:enumeration value="@drawable/ic_browser" />
+            <xs:enumeration value="@drawable/ic_build" />
             <xs:enumeration value="@drawable/ic_dashboard" />
             <xs:enumeration value="@drawable/ic_discuss" />
             <xs:enumeration value="@drawable/ic_done" />
@@ -17636,6 +17765,7 @@
             <xs:enumeration value="@drawable/ic_home" />
             <xs:enumeration value="@drawable/ic_info" />
             <xs:enumeration value="@drawable/ic_keyboard" />
+            <xs:enumeration value="@drawable/ic_keyboard_arrow" />
             <xs:enumeration value="@drawable/ic_launcher" />
             <xs:enumeration value="@drawable/ic_lock" />
             <xs:enumeration value="@drawable/ic_menu" />
@@ -18156,6 +18286,7 @@
             <xs:enumeration value="@drawable/background" />
             <xs:enumeration value="@drawable/background1" />
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/border_bottom" />
             <xs:enumeration value="@drawable/button_selector" />
             <xs:enumeration value="@drawable/circle" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -18205,7 +18336,9 @@
             <xs:enumeration value="@drawable/ic_ab_app" />
             <xs:enumeration value="@drawable/ic_ab_done" />
             <xs:enumeration value="@drawable/ic_add" />
+            <xs:enumeration value="@drawable/ic_assignment" />
             <xs:enumeration value="@drawable/ic_browser" />
+            <xs:enumeration value="@drawable/ic_build" />
             <xs:enumeration value="@drawable/ic_dashboard" />
             <xs:enumeration value="@drawable/ic_discuss" />
             <xs:enumeration value="@drawable/ic_done" />
@@ -18217,6 +18350,7 @@
             <xs:enumeration value="@drawable/ic_home" />
             <xs:enumeration value="@drawable/ic_info" />
             <xs:enumeration value="@drawable/ic_keyboard" />
+            <xs:enumeration value="@drawable/ic_keyboard_arrow" />
             <xs:enumeration value="@drawable/ic_launcher" />
             <xs:enumeration value="@drawable/ic_lock" />
             <xs:enumeration value="@drawable/ic_menu" />
@@ -18498,6 +18632,7 @@
             <xs:enumeration value="@color/bright_foreground_inverse_material_light" />
             <xs:enumeration value="@color/bright_foreground_material_dark" />
             <xs:enumeration value="@color/bright_foreground_material_light" />
+            <xs:enumeration value="@color/button" />
             <xs:enumeration value="@color/button_material_dark" />
             <xs:enumeration value="@color/button_material_light" />
             <xs:enumeration value="@color/cardview_dark_background" />
@@ -18535,6 +18670,7 @@
             <xs:enumeration value="@color/design_snackbar_background_color" />
             <xs:enumeration value="@color/design_textinput_error_color_dark" />
             <xs:enumeration value="@color/design_textinput_error_color_light" />
+            <xs:enumeration value="@color/dialog" />
             <xs:enumeration value="@color/dim_foreground_disabled_material_dark" />
             <xs:enumeration value="@color/dim_foreground_disabled_material_light" />
             <xs:enumeration value="@color/dim_foreground_material_dark" />
@@ -18584,6 +18720,7 @@
             <xs:enumeration value="@color/switch_thumb_material_light" />
             <xs:enumeration value="@color/switch_thumb_normal_material_dark" />
             <xs:enumeration value="@color/switch_thumb_normal_material_light" />
+            <xs:enumeration value="@color/textHite" />
             <xs:enumeration value="@color/textIcon" />
             <xs:enumeration value="@color/vk_black" />
             <xs:enumeration value="@color/vk_black_pressed" />
@@ -18766,6 +18903,7 @@
             <xs:enumeration value="@drawable/background" />
             <xs:enumeration value="@drawable/background1" />
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/border_bottom" />
             <xs:enumeration value="@drawable/button_selector" />
             <xs:enumeration value="@drawable/circle" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -18815,7 +18953,9 @@
             <xs:enumeration value="@drawable/ic_ab_app" />
             <xs:enumeration value="@drawable/ic_ab_done" />
             <xs:enumeration value="@drawable/ic_add" />
+            <xs:enumeration value="@drawable/ic_assignment" />
             <xs:enumeration value="@drawable/ic_browser" />
+            <xs:enumeration value="@drawable/ic_build" />
             <xs:enumeration value="@drawable/ic_dashboard" />
             <xs:enumeration value="@drawable/ic_discuss" />
             <xs:enumeration value="@drawable/ic_done" />
@@ -18827,6 +18967,7 @@
             <xs:enumeration value="@drawable/ic_home" />
             <xs:enumeration value="@drawable/ic_info" />
             <xs:enumeration value="@drawable/ic_keyboard" />
+            <xs:enumeration value="@drawable/ic_keyboard_arrow" />
             <xs:enumeration value="@drawable/ic_launcher" />
             <xs:enumeration value="@drawable/ic_lock" />
             <xs:enumeration value="@drawable/ic_menu" />
@@ -19263,6 +19404,7 @@
             <xs:enumeration value="@drawable/background" />
             <xs:enumeration value="@drawable/background1" />
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/border_bottom" />
             <xs:enumeration value="@drawable/button_selector" />
             <xs:enumeration value="@drawable/circle" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -19312,7 +19454,9 @@
             <xs:enumeration value="@drawable/ic_ab_app" />
             <xs:enumeration value="@drawable/ic_ab_done" />
             <xs:enumeration value="@drawable/ic_add" />
+            <xs:enumeration value="@drawable/ic_assignment" />
             <xs:enumeration value="@drawable/ic_browser" />
+            <xs:enumeration value="@drawable/ic_build" />
             <xs:enumeration value="@drawable/ic_dashboard" />
             <xs:enumeration value="@drawable/ic_discuss" />
             <xs:enumeration value="@drawable/ic_done" />
@@ -19324,6 +19468,7 @@
             <xs:enumeration value="@drawable/ic_home" />
             <xs:enumeration value="@drawable/ic_info" />
             <xs:enumeration value="@drawable/ic_keyboard" />
+            <xs:enumeration value="@drawable/ic_keyboard_arrow" />
             <xs:enumeration value="@drawable/ic_launcher" />
             <xs:enumeration value="@drawable/ic_lock" />
             <xs:enumeration value="@drawable/ic_menu" />
@@ -19605,6 +19750,7 @@
             <xs:enumeration value="@color/bright_foreground_inverse_material_light" />
             <xs:enumeration value="@color/bright_foreground_material_dark" />
             <xs:enumeration value="@color/bright_foreground_material_light" />
+            <xs:enumeration value="@color/button" />
             <xs:enumeration value="@color/button_material_dark" />
             <xs:enumeration value="@color/button_material_light" />
             <xs:enumeration value="@color/cardview_dark_background" />
@@ -19642,6 +19788,7 @@
             <xs:enumeration value="@color/design_snackbar_background_color" />
             <xs:enumeration value="@color/design_textinput_error_color_dark" />
             <xs:enumeration value="@color/design_textinput_error_color_light" />
+            <xs:enumeration value="@color/dialog" />
             <xs:enumeration value="@color/dim_foreground_disabled_material_dark" />
             <xs:enumeration value="@color/dim_foreground_disabled_material_light" />
             <xs:enumeration value="@color/dim_foreground_material_dark" />
@@ -19691,6 +19838,7 @@
             <xs:enumeration value="@color/switch_thumb_material_light" />
             <xs:enumeration value="@color/switch_thumb_normal_material_dark" />
             <xs:enumeration value="@color/switch_thumb_normal_material_light" />
+            <xs:enumeration value="@color/textHite" />
             <xs:enumeration value="@color/textIcon" />
             <xs:enumeration value="@color/vk_black" />
             <xs:enumeration value="@color/vk_black_pressed" />
@@ -19873,6 +20021,7 @@
             <xs:enumeration value="@drawable/background" />
             <xs:enumeration value="@drawable/background1" />
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/border_bottom" />
             <xs:enumeration value="@drawable/button_selector" />
             <xs:enumeration value="@drawable/circle" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -19922,7 +20071,9 @@
             <xs:enumeration value="@drawable/ic_ab_app" />
             <xs:enumeration value="@drawable/ic_ab_done" />
             <xs:enumeration value="@drawable/ic_add" />
+            <xs:enumeration value="@drawable/ic_assignment" />
             <xs:enumeration value="@drawable/ic_browser" />
+            <xs:enumeration value="@drawable/ic_build" />
             <xs:enumeration value="@drawable/ic_dashboard" />
             <xs:enumeration value="@drawable/ic_discuss" />
             <xs:enumeration value="@drawable/ic_done" />
@@ -19934,6 +20085,7 @@
             <xs:enumeration value="@drawable/ic_home" />
             <xs:enumeration value="@drawable/ic_info" />
             <xs:enumeration value="@drawable/ic_keyboard" />
+            <xs:enumeration value="@drawable/ic_keyboard_arrow" />
             <xs:enumeration value="@drawable/ic_launcher" />
             <xs:enumeration value="@drawable/ic_lock" />
             <xs:enumeration value="@drawable/ic_menu" />
@@ -20597,6 +20749,7 @@
             <xs:enumeration value="@drawable/background" />
             <xs:enumeration value="@drawable/background1" />
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/border_bottom" />
             <xs:enumeration value="@drawable/button_selector" />
             <xs:enumeration value="@drawable/circle" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -20646,7 +20799,9 @@
             <xs:enumeration value="@drawable/ic_ab_app" />
             <xs:enumeration value="@drawable/ic_ab_done" />
             <xs:enumeration value="@drawable/ic_add" />
+            <xs:enumeration value="@drawable/ic_assignment" />
             <xs:enumeration value="@drawable/ic_browser" />
+            <xs:enumeration value="@drawable/ic_build" />
             <xs:enumeration value="@drawable/ic_dashboard" />
             <xs:enumeration value="@drawable/ic_discuss" />
             <xs:enumeration value="@drawable/ic_done" />
@@ -20658,6 +20813,7 @@
             <xs:enumeration value="@drawable/ic_home" />
             <xs:enumeration value="@drawable/ic_info" />
             <xs:enumeration value="@drawable/ic_keyboard" />
+            <xs:enumeration value="@drawable/ic_keyboard_arrow" />
             <xs:enumeration value="@drawable/ic_launcher" />
             <xs:enumeration value="@drawable/ic_lock" />
             <xs:enumeration value="@drawable/ic_menu" />
@@ -20989,6 +21145,7 @@
             <xs:enumeration value="@drawable/background" />
             <xs:enumeration value="@drawable/background1" />
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/border_bottom" />
             <xs:enumeration value="@drawable/button_selector" />
             <xs:enumeration value="@drawable/circle" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -21038,7 +21195,9 @@
             <xs:enumeration value="@drawable/ic_ab_app" />
             <xs:enumeration value="@drawable/ic_ab_done" />
             <xs:enumeration value="@drawable/ic_add" />
+            <xs:enumeration value="@drawable/ic_assignment" />
             <xs:enumeration value="@drawable/ic_browser" />
+            <xs:enumeration value="@drawable/ic_build" />
             <xs:enumeration value="@drawable/ic_dashboard" />
             <xs:enumeration value="@drawable/ic_discuss" />
             <xs:enumeration value="@drawable/ic_done" />
@@ -21050,6 +21209,7 @@
             <xs:enumeration value="@drawable/ic_home" />
             <xs:enumeration value="@drawable/ic_info" />
             <xs:enumeration value="@drawable/ic_keyboard" />
+            <xs:enumeration value="@drawable/ic_keyboard_arrow" />
             <xs:enumeration value="@drawable/ic_launcher" />
             <xs:enumeration value="@drawable/ic_lock" />
             <xs:enumeration value="@drawable/ic_menu" />
@@ -21512,6 +21672,7 @@
             <xs:enumeration value="@color/bright_foreground_inverse_material_light" />
             <xs:enumeration value="@color/bright_foreground_material_dark" />
             <xs:enumeration value="@color/bright_foreground_material_light" />
+            <xs:enumeration value="@color/button" />
             <xs:enumeration value="@color/button_material_dark" />
             <xs:enumeration value="@color/button_material_light" />
             <xs:enumeration value="@color/cardview_dark_background" />
@@ -21549,6 +21710,7 @@
             <xs:enumeration value="@color/design_snackbar_background_color" />
             <xs:enumeration value="@color/design_textinput_error_color_dark" />
             <xs:enumeration value="@color/design_textinput_error_color_light" />
+            <xs:enumeration value="@color/dialog" />
             <xs:enumeration value="@color/dim_foreground_disabled_material_dark" />
             <xs:enumeration value="@color/dim_foreground_disabled_material_light" />
             <xs:enumeration value="@color/dim_foreground_material_dark" />
@@ -21598,6 +21760,7 @@
             <xs:enumeration value="@color/switch_thumb_material_light" />
             <xs:enumeration value="@color/switch_thumb_normal_material_dark" />
             <xs:enumeration value="@color/switch_thumb_normal_material_light" />
+            <xs:enumeration value="@color/textHite" />
             <xs:enumeration value="@color/textIcon" />
             <xs:enumeration value="@color/vk_black" />
             <xs:enumeration value="@color/vk_black_pressed" />
@@ -23073,6 +23236,7 @@
             <xs:enumeration value="@color/bright_foreground_inverse_material_light" />
             <xs:enumeration value="@color/bright_foreground_material_dark" />
             <xs:enumeration value="@color/bright_foreground_material_light" />
+            <xs:enumeration value="@color/button" />
             <xs:enumeration value="@color/button_material_dark" />
             <xs:enumeration value="@color/button_material_light" />
             <xs:enumeration value="@color/cardview_dark_background" />
@@ -23110,6 +23274,7 @@
             <xs:enumeration value="@color/design_snackbar_background_color" />
             <xs:enumeration value="@color/design_textinput_error_color_dark" />
             <xs:enumeration value="@color/design_textinput_error_color_light" />
+            <xs:enumeration value="@color/dialog" />
             <xs:enumeration value="@color/dim_foreground_disabled_material_dark" />
             <xs:enumeration value="@color/dim_foreground_disabled_material_light" />
             <xs:enumeration value="@color/dim_foreground_material_dark" />
@@ -23159,6 +23324,7 @@
             <xs:enumeration value="@color/switch_thumb_material_light" />
             <xs:enumeration value="@color/switch_thumb_normal_material_dark" />
             <xs:enumeration value="@color/switch_thumb_normal_material_light" />
+            <xs:enumeration value="@color/textHite" />
             <xs:enumeration value="@color/textIcon" />
             <xs:enumeration value="@color/vk_black" />
             <xs:enumeration value="@color/vk_black_pressed" />
@@ -23341,6 +23507,7 @@
             <xs:enumeration value="@drawable/background" />
             <xs:enumeration value="@drawable/background1" />
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/border_bottom" />
             <xs:enumeration value="@drawable/button_selector" />
             <xs:enumeration value="@drawable/circle" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -23390,7 +23557,9 @@
             <xs:enumeration value="@drawable/ic_ab_app" />
             <xs:enumeration value="@drawable/ic_ab_done" />
             <xs:enumeration value="@drawable/ic_add" />
+            <xs:enumeration value="@drawable/ic_assignment" />
             <xs:enumeration value="@drawable/ic_browser" />
+            <xs:enumeration value="@drawable/ic_build" />
             <xs:enumeration value="@drawable/ic_dashboard" />
             <xs:enumeration value="@drawable/ic_discuss" />
             <xs:enumeration value="@drawable/ic_done" />
@@ -23402,6 +23571,7 @@
             <xs:enumeration value="@drawable/ic_home" />
             <xs:enumeration value="@drawable/ic_info" />
             <xs:enumeration value="@drawable/ic_keyboard" />
+            <xs:enumeration value="@drawable/ic_keyboard_arrow" />
             <xs:enumeration value="@drawable/ic_launcher" />
             <xs:enumeration value="@drawable/ic_lock" />
             <xs:enumeration value="@drawable/ic_menu" />
@@ -23683,6 +23853,7 @@
             <xs:enumeration value="@color/bright_foreground_inverse_material_light" />
             <xs:enumeration value="@color/bright_foreground_material_dark" />
             <xs:enumeration value="@color/bright_foreground_material_light" />
+            <xs:enumeration value="@color/button" />
             <xs:enumeration value="@color/button_material_dark" />
             <xs:enumeration value="@color/button_material_light" />
             <xs:enumeration value="@color/cardview_dark_background" />
@@ -23720,6 +23891,7 @@
             <xs:enumeration value="@color/design_snackbar_background_color" />
             <xs:enumeration value="@color/design_textinput_error_color_dark" />
             <xs:enumeration value="@color/design_textinput_error_color_light" />
+            <xs:enumeration value="@color/dialog" />
             <xs:enumeration value="@color/dim_foreground_disabled_material_dark" />
             <xs:enumeration value="@color/dim_foreground_disabled_material_light" />
             <xs:enumeration value="@color/dim_foreground_material_dark" />
@@ -23769,6 +23941,7 @@
             <xs:enumeration value="@color/switch_thumb_material_light" />
             <xs:enumeration value="@color/switch_thumb_normal_material_dark" />
             <xs:enumeration value="@color/switch_thumb_normal_material_light" />
+            <xs:enumeration value="@color/textHite" />
             <xs:enumeration value="@color/textIcon" />
             <xs:enumeration value="@color/vk_black" />
             <xs:enumeration value="@color/vk_black_pressed" />
@@ -25007,6 +25180,7 @@
             <xs:enumeration value="@drawable/background" />
             <xs:enumeration value="@drawable/background1" />
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/border_bottom" />
             <xs:enumeration value="@drawable/button_selector" />
             <xs:enumeration value="@drawable/circle" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -25056,7 +25230,9 @@
             <xs:enumeration value="@drawable/ic_ab_app" />
             <xs:enumeration value="@drawable/ic_ab_done" />
             <xs:enumeration value="@drawable/ic_add" />
+            <xs:enumeration value="@drawable/ic_assignment" />
             <xs:enumeration value="@drawable/ic_browser" />
+            <xs:enumeration value="@drawable/ic_build" />
             <xs:enumeration value="@drawable/ic_dashboard" />
             <xs:enumeration value="@drawable/ic_discuss" />
             <xs:enumeration value="@drawable/ic_done" />
@@ -25068,6 +25244,7 @@
             <xs:enumeration value="@drawable/ic_home" />
             <xs:enumeration value="@drawable/ic_info" />
             <xs:enumeration value="@drawable/ic_keyboard" />
+            <xs:enumeration value="@drawable/ic_keyboard_arrow" />
             <xs:enumeration value="@drawable/ic_launcher" />
             <xs:enumeration value="@drawable/ic_lock" />
             <xs:enumeration value="@drawable/ic_menu" />
@@ -25349,6 +25526,7 @@
             <xs:enumeration value="@color/bright_foreground_inverse_material_light" />
             <xs:enumeration value="@color/bright_foreground_material_dark" />
             <xs:enumeration value="@color/bright_foreground_material_light" />
+            <xs:enumeration value="@color/button" />
             <xs:enumeration value="@color/button_material_dark" />
             <xs:enumeration value="@color/button_material_light" />
             <xs:enumeration value="@color/cardview_dark_background" />
@@ -25386,6 +25564,7 @@
             <xs:enumeration value="@color/design_snackbar_background_color" />
             <xs:enumeration value="@color/design_textinput_error_color_dark" />
             <xs:enumeration value="@color/design_textinput_error_color_light" />
+            <xs:enumeration value="@color/dialog" />
             <xs:enumeration value="@color/dim_foreground_disabled_material_dark" />
             <xs:enumeration value="@color/dim_foreground_disabled_material_light" />
             <xs:enumeration value="@color/dim_foreground_material_dark" />
@@ -25435,6 +25614,7 @@
             <xs:enumeration value="@color/switch_thumb_material_light" />
             <xs:enumeration value="@color/switch_thumb_normal_material_dark" />
             <xs:enumeration value="@color/switch_thumb_normal_material_light" />
+            <xs:enumeration value="@color/textHite" />
             <xs:enumeration value="@color/textIcon" />
             <xs:enumeration value="@color/vk_black" />
             <xs:enumeration value="@color/vk_black_pressed" />
@@ -25617,6 +25797,7 @@
             <xs:enumeration value="@drawable/background" />
             <xs:enumeration value="@drawable/background1" />
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/border_bottom" />
             <xs:enumeration value="@drawable/button_selector" />
             <xs:enumeration value="@drawable/circle" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -25666,7 +25847,9 @@
             <xs:enumeration value="@drawable/ic_ab_app" />
             <xs:enumeration value="@drawable/ic_ab_done" />
             <xs:enumeration value="@drawable/ic_add" />
+            <xs:enumeration value="@drawable/ic_assignment" />
             <xs:enumeration value="@drawable/ic_browser" />
+            <xs:enumeration value="@drawable/ic_build" />
             <xs:enumeration value="@drawable/ic_dashboard" />
             <xs:enumeration value="@drawable/ic_discuss" />
             <xs:enumeration value="@drawable/ic_done" />
@@ -25678,6 +25861,7 @@
             <xs:enumeration value="@drawable/ic_home" />
             <xs:enumeration value="@drawable/ic_info" />
             <xs:enumeration value="@drawable/ic_keyboard" />
+            <xs:enumeration value="@drawable/ic_keyboard_arrow" />
             <xs:enumeration value="@drawable/ic_launcher" />
             <xs:enumeration value="@drawable/ic_lock" />
             <xs:enumeration value="@drawable/ic_menu" />
@@ -26009,6 +26193,7 @@
             <xs:enumeration value="@drawable/background" />
             <xs:enumeration value="@drawable/background1" />
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/border_bottom" />
             <xs:enumeration value="@drawable/button_selector" />
             <xs:enumeration value="@drawable/circle" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -26058,7 +26243,9 @@
             <xs:enumeration value="@drawable/ic_ab_app" />
             <xs:enumeration value="@drawable/ic_ab_done" />
             <xs:enumeration value="@drawable/ic_add" />
+            <xs:enumeration value="@drawable/ic_assignment" />
             <xs:enumeration value="@drawable/ic_browser" />
+            <xs:enumeration value="@drawable/ic_build" />
             <xs:enumeration value="@drawable/ic_dashboard" />
             <xs:enumeration value="@drawable/ic_discuss" />
             <xs:enumeration value="@drawable/ic_done" />
@@ -26070,6 +26257,7 @@
             <xs:enumeration value="@drawable/ic_home" />
             <xs:enumeration value="@drawable/ic_info" />
             <xs:enumeration value="@drawable/ic_keyboard" />
+            <xs:enumeration value="@drawable/ic_keyboard_arrow" />
             <xs:enumeration value="@drawable/ic_launcher" />
             <xs:enumeration value="@drawable/ic_lock" />
             <xs:enumeration value="@drawable/ic_menu" />
@@ -26449,6 +26637,7 @@
             <xs:enumeration value="@drawable/background" />
             <xs:enumeration value="@drawable/background1" />
             <xs:enumeration value="@drawable/border" />
+            <xs:enumeration value="@drawable/border_bottom" />
             <xs:enumeration value="@drawable/button_selector" />
             <xs:enumeration value="@drawable/circle" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -26498,7 +26687,9 @@
             <xs:enumeration value="@drawable/ic_ab_app" />
             <xs:enumeration value="@drawable/ic_ab_done" />
             <xs:enumeration value="@drawable/ic_add" />
+            <xs:enumeration value="@drawable/ic_assignment" />
             <xs:enumeration value="@drawable/ic_browser" />
+            <xs:enumeration value="@drawable/ic_build" />
             <xs:enumeration value="@drawable/ic_dashboard" />
             <xs:enumeration value="@drawable/ic_discuss" />
             <xs:enumeration value="@drawable/ic_done" />
@@ -26510,6 +26701,7 @@
             <xs:enumeration value="@drawable/ic_home" />
             <xs:enumeration value="@drawable/ic_info" />
             <xs:enumeration value="@drawable/ic_keyboard" />
+            <xs:enumeration value="@drawable/ic_keyboard_arrow" />
             <xs:enumeration value="@drawable/ic_launcher" />
             <xs:enumeration value="@drawable/ic_lock" />
             <xs:enumeration value="@drawable/ic_menu" />

@@ -8,9 +8,11 @@
   <color name="textIcon">#FFFFFF</color>
   <color name="textHite">#ECECEC</color>
   <color name="button">#26C6DA</color>
+  <color name="dialog">#B2EBF2</color>
   <color name="primaryText">#212121</color>
   <color name="secondaryText">#727272</color>
   <color name="divider">#B6B6B6</color>
-  <color name="activated_color">#E0F7FA</color>
+  <color name="black">#000000</color>
+<color name="activated_color">#E0F7FA</color>
   <color name="mainTitleColor">#171754</color>
 </resources>

@@ -1,41 +1,27 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
 using Android.App;
-using Android.Content;
+using Android.Graphics;
 using Android.OS;
-using Android.Runtime;
 using Android.Support.Design.Widget;
-using Android.Support.V4.App;
-using Android.Views;
 using Android.Widget;
 using Com.Nostra13.Universalimageloader.Core;
 using MvvmCross.Platform;
 using ServiceLocator.Core.IServices;
 using ServiceLocator.Core.ViewModels;
-using VKontakte.API;
-using Toolbar = Android.Support.V7.Widget.Toolbar;
-using ServiceLocator.Core.IServices;
-using Android.Graphics;
 using ServiceLocator.Droid.Views.Dialogs;
-
-using MvvmCross.Binding.BindingContext;
-using MvvmCross.Droid.Support.V7.AppCompat;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace ServiceLocator.Droid.Views
 {
-
     [Activity(Label = "Master", ParentActivity = typeof(FirstMasterView))]
     [MetaData("android.support.PARENT_ACTIVITY", Value = "navdrawer.activities.FirstMasterView")]
     public class FirstMasterView : BaseView<FirstMasterViewModel>
     {
         private ImageLoader _imageLoader;
         protected override int LayoutResource => Resource.Layout.first_master_view;
+
         protected override async void OnCreate(Bundle bundle)
         {
-
             base.OnCreate(bundle);
             // SetContentView(LayoutResource);
             //ViewModel.Title = "FriendView";
@@ -65,23 +51,23 @@ namespace ServiceLocator.Droid.Views
             collapsingToolbar.SetCollapsedTitleTextColor(Color.White);
             collapsingToolbar.SetExpandedTitleColor(Color.White);
             var t = FindViewById<ImageView>(Resource.Id.imageView1);
-           // t.Background = user.photo_50;vo
+            // t.Background = user.photo_50;vo
             try
             {
-            _imageLoader.DisplayImage(user.photo_100, FindViewById<ImageView>(Resource.Id.imageView1));
+                _imageLoader.DisplayImage(user.photo_100, FindViewById<ImageView>(Resource.Id.imageView1));
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                var m =ex.Message;
+                var m = ex.Message;
             }
-            var buttonForCategory = (Button)FindViewById(Resource.Id.category);
+            var buttonForCategory = (Button) FindViewById(Resource.Id.category);
             buttonForCategory.Click += OnCategoryClick;
         }
+
         private void OnCategoryClick(object sender, EventArgs eventArgs)
         {
-            var dialog4 = new CategoryServiceDialog ();
+            var dialog4 = new CategoryServiceDialog(ViewModel);
             dialog4.Show(SupportFragmentManager, "PrintedAndNotServedDialog");
-
         }
     }
 }
