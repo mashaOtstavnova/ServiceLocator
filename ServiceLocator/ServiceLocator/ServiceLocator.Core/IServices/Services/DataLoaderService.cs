@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ServiceLocator.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,12 +11,38 @@ namespace ServiceLocator.Core.IServices.Services
     {
         public void GetTypeUser()
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
 
         public void SetTypeUser()
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
+
+        public Master GetMaster(int id)
+        {
+            Master master = new Master();
+            var cat = new List<string>();
+            cat.Add("It");
+            var ser = new List<string>();
+            ser.Add(ServicesCategory.IT);
+            master.Categories = ser;
+            master.AboutMe = "Мобильная разработка";
+            master.Subcategory = "Добрый день. Хочу предложить Вам услуги в сфере создания сайтов. \r\nМои преимущества: \r\n• Фиксированная цена. \r\n• Отличное качество работ. \r\n• Малые сроки исполнения (1-3 дня)\r\n• Работа на результат. \r\n• Никаких \"заумных\" слов и обмана. \r\nВ стоимость войдет: \r\n• Адаптивная верстка под мобильные устройства\r\n• Домен в зоне. ru или. рф\r\n• В стоимость включена разработка до 5-ти страниц\r\n• Форма быстрой связи с клиентом\r\n• Выгрузка сайта на хостинг (оплата хостинга в стоимость не включена) \r\n• Предустановленная административная панель управления сайтом (возможность самостоятельной замены картинок и текста на сайте)\r\nДополнительные услуги: \r\n• Разработка логотипа в векторном формате\r\n• Регистрация в поисковых системах\r\n• \"Красивости\" на сайте (параллакс эффекты, ajax формы, анимация и т. д. ) \r\nПортфолио вышлю по запросу. \r\nКонсультация бесплатно.";
+            master.IsRegistration = true;
+            return master;
+        }
+
+        public string GetType(int id)
+        {
+            return "Client";
+        }
+        public Client GetClient(int id)
+        {
+            Client client = new Client();
+            client.IsRegistration = true;
+            return client;
+        }
+
     }
 }

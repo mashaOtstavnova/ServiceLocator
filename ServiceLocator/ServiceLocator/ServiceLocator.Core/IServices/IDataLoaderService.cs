@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ServiceLocator.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,5 +11,8 @@ namespace ServiceLocator.Core.IServices
     {
         void GetTypeUser();
         void SetTypeUser();
+        Master GetMaster(int id);
+        string GetType(int id);
+        Client GetClient(int id);
     }
 }

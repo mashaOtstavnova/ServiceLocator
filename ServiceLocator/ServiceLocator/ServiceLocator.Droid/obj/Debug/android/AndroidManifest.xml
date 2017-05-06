@@ -13,7 +13,7 @@
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <uses-feature android:glEsVersion="0x00020000" android:required="true" />
-  <application android:label="ServiceLocator" android:icon="@drawable/icon" android:theme="@style/MyTheme" android:name="otstavnova.ServiceLocator.ServiceLocator" android:allowBackup="true" android:debuggable="true">
+  <application android:label="ServiceLocator" android:icon="@drawable/icon" android:theme="@style/MyTheme" android:allowBackup="true" android:largeHeap="true" android:name="otstavnova.ServiceLocator.ServiceLocator" android:debuggable="true">
     <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="YOUR_API_KEY" />
     <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
     <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
@@ -25,17 +25,20 @@
         <data android:scheme="vk5963678" />
       </intent-filter>
     </activity>
-    <activity android:name="md5125ebd17ef9509e4cbe1fe290f2647c9.TypeUserView" />
+    <activity android:label="Friend" android:name="md5e187c0d02747d8043bdf48cfd714108a.ClientView" />
     <activity android:label="Master" android:parentActivityName="md5e187c0d02747d8043bdf48cfd714108a.FirstMasterView" android:name="md5e187c0d02747d8043bdf48cfd714108a.FirstMasterView">
       <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="navdrawer.activities.FirstMasterView" />
     </activity>
+    <activity android:label="Friends" android:parentActivityName="md5e187c0d02747d8043bdf48cfd714108a.HomeMasterView" android:name="md5e187c0d02747d8043bdf48cfd714108a.FriendsView" />
     <activity android:name="md5e187c0d02747d8043bdf48cfd714108a.HomeMasterView" />
+    <activity android:label="Friend" android:name="md5e187c0d02747d8043bdf48cfd714108a.MasterView" />
     <activity android:icon="@drawable/icon" android:label="ServiceLocatorApplication.Droid" android:noHistory="true" android:screenOrientation="portrait" android:theme="@style/Theme.Splash" android:name="md5e187c0d02747d8043bdf48cfd714108a.SplashScreenView">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
+    <activity android:name="md5e187c0d02747d8043bdf48cfd714108a.TypeUserView" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="otstavnova.ServiceLocator.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->
     <receiver android:name="mono.android.Seppuku">

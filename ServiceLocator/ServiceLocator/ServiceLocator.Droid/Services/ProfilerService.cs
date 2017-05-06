@@ -20,7 +20,7 @@ namespace ServiceLocator.Droid.Services
             {
                 {
                     VKApiConst.Fields,
-                    "id,first_name,last_name,sex,bdate,city,country,photo_50,photo_100,photo_max_orig"
+                    "id,first_name,last_name,sex,bdate,contacts,city,country,photo_50,photo_100,photo_max_orig"
                 }
             }));
             try

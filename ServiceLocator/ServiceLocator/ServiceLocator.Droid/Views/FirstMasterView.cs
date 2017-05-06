@@ -17,24 +17,25 @@ namespace ServiceLocator.Droid.Views
     [MetaData("android.support.PARENT_ACTIVITY", Value = "navdrawer.activities.FirstMasterView")]
     public class FirstMasterView : BaseView<FirstMasterViewModel>
     {
+        private Button _buttonForCategory;
         private ImageLoader _imageLoader;
+        private Button _saveButton;
         protected override int LayoutResource => Resource.Layout.first_master_view;
 
         protected override async void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-            // SetContentView(LayoutResource);
-            //ViewModel.Title = "FriendView";
-            //Title = ViewModel.Title;
 
             _imageLoader = ImageLoader.Instance;
-            _imageLoader.Init(ImageLoaderConfiguration.CreateDefault(this));
+
+            if (!_imageLoader.IsInited)
+                _imageLoader.Init(ImageLoaderConfiguration.CreateDefault(this));
+
             IProfileService profileService;
             var service = Mvx.TryResolve(out profileService);
 
             var user = await profileService.GetUser();
-
-            //friends = Util.GenerateFriends();
+            
             var title = user.first_name + " " + user.last_name;
             var birthday = user.bdate;
 
@@ -42,16 +43,11 @@ namespace ServiceLocator.Droid.Views
             var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
 
-            //if (string.IsNullOrWhiteSpace(image))
-            //    image = friends[0].Image;
-
             SupportActionBar.SetDisplayHomeAsUpEnabled(true);
             var collapsingToolbar = FindViewById<CollapsingToolbarLayout>(Resource.Id.collapsing_toolbar);
             collapsingToolbar.SetTitle(title);
             collapsingToolbar.SetCollapsedTitleTextColor(Color.White);
             collapsingToolbar.SetExpandedTitleColor(Color.White);
-            var t = FindViewById<ImageView>(Resource.Id.imageView1);
-            // t.Background = user.photo_50;vo
             try
             {
                 _imageLoader.DisplayImage(user.photo_100, FindViewById<ImageView>(Resource.Id.imageView1));
@@ -60,8 +56,23 @@ namespace ServiceLocator.Droid.Views
             {
                 var m = ex.Message;
             }
-            var buttonForCategory = (Button) FindViewById(Resource.Id.category);
-            buttonForCategory.Click += OnCategoryClick;
+            _buttonForCategory = (Button) FindViewById(Resource.Id.category);
+            _buttonForCategory.Click += OnCategoryClick;
+            _saveButton = FindViewById<Button>(Resource.Id.save_button);
+            _saveButton.Click += SaveButtonOnClick;
+        }
+
+        protected override void OnDestroy()
+        {
+            _buttonForCategory.Click -= OnCategoryClick;
+            _saveButton.Click -= SaveButtonOnClick;
+            _imageLoader.Destroy();
+            base.OnDestroy();
+        }
+
+        private void SaveButtonOnClick(object sender, EventArgs e)
+        {
+            ViewModel.SaveInfoCommand.Execute();
         }
 
         private void OnCategoryClick(object sender, EventArgs eventArgs)

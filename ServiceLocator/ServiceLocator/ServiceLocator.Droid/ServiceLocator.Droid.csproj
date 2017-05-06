@@ -103,15 +103,36 @@
       <HintPath>..\..\packages\MvvmCross.Platform.4.3.0\lib\MonoAndroid\MvvmCross.Platform.Droid.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="MvvmCross.Plugins.DownloadCache, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MvvmCross.Plugin.DownloadCache.4.3.0\lib\MonoAndroid\MvvmCross.Plugins.DownloadCache.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.DownloadCache.Droid, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MvvmCross.Plugin.DownloadCache.4.3.0\lib\MonoAndroid\MvvmCross.Plugins.DownloadCache.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.File, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MvvmCross.Plugin.File.4.3.0\lib\MonoAndroid\MvvmCross.Plugins.File.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.File.Droid, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MvvmCross.Plugin.File.4.3.0\lib\MonoAndroid\MvvmCross.Plugins.File.Droid.dll</HintPath>
+    </Reference>
     <Reference Include="MvvmCross.Plugins.Json, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\MvvmCross.Plugin.Json.4.3.0\lib\MonoAndroid\MvvmCross.Plugins.Json.dll</HintPath>
       <Private>True</Private>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Visibility, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MvvmCross.Plugin.Visibility.4.3.0\lib\MonoAndroid\MvvmCross.Plugins.Visibility.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Visibility.Droid, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MvvmCross.Plugin.Visibility.4.3.0\lib\MonoAndroid\MvvmCross.Plugins.Visibility.Droid.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Newtonsoft.Json.9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Collections.Immutable, Version=1.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Collections.Immutable.1.2.0\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
@@ -162,10 +183,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bootstrap\DownloadCachePluginBootstrap.cs" />
+    <Compile Include="Bootstrap\FilePluginBootstrap.cs" />
     <Compile Include="Bootstrap\JsonPluginBootstrap.cs" />
+    <Compile Include="Bootstrap\VisibilityPluginBootstrap.cs" />
     <Compile Include="DebugTrace.cs" />
     <Compile Include="Extensions\StoreExtensions.cs" />
     <Compile Include="Extensions\UIExtensions.cs" />
+    <Compile Include="helpers\Conventers.cs" />
     <Compile Include="LinkerPleaseInclude.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -174,10 +199,14 @@
     <Compile Include="Services\ProfilerService.cs" />
     <Compile Include="Setup.cs" />
     <Compile Include="Views\BaseView.cs" />
+    <Compile Include="Views\ClientView.cs" />
     <Compile Include="Views\Dialogs\CategoryServiceDialog.cs" />
     <Compile Include="Views\FirstMasterView.cs" />
+    <Compile Include="Views\FriendsView.cs" />
     <Compile Include="Views\HomeMasterView.cs" />
     <Compile Include="Views\LoginVKView.cs" />
+    <Compile Include="Views\MasterView.cs" />
+    <Compile Include="Views\Controls\MvxSelectableListView.cs" />
     <Compile Include="Views\SplashScreen.cs" />
     <Compile Include="Views\TypeUserView.cs" />
   </ItemGroup>
@@ -211,6 +240,18 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\category_dialog.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\master_view.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\list_item_view.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\friends_masters_view.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\client_view.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -262,7 +303,9 @@
     <AndroidResource Include="Resources\menu\nav_menu_masters.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\nav_header.axml" />
+    <AndroidResource Include="Resources\layout\nav_header.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
     <AndroidResource Include="Resources\drawable-mdpi\ic_add.png" />
     <AndroidResource Include="Resources\drawable-mdpi\ic_browser.png" />
     <AndroidResource Include="Resources\drawable-mdpi\ic_dashboard.png" />
@@ -347,6 +390,14 @@
     <AndroidResource Include="Resources\drawable-xxxhdpi\ic_assignment.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\ic_build.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\ic_keyboard_arrow.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_clear.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_clear.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_clear.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_clear.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_call.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_call.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_call.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_call.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ServiceLocator.Core\ServiceLocator.Core.csproj">

@@ -9,7 +9,7 @@ using VKontakte.Utils;
 
 namespace ServiceLocator.Droid
 {
-    [Application(Name = "otstavnova.ServiceLocator.ServiceLocator")]
+    [Application(Name = "otstavnova.ServiceLocator.ServiceLocator" ,LargeHeap = true, AllowBackup = true)]
     public class ServiceLocatorApplication : Application
     {
         private readonly TokenTracker _tokenTracker = new TokenTracker();

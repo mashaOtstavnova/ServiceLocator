@@ -1,31 +1,41 @@
 ﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
 using System.Threading.Tasks;
-using MvvmCross.Core.ViewModels;
 using MvvmCross.Platform;
-using ServiceLocator.Entities;
 using ServiceLocator.Core.IServices;
+using ServiceLocator.Entities;
 
 namespace ServiceLocator.Core.ViewModels
 {
     public class HomeMasterViewModel : BaseViewModel
     {
         private readonly IDataLoaderService _loaderService;
+
         private readonly IProfileService _profileService;
+
+        // private ObservableCollection<Present> _allWantedPresents;
         private User _currentUser;
+        //private readonly IProgressLoaderService _progressLoaderService;
 
         public HomeMasterViewModel()
         {
             _profileService = Mvx.Resolve<IProfileService>();
             _loaderService = Mvx.Resolve<IDataLoaderService>();
+            //_progressLoaderService = Mvx.Resolve<IProgressLoaderService>();
         }
 
-
+        //public ObservableCollection<Present> AllWantedPresents
+        //{
+        //    get { return _allWantedPresents; }
+        //    set
+        //    {
+        //        _allWantedPresents = value;
+        //        RaisePropertyChanged(() => AllWantedPresents);
+        //    }
+        //}
 
         public User CurrentUser
         {
-            get { return _currentUser; }
+            get => _currentUser;
             set
             {
                 _currentUser = value;
@@ -33,20 +43,27 @@ namespace ServiceLocator.Core.ViewModels
             }
         }
 
-
+        //public MvxCommand<Present> ItemClickCommand
+        //{
+        //    get { return new MvxCommand<Present>(OpenPresentPage); }
+        //}
 
         public async Task Initialize()
         {
-            //var friends = new List<Friend>();
-            //CurrentUser = await _profileService.GetUser();
+            //_progressLoaderService.ShowProgressBar();
+            var friends = new List<Friend>();
+            CurrentUser = await _profileService.GetUser();
 
-            //if (CurrentUser != null)
-            //{
-            //    friends = (await _profileService.GetFriends()).items;
-
-
-            //}
+            if (CurrentUser != null)
+                friends = (await _profileService.GetFriends()).items;
+            //_progressLoaderService.HideProgressBar();
         }
+
+        //private void OpenPresentPage(Present present)
+        //{
+        //    ShowViewModel<PresentViewModel>(new { presentId = present.Id.ToString() });
+        //}
+
         public void ShowInfo()
         {
             //ShowViewModel<InfoViewModel>();
@@ -54,17 +71,17 @@ namespace ServiceLocator.Core.ViewModels
 
         public void ShowMainPage()
         {
-            //ShowViewModel<HomeViewModel>();
+            ShowViewModel<HomeMasterViewModel>();
         }
 
         public void ShowFriends()
         {
-            //ShowViewModel<FriendsViewModel>();
+            ShowViewModel<FriendsViewModel>();
         }
 
         public void ShowProfile()
         {
-            //ShowViewModel<UserViewModel>(new { idFriend = CurrentUser.id });
+            ShowViewModel<MasterViewModel>(new {idFriend = CurrentUser.id});
         }
 
         public void ShowBrowse()

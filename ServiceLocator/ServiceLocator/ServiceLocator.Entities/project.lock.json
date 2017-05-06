@@ -2638,10 +2638,10 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\maria\\Documents\\GitHub\\ServiceLocator\\ServiceLocator\\ServiceLocator\\ServiceLocator.Entities\\ServiceLocator.Entities.csproj",
+      "projectUniqueName": "C:\\Users\\maria\\Desktop\\ServiceLocator\\ServiceLocator\\ServiceLocator.Entities\\ServiceLocator.Entities.csproj",
       "projectName": "ServiceLocator.Entities",
-      "projectPath": "C:\\Users\\maria\\Documents\\GitHub\\ServiceLocator\\ServiceLocator\\ServiceLocator\\ServiceLocator.Entities\\ServiceLocator.Entities.csproj",
-      "projectJsonPath": "C:\\Users\\maria\\Documents\\GitHub\\ServiceLocator\\ServiceLocator\\ServiceLocator\\ServiceLocator.Entities\\project.json",
+      "projectPath": "C:\\Users\\maria\\Desktop\\ServiceLocator\\ServiceLocator\\ServiceLocator.Entities\\ServiceLocator.Entities.csproj",
+      "projectJsonPath": "C:\\Users\\maria\\Desktop\\ServiceLocator\\ServiceLocator\\ServiceLocator.Entities\\project.json",
       "projectStyle": "ProjectJson"
     },
     "dependencies": {

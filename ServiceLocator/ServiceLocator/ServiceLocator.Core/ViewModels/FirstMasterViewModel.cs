@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using MvvmCross.Core.ViewModels;
 
 namespace ServiceLocator.Core.ViewModels
 {
@@ -30,6 +31,16 @@ namespace ServiceLocator.Core.ViewModels
                     ? string.Join("; ", SelectedCategories)
                     : "Ваши услуги";
             }
+        }
+
+        public MvxCommand SaveInfoCommand
+        {
+            get { return new MvxCommand(SaveInfoCommandClick); }
+        }
+        private void SaveInfoCommandClick()
+        {
+            ShowViewModel<HomeMasterViewModel>();
+            //_dataLoader.SetTypeUser();
         }
     }
 }

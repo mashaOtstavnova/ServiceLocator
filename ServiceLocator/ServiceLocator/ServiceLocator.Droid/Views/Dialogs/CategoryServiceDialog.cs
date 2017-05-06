@@ -1,17 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using Android.App;
 using Android.OS;
+using Android.Support.V7.App;
 using Android.Views;
 using Android.Widget;
-using MvvmCross.Binding.Droid.BindingContext;
-using MvvmCross.Droid.Support.V7.AppCompat;
 using ServiceLocator.Core.ViewModels;
 using ServiceLocator.Entities;
+using AlertDialog = Android.App.AlertDialog;
 
 namespace ServiceLocator.Droid.Views.Dialogs
 {
-    public class CategoryServiceDialog : MvxAppCompatDialogFragment
+    public class CategoryServiceDialog : AppCompatDialogFragment
     {
         private readonly FirstMasterViewModel _firstMasterViewModel;
         private List<CheckBox> _checkBoxList;
@@ -24,21 +23,20 @@ namespace ServiceLocator.Droid.Views.Dialogs
             _firstMasterViewModel = firstMasterViewModel;
         }
 
-        public override Dialog OnCreateDialog(Bundle savedState)
+        public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
-            EnsureBindingContextSet(savedState);
-
-            var view = this.BindingInflate(Resource.Layout.category_dialog, null);
+            var view = inflater.Inflate(Resource.Layout.category_dialog, null);
+            Dialog.SetTitle("Выберите категории");
             var mainLayout = view.FindViewById<LinearLayout>(Resource.Id.category_dialog_main);
-
             _checkBoxList = new List<CheckBox>();
 
-            foreach (var check in ServicesCategory.ServicesCategoryList)
+            for (var index = 0; index < ServicesCategory.ServicesCategoryList.Count; index++)
             {
+                var check = ServicesCategory.ServicesCategoryList[index];
                 var checkbox = new CheckBox(Context)
                 {
                     Text = check,
-                    Checked = false,
+                    Checked = _firstMasterViewModel.SelectedCategories.Exists(s => s.ToLower().Equals(check.ToLower())),
                     LayoutParameters = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MatchParent,
                         ViewGroup.LayoutParams.WrapContent)
                 };
@@ -53,7 +51,13 @@ namespace ServiceLocator.Droid.Views.Dialogs
             builder.SetView(view);
 
             _createdDialog = builder.Create();
-            return _createdDialog;
+            return view; // base.OnCreateView(inflater, container, savedInstanceState);
+        }
+
+        public override void OnCreate(Bundle savedInstanceState)
+        {
+            base.OnCreate(savedInstanceState);
+            Dialog?.SetTitle("Выберите категории");
         }
 
         private void CloseButtonOnClick(object sender, EventArgs eventArgs)
@@ -63,21 +67,14 @@ namespace ServiceLocator.Droid.Views.Dialogs
                 if (checkBox.Checked)
                     list.Add(checkBox.Text);
             _firstMasterViewModel.SelectedCategories = new List<string>(list);
-            Dialog.Cancel();
+            Dialog.Dismiss();
         }
 
-        public override void OnResume()
-        {
-            var width = (int) (Resources.DisplayMetrics.WidthPixels / 1.25);
-            var @params = Dialog.Window.Attributes;
-            @params.Width = width;
-            @params.Height = ViewGroup.LayoutParams.WrapContent;
-            Dialog.Window.Attributes = @params;
-            base.OnResume();
-        }
 
         protected override void Dispose(bool disposing)
         {
+            _createdDialog.Dispose();
+            _createdDialog = null;
             _checkBoxList.Clear();
             _checkBoxList = null;
             _closeButton.Click -= CloseButtonOnClick;

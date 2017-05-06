@@ -1,26 +1,18 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
 using Android.App;
-using Android.Content;
 using Android.OS;
-using Android.Runtime;
 using Android.Views;
-using Android.Views.Animations;
 using Android.Widget;
 using ServiceLocator.Core.ViewModels;
-using ServiceLocator.Droid.Views;
 
-namespace ServiceLocator.Droid
+namespace ServiceLocator.Droid.Views
 {
     [Activity]
-    public class TypeUserView: BaseView<TypeUserViewModel>
+    public class TypeUserView : BaseView<TypeUserViewModel>
     {
-        Button buttonForMaster;
+        private Button _buttonForMaster;
         protected override int LayoutResource => Resource.Layout.typeUserView;
-        
+
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
@@ -29,13 +21,13 @@ namespace ServiceLocator.Droid
             Window.ClearFlags(WindowManagerFlags.ForceNotFullscreen);
             //bigIcon = (ImageView)FindViewById(Resource.Id.bigicon);
             //background = (ImageView)FindViewById(Resource.Id.background);
-            buttonForMaster = (Button)FindViewById(Resource.Id.type_user_master);
+            _buttonForMaster = (Button) FindViewById(Resource.Id.type_user_master);
 
             //Animation anim = AnimationUtils.LoadAnimation(ApplicationContext,
             //              Resource.Animation.fade_in);
             //button.StartAnimation(anim);
-           
-            buttonForMaster.Click += OnButtonForMasterClic;
+
+            _buttonForMaster.Click += OnButtonForMasterClic;
         }
 
         //protected override void OnResume()

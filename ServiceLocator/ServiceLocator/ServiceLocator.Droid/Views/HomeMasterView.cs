@@ -1,25 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
 using Android.App;
 using Android.Content;
-using Android.Support.Design.Widget;
 using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
-using Com.Nostra13.Universalimageloader.Core;
-using ServiceLocator.Core.ViewModels;
-using ServiceLocator.Entities;
-using ServiceLocator.Core.IServices;
-using MvvmCross.Platform;
-using VKontakte;
-
 using Android.Support.Design.Widget;
 using Android.Support.V4.View;
 using Android.Support.V4.Widget;
+using Android.Views;
+using Android.Widget;
+using Com.Nostra13.Universalimageloader.Core;
+using MvvmCross.Platform;
+using ServiceLocator.Core.IServices;
+using ServiceLocator.Core.ViewModels;
+using VKontakte;
 
 namespace ServiceLocator.Droid.Views
 {
@@ -35,15 +27,20 @@ namespace ServiceLocator.Droid.Views
             try
             {
                 base.OnCreate(bundle);
+
+                _drawerLayout = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
+
                 SupportActionBar.SetHomeAsUpIndicator(Resource.Drawable.ic_menu);
 
                 var config = ImageLoaderConfiguration.CreateDefault(ApplicationContext);
-                ImageLoader.Instance.Init(config);
+                if(!ImageLoader.Instance.IsInited)
+                    ImageLoader.Instance.Init(config);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 var m = ex.Message;
             }
+
             //// Initialize ImageLoader with configuration.
             var imageLoader = ImageLoader.Instance;
             var headerMenu = FindViewById<NavigationView>(Resource.Id.nav_view).GetHeaderView(0);
@@ -55,7 +52,7 @@ namespace ServiceLocator.Droid.Views
                     task =>
                     {
                         RunOnUiThread(
-                            () => { imageLoader.DisplayImage(ViewModel?.CurrentUser?.photo_max_orig, photoUser); });
+                            () => { imageLoader.DisplayImage(ViewModel?.CurrentUser?.photo_100, photoUser); });
                     });
 
             IProfileService profileService;
@@ -63,35 +60,35 @@ namespace ServiceLocator.Droid.Views
 
             var user = await profileService.GetUser();
             nameUser.Text = user.first_name + " " + user.last_name;
-            imageLoader.DisplayImage(user.photo_max_orig, photoUser);
-
-            _drawerLayout = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
+            imageLoader.DisplayImage(user.photo_100, photoUser);
 
             _navigationView = FindViewById<NavigationView>(Resource.Id.nav_view);
-            _navigationView.NavigationItemSelected += (sender, e) =>
-            {
-                e.MenuItem.SetChecked(true);
+            _navigationView.NavigationItemSelected +=NavigationViewOnNavigationItemSelected;
+        }
 
-                switch (e.MenuItem.ItemId)
-                {
-                    case Resource.Id.nav_user:
-                        ViewModel.ShowProfile();
-                        break;
-                    case Resource.Id.nav_friends:
-                        ViewModel.ShowFriends();
-                        break;
-                    case Resource.Id.nav_home:
-                        ViewModel.ShowMainPage();
-                        break;
-                    case Resource.Id.nav_info:
-                        ViewModel.ShowInfo();
-                        break;
-                    case Resource.Id.nav_exit:
-                        Logout();
-                        break;
-                }
-                _drawerLayout.CloseDrawers();
-            };
+        private void NavigationViewOnNavigationItemSelected(object o, NavigationView.NavigationItemSelectedEventArgs e)
+        {
+            e.MenuItem.SetChecked(true);
+
+            switch (e.MenuItem.ItemId)
+            {
+                case Resource.Id.nav_user:
+                    ViewModel.ShowProfile();
+                    break;
+                case Resource.Id.nav_friends:
+                    ViewModel.ShowFriends();
+                    break;
+                case Resource.Id.nav_home:
+                    ViewModel.ShowMainPage();
+                    break;
+                case Resource.Id.nav_info:
+                    ViewModel.ShowInfo();
+                    break;
+                case Resource.Id.nav_exit:
+                    Logout();
+                    break;
+            }
+            _drawerLayout.CloseDrawers();
         }
 
         private void Logout()
@@ -110,6 +107,12 @@ namespace ServiceLocator.Droid.Views
                     return true;
             }
             return base.OnOptionsItemSelected(item);
+        }
+
+        protected override void OnDestroy()
+        {
+            ImageLoader.Instance.Destroy();
+            base.OnDestroy();
         }
 
         public override void OnBackPressed()

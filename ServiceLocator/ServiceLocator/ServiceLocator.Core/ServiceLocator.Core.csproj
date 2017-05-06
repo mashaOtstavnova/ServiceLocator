@@ -41,10 +41,13 @@
     <Compile Include="IServices\Services\DataLoaderService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
+    <Compile Include="ViewModels\ClientViewModel.cs" />
     <Compile Include="ViewModels\EventsMapViewModel.cs" />
     <Compile Include="ViewModels\FirstMasterViewModel.cs" />
+    <Compile Include="ViewModels\FriendsViewModel.cs" />
     <Compile Include="ViewModels\HomeMasterViewModel.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
+    <Compile Include="ViewModels\MasterViewModel.cs" />
     <Compile Include="ViewModels\TypeUserViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
