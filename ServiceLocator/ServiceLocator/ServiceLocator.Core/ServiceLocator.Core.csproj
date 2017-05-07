@@ -45,9 +45,12 @@
     <Compile Include="ViewModels\EventsMapViewModel.cs" />
     <Compile Include="ViewModels\FirstMasterViewModel.cs" />
     <Compile Include="ViewModels\FriendsViewModel.cs" />
+    <Compile Include="ViewModels\HomeClientViewModel.cs" />
     <Compile Include="ViewModels\HomeMasterViewModel.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
     <Compile Include="ViewModels\MasterViewModel.cs" />
+    <Compile Include="ViewModels\NewRecordClientViewModel.cs" />
+    <Compile Include="ViewModels\NewRecordMasterViewModel.cs" />
     <Compile Include="ViewModels\TypeUserViewModel.cs" />
   </ItemGroup>
   <ItemGroup>

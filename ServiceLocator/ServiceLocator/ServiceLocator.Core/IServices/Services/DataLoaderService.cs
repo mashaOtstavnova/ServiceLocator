@@ -19,6 +19,19 @@ namespace ServiceLocator.Core.IServices.Services
             //throw new NotImplementedException();
         }
 
+        public void AddNewRecord(Record record)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<string> GetIsBusiRecordsMaster(int idMaster, DateTime date)
+        {
+            var list = new List<string>();
+            list.Add("16:40");
+            list.Add("12:40");
+            return list;
+        }
+
         public Master GetMaster(int id)
         {
             Master master = new Master();

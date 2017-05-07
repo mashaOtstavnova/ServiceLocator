@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ServiceLocator.Core.ViewModels;
 
 namespace ServiceLocator.Core.IServices
 {
@@ -11,6 +12,8 @@ namespace ServiceLocator.Core.IServices
     {
         void GetTypeUser();
         void SetTypeUser();
+        void AddNewRecord(Record record);
+        List<string> GetIsBusiRecordsMaster(int idMaster, DateTime date);
         Master GetMaster(int id);
         string GetType(int id);
         Client GetClient(int id);

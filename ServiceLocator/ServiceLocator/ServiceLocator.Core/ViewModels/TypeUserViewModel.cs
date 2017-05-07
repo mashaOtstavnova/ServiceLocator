@@ -16,13 +16,22 @@ namespace ServiceLocator.Core.ViewModels
         {
             _dataLoader = Mvx.Resolve<IDataLoaderService>();
         }
-        public MvxCommand SetTypeUserClickCommand
+        public MvxCommand SetTypeMasterClickCommand
         {
-            get { return new MvxCommand(SetTypeUserClick); }
+            get { return new MvxCommand(SetTypeMasterClick); }
         }
-        private void SetTypeUserClick()
+        private void SetTypeMasterClick()
         {
             ShowViewModel<FirstMasterViewModel>();
+            //_dataLoader.SetTypeUser();
+        }
+        public MvxCommand SetTypeClientClickCommand
+        {
+            get { return new MvxCommand(SetTypeClientClick); }
+        }
+        private void SetTypeClientClick()
+        {
+            ShowViewModel<HomeClientViewModel>();
             //_dataLoader.SetTypeUser();
         }
     }

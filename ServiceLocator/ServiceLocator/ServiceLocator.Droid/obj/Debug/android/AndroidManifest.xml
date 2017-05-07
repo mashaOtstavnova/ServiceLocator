@@ -30,8 +30,11 @@
       <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="navdrawer.activities.FirstMasterView" />
     </activity>
     <activity android:label="Friends" android:parentActivityName="md5e187c0d02747d8043bdf48cfd714108a.HomeMasterView" android:name="md5e187c0d02747d8043bdf48cfd714108a.FriendsView" />
+    <activity android:name="md5e187c0d02747d8043bdf48cfd714108a.HomeClientView" />
     <activity android:name="md5e187c0d02747d8043bdf48cfd714108a.HomeMasterView" />
     <activity android:label="Friend" android:name="md5e187c0d02747d8043bdf48cfd714108a.MasterView" />
+    <activity android:name="md5e187c0d02747d8043bdf48cfd714108a.NewRecordClientView" />
+    <activity android:name="md5e187c0d02747d8043bdf48cfd714108a.NewRecordMasterView" />
     <activity android:icon="@drawable/icon" android:label="ServiceLocatorApplication.Droid" android:noHistory="true" android:screenOrientation="portrait" android:theme="@style/Theme.Splash" android:name="md5e187c0d02747d8043bdf48cfd714108a.SplashScreenView">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />

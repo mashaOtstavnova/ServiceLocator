@@ -32,8 +32,8 @@ namespace ServiceLocator.Entities
     {
         public bool IsBusy { get; set; }
         public Guid Id { get; set; }
-        public Client Client { get; set; }
-        public Master Master { get; set; }
+        public int IdClient { get; set; }
+        public int IdMaster { get; set; }
         public DateTime Time { get; set; }
         public TimeSpan Duration { get; set; }
         public string Service { get; set; }
