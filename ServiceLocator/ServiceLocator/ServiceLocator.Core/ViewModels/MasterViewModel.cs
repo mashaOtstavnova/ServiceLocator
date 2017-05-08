@@ -220,9 +220,9 @@ namespace ServiceLocator.Core.ViewModels
             }
         }
 
-        public IMvxCommand ShowUserPresentsCommand
+        public IMvxCommand AddNewRecordCommand
         {
-            get { return new MvxCommand(ShowUserPresents); }
+            get { return new MvxCommand(AddNewRecord); }
         }
 
         public bool IsMy
@@ -243,9 +243,9 @@ namespace ServiceLocator.Core.ViewModels
             Friend = await Mvx.Resolve<IProfileService>().GetFriend(UserId);
         }
 
-        private void ShowUserPresents()
+        private void AddNewRecord()
         {
-            //ShowViewModel<PresentsBrowseViewModel>(new { friendId = UserId, fullName = FullName, isMy = IsMy });
+            ShowViewModel<NewRecordClientViewModel>(new {masterId = Master.Id });
         }
     }
 }

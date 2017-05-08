@@ -17,13 +17,24 @@ namespace ServiceLocator.Core.ViewModels
         private string _photo;
         private string _mobile_phone;
         private bool _isPhone;
+        private bool _isMy;
         private string _home_phone;
         private string _contactsString;
         private bool _isRegistration;
         private Friend _friend;
         private Client _client;
         public int UserId;
+        private User _user;
 
+        public bool IsMy
+        {
+            get { return _isMy; }
+            set
+            {
+                _isMy = value;
+                RaisePropertyChanged(() => IsMy);
+            }
+        }
         public string FullName
         {
             get { return _fullName; }
@@ -109,7 +120,7 @@ namespace ServiceLocator.Core.ViewModels
                 {
                     FullName = $"{value.first_name} {value.last_name}";
                     Bdate = $"{value.bdate}";
-
+                    IsMy = false;
                     HomePhone = $"{value.home_phone}";
                     MobilePhone = $"{value.mobile_phone}";
                     СontactsString = (value.home_phone != null || value.mobile_phone != null) ? $"{value.home_phone } {value.mobile_phone }" : "Нет контактов";
@@ -117,6 +128,28 @@ namespace ServiceLocator.Core.ViewModels
                     Photo = value.photo_max_orig;
                 }
                 RaisePropertyChanged(() => Friend);
+            }
+        }
+        public User User
+        {
+            get { return _user; }
+            set
+            {
+                _user = value;
+                if (value != null)
+                {
+                    IsMy = true;
+                    FullName = $"{value.first_name} {value.last_name}";
+                    Bdate = $"{value.bdate}";
+                    HomePhone = $"{value.home_phone}";
+                    MobilePhone = $"{value.mobile_phone}";
+                    СontactsString = (value.home_phone != null || value.mobile_phone != null) ? $"{value.home_phone } {value.mobile_phone }" : "Нет контактов";
+                    IsPhone = (HomePhone == null & MobilePhone == null) ? false : true;
+                   
+                    Photo = value.photo_max_orig;
+                }
+                RaisePropertyChanged(() => User);
+                RaisePropertyChanged(() => IsMy);
             }
         }
         public Client Client
@@ -135,7 +168,18 @@ namespace ServiceLocator.Core.ViewModels
         public async Task Init(int idFriend)
         {
             UserId = idFriend;
+            User = await Mvx.Resolve<IProfileService>().GetUser();
+            Client = Mvx.Resolve<IDataLoaderService>().GetClient(UserId);
             Friend = await Mvx.Resolve<IProfileService>().GetFriend(idFriend);
+        }
+        public IMvxCommand AddNewRecordCommand
+        {
+            get { return new MvxCommand(AddNewRecord); }
+        }
+
+        private void AddNewRecord()
+        {
+            ShowViewModel<NewRecordMasterViewModel>(new { clientId = Client.Id });
         }
     }
 }

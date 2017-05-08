@@ -24,16 +24,7 @@ namespace ServiceLocator.Droid.Views
         {
             base.OnCreate(bundle);
             var fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
-            if (ViewModel.Client != null && ViewModel.Client.IsRegistration)
-            {
-                var draw = GetDrawable(Resource.Drawable.ic_done);
-                fab.SetImageDrawable(draw);
-            }
-            else
-            {
-                var draw = GetDrawable(Resource.Drawable.ic_clear);
-                fab.SetImageDrawable(draw);
-            }
+           
             var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
             SupportActionBar.SetDisplayHomeAsUpEnabled(true);
@@ -47,14 +38,34 @@ namespace ServiceLocator.Droid.Views
 
 
             callButton.Click += OnButtonFoCall;
+
+            var addNewRecordButoon = FindViewById<FloatingActionButton>(Resource.Id.addNewRecord);
+            addNewRecordButoon.Click += OnAddNewRecord;
             var set = this.CreateBindingSet<ClientView, ClientViewModel>();
             set.Bind(collapsingToolbar).For(ctb => ctb.Title).To(vm => vm.FullName);
 
             set.Bind(callButton).For(ctb => ctb.Visibility).To(vm => vm.IsPhone).WithConversion("MyVisibility");
+
+            set.Bind(addNewRecordButoon).For(ctb => ctb.Visibility).To(vm => vm.IsMy).WithConversion("MyVisibilityFalse");
+            // set.Bind(fab).To(vm => vm.Client.IsRegistration).WithConversion("MySwapImage");
             this.CreateBinding().For("Title").To<MasterViewModel>(vm => vm.FullName).Apply();
             set.Apply();
+            if (ViewModel.Client != null && ViewModel.Client.IsRegistration)
+            {
+                var draw = GetDrawable(Resource.Drawable.ic_done);
+                fab.SetImageDrawable(draw);
+            }
+            else
+            {
+                var draw = GetDrawable(Resource.Drawable.ic_clear);
+                fab.SetImageDrawable(draw);
+            }
         }
 
+        private void OnAddNewRecord(object sender, EventArgs e)
+        {
+            ViewModel.AddNewRecordCommand.Execute();
+        }
         private void OnButtonFoCall(object sender, EventArgs e)
         {
             Intent intent = new Intent(Intent.ActionDial);

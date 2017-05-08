@@ -5,13 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 using MvvmCross.Platform;
 using ServiceLocator.Core.IServices;
+using ServiceLocator.Entities;
 
 namespace ServiceLocator.Core.ViewModels
 {
     public class NewRecordClientViewModel:BaseViewModel
     {
         private int _idMaster;
-
+        
         private string _dateString = "";
         private DateTime _date = new DateTime();
         private string _timeString="";
@@ -64,9 +65,24 @@ namespace ServiceLocator.Core.ViewModels
                 RaisePropertyChanged(() => IdMaster);
             }
         }
-        public  void Init()
+        public Master Master
         {
-           
+            get => _master;
+            set
+            {
+                _master = value;
+                RaisePropertyChanged(() => Master);
+            }
+        }
+
+        private IDataLoaderService _dataLoaderService;
+        private Master _master;
+
+        public void Init(int masterId)
+        {
+            _dataLoaderService = Mvx.Resolve<IDataLoaderService>();
+            IdMaster = masterId;
+            Master = _dataLoaderService.GetMaster(masterId);
         }
     }
 }

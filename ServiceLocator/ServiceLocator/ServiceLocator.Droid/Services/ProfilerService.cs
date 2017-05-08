@@ -41,7 +41,7 @@ namespace ServiceLocator.Droid.Services
         {
             var request = VKApi.Friends.Get(new VKParameters(new Dictionary<string, Object>
             {
-                {VKApiConst.Fields, "id,first_name,last_name,sex,bdate,city,photo_50,photo_max_orig"}
+                {VKApiConst.Fields, "id,first_name,last_name,contacts,sex,bdate,city,photo_50,photo_max_orig"}
             }));
             try
             {
@@ -49,7 +49,6 @@ namespace ServiceLocator.Droid.Services
                 var s = response.Json.ToString();
                 var json = JObject.Parse(response.Json.ToString());
                 var jsonArray = json["response"];
-
                 return JsonConvert.DeserializeObject<Friends>(jsonArray.ToString());
             }
             catch (Exception ex)
@@ -63,8 +62,7 @@ namespace ServiceLocator.Droid.Services
         {
             var listFriend = await GetFriends();
             return listFriend.items.FirstOrDefault(t => t.id == idFriend);
-
-            throw new NotImplementedException();
+            
         }
     }
 }

@@ -21,6 +21,7 @@ namespace ServiceLocator.Core.ViewModels
         private int _duration;
         private decimal _money;
         private string _service;
+        private Client _client;
 
         public int Minute
         {
@@ -71,6 +72,15 @@ namespace ServiceLocator.Core.ViewModels
                 RaisePropertyChanged(() => Duration);
             }
         }
+        public Client Client
+        {
+            get => _client;
+            set
+            {
+                _client = value;
+                RaisePropertyChanged(() => Client);
+            }
+        }
         public string Service
         {
             get => _service;
@@ -103,21 +113,28 @@ namespace ServiceLocator.Core.ViewModels
                 RaisePropertyChanged(() => DateString);
             }
         }
-        public async void Init()
+        //public async void Init()
+        ////{
+        ////    IProfileService profileService;
+        ////    Mvx.TryResolve(out profileService);
+
+        ////    var users = await profileService.GetFriends();
+
+        ////    var s =
+        ////        users.items.Select(
+        ////                friend => new ListItem(friend.first_name + " " + friend.last_name, friend.photo_50, friend.id))
+        ////            .ToList();
+        ////    Friends = new List<ListItem>(s);
+        //}
+
+        private IDataLoaderService _dataLoaderService;
+        public void Init(int clientId)
         {
-            IProfileService profileService;
-            Mvx.TryResolve(out profileService);
-
-            var users = await profileService.GetFriends();
-
-            var s =
-                users.items.Select(
-                        friend => new ListItem(friend.first_name + " " + friend.last_name, friend.photo_50, friend.id))
-                    .ToList();
-            Friends = new List<ListItem>(s);
+            _dataLoaderService = Mvx.Resolve<IDataLoaderService>();
+            Client = _dataLoaderService.GetClient(clientId);
         }
 
-       public List<ListItem> Friends { get; set; }
+        public List<ListItem> Friends { get; set; }
         public MvxCommand<Record> AddNewRecordCommand
         {
             get { return new MvxCommand<Record>(AddNewRecord); }

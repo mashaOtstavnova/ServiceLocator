@@ -21,16 +21,8 @@ namespace ServiceLocator.Droid.Views
         {
             base.OnCreate(bundle);
             var fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
-            if (ViewModel.Master != null && ViewModel.Master.IsRegistration)
-            {
-                var draw = GetDrawable(Resource.Drawable.ic_done);
-                fab.SetImageDrawable(draw);
-            }
-            else
-            {
-                var draw = GetDrawable(Resource.Drawable.ic_clear);
-                fab.SetImageDrawable(draw);
-            }
+            var addNewRecordButoon = FindViewById<FloatingActionButton>(Resource.Id.addNewRecord);
+           
             var toolbar = FindViewById<V7Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
             SupportActionBar.SetDisplayHomeAsUpEnabled(true);
@@ -43,9 +35,11 @@ namespace ServiceLocator.Droid.Views
             set.Bind(collapsingToolbar).For(ctb => ctb.Title).To(vm => vm.FullName);
 
             callButton.Click += OnButtonFoCall;
+            addNewRecordButoon.Click += OnAddNewRecord;
             try
             {
                 set.Bind(callButton).For(ctb => ctb.Visibility).To(vm =>vm.IsPhone).WithConversion("MyVisibility");
+                set.Bind(addNewRecordButoon).For(ctb => ctb.Visibility).To(vm =>vm.IsMy).WithConversion("MyVisibilityFalse");
             }
             catch (Exception e)
             {
@@ -56,16 +50,27 @@ namespace ServiceLocator.Droid.Views
 
             this.CreateBinding().For("Title").To<MasterViewModel>(vm => vm.FullName).Apply();
             set.Apply();
+            if (ViewModel.Master != null && ViewModel.Master.IsRegistration)
+            {
+                var draw = GetDrawable(Resource.Drawable.ic_done);
+                fab.SetImageDrawable(draw);
+            }
+            else
+            {
+                var draw = GetDrawable(Resource.Drawable.ic_clear);
+                fab.SetImageDrawable(draw);
+            }
             //if (ViewModel.HomePhone == null & ViewModel.MobilePhone == null)
             //{
             //    callButton.Visibility = ViewStates.Invisible;
             //}
         }
 
-        private void ButtonForPresent(object sender, EventArgs e)
+        private void OnAddNewRecord(object sender, EventArgs e)
         {
-            ViewModel.ShowUserPresentsCommand.Execute();
+            ViewModel.AddNewRecordCommand.Execute();
         }
+        
         private void OnButtonFoCall(object sender, EventArgs e)
         {
             Intent intent = new Intent(Intent.ActionDial);
