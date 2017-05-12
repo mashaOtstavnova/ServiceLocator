@@ -54,25 +54,47 @@ namespace ServiceLocator.Core.ViewModels
             IProfileService profileService;
             Mvx.TryResolve(out profileService);
 
+            IDataLoaderService dataLoaderService;
+            Mvx.TryResolve(out dataLoaderService);
             var users = await profileService.GetFriends();
-
-            var s =
-                users.items.Select(
-                        friend => new ListItem(friend.first_name + " " + friend.last_name, friend.photo_50, friend.id))
-                    .ToList();
-            Items = new List<ListItem>(s);
+            var test = new List<ListItem>();
+            Items = new List<ListItem>();
+            foreach (var item in users.items)
+            {
+                var type = dataLoaderService.GetType(item.id);
+                string services = "";
+                if (type == "Master")
+                {
+                    var ser = dataLoaderService.GetMaster(item.id).Categories;
+                    services = ser.Count > 0
+                        ? string.Join("; ", ser)
+                        : "Мастер";
+                    ;
+                }
+                else
+                {
+                    services = "Клиент";
+                }
+                var t = new ListItem(item.first_name + " " + item.last_name, item.photo_50,services, item.id);
+                Items.Add(t);
+            }
+            //var s =
+            //    users.items.Select(
+            //            friend => new ListItem(friend.first_name + " " + friend.last_name, friend.photo_50, friend.id))
+            //        .ToList();
+            //Items = new List<ListItem>(s);
         }
 
-        private async void InitializeMyList()
-        {
-            list = new List<ListItem>();
-            IProfileService profileService;
-            var service = Mvx.TryResolve(out profileService);
+        //private async void InitializeMyList()
+        //{
+        //    list = new List<ListItem>();
+        //    IProfileService profileService;
+        //    var service = Mvx.TryResolve(out profileService);
 
-            var friends = await profileService.GetFriends();
-            foreach (var friend in friends.items)
-                list.Add(new ListItem(friend.first_name, friend.photo_50, friend.id));
-        }
+        //    var friends = await profileService.GetFriends();
+        //    foreach (var friend in friends.items)
+        //        list.Add(new ListItem(friend.first_name, friend.photo_50, friend.id));
+        //}
 
         public void OnItemSelect(ListItem item)
         {
@@ -101,14 +123,16 @@ namespace ServiceLocator.Core.ViewModels
 
     public class ListItem
     {
-        public ListItem(string title, string photo, int id)
+        public ListItem(string title, string photo, string services, int id)
         {
             Title = title;
             Photo = photo;
+            Services = services;
             Id = id;
         }
 
         public string Title { get; set; }
+        public string Services { get; set; }
         public int Id { get; set; }
         public string Photo { get; set; }
     }

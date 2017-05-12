@@ -13,5 +13,6 @@ namespace ServiceLocator.Core.IServices
         Task<User> GetUser();
         Task<Friends> GetFriends();
         Task<Friend> GetFriend(int idFriend);
+        Task<User> GetUserById(int idFriend);
     }
 }

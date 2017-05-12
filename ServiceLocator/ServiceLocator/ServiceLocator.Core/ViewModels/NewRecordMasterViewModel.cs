@@ -128,10 +128,10 @@ namespace ServiceLocator.Core.ViewModels
         //}
 
         private IDataLoaderService _dataLoaderService;
-        public void Init(int clientId)
+        public void Init(string clientId)
         {
             _dataLoaderService = Mvx.Resolve<IDataLoaderService>();
-            Client = _dataLoaderService.GetClient(clientId);
+           // Client = _dataLoaderService.GetClient(clientId);
         }
 
         public List<ListItem> Friends { get; set; }

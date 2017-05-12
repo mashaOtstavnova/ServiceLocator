@@ -66,43 +66,43 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/AutoCompleteInput"
-               android:hint="Добавьте клиента"/>
-          <Button
-            android:id="@+id/pickTime"
-            android:layout_height="43dp"
-            android:paddingTop="16dp"
-            android:drawableLeft="@drawable/ic_alarm"
-            android:drawableRight="@drawable/ic_keyboard_arrow"
-            android:layout_width="match_parent"
-            android:paddingLeft="5dp"
-            android:paddingRight="10dp"
-            android:paddingBottom="5dp"
-            android:gravity="left|center_vertical"
-            local:MvxBind="Text TimeString"
-            android:textAllCaps="false"
-            android:textSize="17dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="5dp"
-            android:textColor="@color/secondaryText"
-            android:background="@drawable/linearBorder" />
-          <Button
-            android:id="@+id/pickDate"
-            android:layout_height="43dp"
-            android:paddingTop="16dp"
-            android:drawableLeft="@drawable/ic_date"
-            android:drawableRight="@drawable/ic_keyboard_arrow"
-            android:layout_width="match_parent"
-            android:paddingLeft="5dp"
-            android:paddingRight="10dp"
-            android:paddingBottom="5dp"
-            android:gravity="left|center_vertical"
-            local:MvxBind="Text DateString"
-            android:textAllCaps="false"
-            android:textSize="17dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="5dp"
-            android:textColor="@color/secondaryText"
-            android:background="@drawable/linearBorder" />
+                android:hint="Добавьте клиента" />
+            <Button
+                android:id="@+id/pickTime"
+                android:layout_height="43dp"
+                android:paddingTop="16dp"
+                android:drawableLeft="@drawable/ic_alarm"
+                android:drawableRight="@drawable/ic_keyboard_arrow"
+                android:layout_width="match_parent"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:gravity="left|center_vertical"
+                local:MvxBind="Text TimeString"
+                android:textAllCaps="false"
+                android:textSize="17dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/secondaryText"
+                android:background="@drawable/linearBorder" />
+            <Button
+                android:id="@+id/pickDate"
+                android:layout_height="43dp"
+                android:paddingTop="16dp"
+                android:drawableLeft="@drawable/ic_date"
+                android:drawableRight="@drawable/ic_keyboard_arrow"
+                android:layout_width="match_parent"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:gravity="left|center_vertical"
+                local:MvxBind="Text DateString"
+                android:textAllCaps="false"
+                android:textSize="17dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/secondaryText"
+                android:background="@drawable/linearBorder" />
             <android.support.design.widget.TextInputLayout
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
@@ -127,7 +127,7 @@
             <android.support.design.widget.TextInputLayout
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
-              android:gravity="center_vertical"
+                android:gravity="center_vertical"
                 android:textColorHint="@color/secondaryText"
                 android:layout_width="match_parent"
                 android:id="@+id/money">
@@ -144,25 +144,25 @@
                     local:MvxBind="Text Money"
                     android:ems="10" />
             </android.support.design.widget.TextInputLayout>
-          <android.support.design.widget.TextInputLayout
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:gravity="center_vertical"
-            android:textColorHint="@color/secondaryText"
-            android:layout_width="match_parent"
-            android:id="@+id/service">
-            <android.support.v7.widget.AppCompatEditText
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:hint=" Предоставляемая услуга"
-              android:imeOptions="actionNext"
-              android:drawableLeft="@drawable/ic_assignment"
-              android:textColor="@android:color/white"
-              android:textCursorDrawable="@null"
-              local:backgroundTint="@android:color/white"
-              local:MvxBind="Text Service"
-              android:ems="10" />
-          </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:textColorHint="@color/secondaryText"
+                android:layout_width="match_parent"
+                android:id="@+id/service">
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=" Предоставляемая услуга"
+                    android:imeOptions="actionNext"
+                    android:drawableLeft="@drawable/ic_assignment"
+                    android:textColor="@android:color/white"
+                    android:textCursorDrawable="@null"
+                    local:backgroundTint="@android:color/white"
+                    local:MvxBind="Text Service"
+                    android:ems="10" />
+            </android.support.design.widget.TextInputLayout>
             <Button
                 android:id="@+id/save_button"
                 android:layout_height="50dp"

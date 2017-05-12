@@ -39,6 +39,7 @@ namespace ServiceLocator.Droid.Services
 
         public async Task<Friends> GetFriends()
         {
+            
             var request = VKApi.Friends.Get(new VKParameters(new Dictionary<string, Object>
             {
                 {VKApiConst.Fields, "id,first_name,last_name,contacts,sex,bdate,city,photo_50,photo_max_orig"}
@@ -57,7 +58,26 @@ namespace ServiceLocator.Droid.Services
                 return null;
             }
         }
-
+        public async Task<User> GetUserById(int idFriend)
+        {
+            var t = new Dictionary<string, Object>();
+            t.Add("user_ids",
+                idFriend);
+            t.Add(VKApiConst.Fields, "id,first_name,last_name,contacts,sex,bdate,city,photo_50,photo_max_orig");
+            var request = VKApi.Users.Get(new VKParameters(t));
+            try
+            {
+                var response = await request.ExecuteAsync();
+                var json = JObject.Parse(response.Json.ToString());
+                var jsonArray = (JArray)json["response"];
+                return JsonConvert.DeserializeObject<User>(jsonArray[0].ToString());
+            }
+            catch (Exception ex)
+            {
+                var c = ex.Message;
+                return null;
+            }
+        }
         public async Task<Friend> GetFriend(int idFriend)
         {
             var listFriend = await GetFriends();

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using MvvmCross.Platform;
 using ServiceLocator.Core.IServices;
@@ -35,7 +36,7 @@ namespace ServiceLocator.Core.ViewModels
 
         public User CurrentUser
         {
-            get => _currentUser;
+            get { return _currentUser; }
             set
             {
                 _currentUser = value;
@@ -66,7 +67,8 @@ namespace ServiceLocator.Core.ViewModels
 
         public void ShowInfo()
         {
-            //ShowViewModel<InfoViewModel>();
+           
+            ShowViewModel<RecordViewModel>(new { idRecord = 01 });
         }
 
         public void ShowMainPage()

@@ -34,6 +34,8 @@ namespace ServiceLocator.Core.IServices.Services
 
         public Master GetMaster(int id)
         {
+            //if(получение мастера из базы)
+            //если нет то подгрузка из вк
             Master master = new Master();
             var cat = new List<string>();
             cat.Add("It");
@@ -46,12 +48,24 @@ namespace ServiceLocator.Core.IServices.Services
             return master;
         }
 
+        public Record GetRecord(int id)
+        {
+            var record = new Record();
+            record.IdMaster = 5337911;
+            record.IdClient = 58767238;
+            record.Service = "Уменьшение вонючести";
+            record.Time = DateTime.Now;
+            return record;
+        }
+
         public string GetType(int id)
         {
             return "Client";
         }
         public Client GetClient(int id)
         {
+            //if(получение мастера из базы)
+            //если нет то подгрузка из вк
             Client client = new Client();
             client.IsRegistration = true;
             return client;

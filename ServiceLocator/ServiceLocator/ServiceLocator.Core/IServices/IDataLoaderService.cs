@@ -15,6 +15,7 @@ namespace ServiceLocator.Core.IServices
         void AddNewRecord(Record record);
         List<string> GetIsBusiRecordsMaster(int idMaster, DateTime date);
         Master GetMaster(int id);
+        Record GetRecord(int id);
         string GetType(int id);
         Client GetClient(int id);
     }

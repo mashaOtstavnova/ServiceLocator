@@ -50,6 +50,10 @@ ServiceLocator.Droid.Views.NewRecordMasterView, ServiceLocator.Droid;md5e187c0d0
 ServiceLocator.Droid.Views.NewRecordMasterView, ServiceLocator.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5e187c0d02747d8043bdf48cfd714108a.NewRecordMasterView
 ServiceLocator.Droid.Views.NewRecordMasterView;md5e187c0d02747d8043bdf48cfd714108a.NewRecordMasterView
 servicelocator.droid.views.NewRecordMasterView;md5e187c0d02747d8043bdf48cfd714108a.NewRecordMasterView
+ServiceLocator.Droid.Views.RecordView, ServiceLocator.Droid;md5e187c0d02747d8043bdf48cfd714108a.RecordView
+ServiceLocator.Droid.Views.RecordView, ServiceLocator.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5e187c0d02747d8043bdf48cfd714108a.RecordView
+ServiceLocator.Droid.Views.RecordView;md5e187c0d02747d8043bdf48cfd714108a.RecordView
+servicelocator.droid.views.RecordView;md5e187c0d02747d8043bdf48cfd714108a.RecordView
 ServiceLocator.Droid.Views.SplashScreenView, ServiceLocator.Droid;md5e187c0d02747d8043bdf48cfd714108a.SplashScreenView
 ServiceLocator.Droid.Views.SplashScreenView, ServiceLocator.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5e187c0d02747d8043bdf48cfd714108a.SplashScreenView
 ServiceLocator.Droid.Views.SplashScreenView;md5e187c0d02747d8043bdf48cfd714108a.SplashScreenView

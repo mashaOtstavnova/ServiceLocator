@@ -190,6 +190,8 @@
     <Compile Include="DebugTrace.cs" />
     <Compile Include="Extensions\StoreExtensions.cs" />
     <Compile Include="Extensions\UIExtensions.cs" />
+    <Compile Include="Fragments\FriendsAllFragment.cs" />
+    <Compile Include="Fragments\FriendsMasterFragment.cs" />
     <Compile Include="helpers\Conventers.cs" />
     <Compile Include="LinkerPleaseInclude.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
@@ -202,6 +204,7 @@
     <Compile Include="Views\ClientView.cs" />
     <Compile Include="Views\Dialogs\CategoryServiceDialog.cs" />
     <Compile Include="Views\FirstMasterView.cs" />
+    <Compile Include="Views\FriendsClientView.cs" />
     <Compile Include="Views\FriendsView.cs" />
     <Compile Include="Views\HomeClientView.cs" />
     <Compile Include="Views\HomeMasterView.cs" />
@@ -210,6 +213,7 @@
     <Compile Include="Views\Controls\MvxSelectableListView.cs" />
     <Compile Include="Views\NewRecordClientView.cs" />
     <Compile Include="Views\NewRecordMasterView.cs" />
+    <Compile Include="Views\RecordView.cs" />
     <Compile Include="Views\SplashScreen.cs" />
     <Compile Include="Views\TypeUserView.cs" />
   </ItemGroup>
@@ -259,6 +263,15 @@
     </AndroidResource>
     <AndroidResource Include="Resources\layout\category_dialog.axml" />
     <AndroidResource Include="Resources\layout\new_record_client_view.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\friends_client_view.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\record_view.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\friends_all_fragment.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

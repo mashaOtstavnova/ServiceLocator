@@ -44,6 +44,9 @@
     <Compile Include="ViewModels\ClientViewModel.cs" />
     <Compile Include="ViewModels\EventsMapViewModel.cs" />
     <Compile Include="ViewModels\FirstMasterViewModel.cs" />
+    <Compile Include="ViewModels\FriendsAllViewModel.cs" />
+    <Compile Include="ViewModels\FriendsClientViewModel.cs" />
+    <Compile Include="ViewModels\FriendsMasterViewModel.cs" />
     <Compile Include="ViewModels\FriendsViewModel.cs" />
     <Compile Include="ViewModels\HomeClientViewModel.cs" />
     <Compile Include="ViewModels\HomeMasterViewModel.cs" />
@@ -51,6 +54,7 @@
     <Compile Include="ViewModels\MasterViewModel.cs" />
     <Compile Include="ViewModels\NewRecordClientViewModel.cs" />
     <Compile Include="ViewModels\NewRecordMasterViewModel.cs" />
+    <Compile Include="ViewModels\RecordViewModel.cs" />
     <Compile Include="ViewModels\TypeUserViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
