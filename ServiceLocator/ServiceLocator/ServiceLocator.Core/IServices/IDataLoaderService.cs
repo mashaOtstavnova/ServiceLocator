@@ -18,5 +18,8 @@ namespace ServiceLocator.Core.IServices
         Record GetRecord(int id);
         string GetType(int id);
         Client GetClient(int id);
+        void DellRecord(Guid idRecord);
+        void UpdateRecordMasters(Record record);
+        void UpdateRecordClients(Record record);
     }
 }

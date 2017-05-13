@@ -37,16 +37,19 @@
                     android:innerRadius="0dp"
                     android:shape="ring"
                     android:thicknessRatio="1.9">
-                    <ImageView
-                        android:layout_height="80dp"
+                  <mvvmcross.binding.droid.views.MvxImageView
+                      android:layout_height="80dp"
                         android:layout_width="match_parent"
                         android:id="@+id/imageView1"
+                        
+                    local:MvxBind="ImageUrl Photo"
                         android:layout_alignParentTop="true"
                         android:layout_centerHorizontal="true" />
                 </android.support.v7.widget.CardView>
             </RelativeLayout>
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
+                local:MvxBind="Text NameClient"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 local:layout_collapseMode="pin" />

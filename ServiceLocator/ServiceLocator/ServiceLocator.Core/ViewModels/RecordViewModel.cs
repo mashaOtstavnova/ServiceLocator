@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MvvmCross.Core.ViewModels;
 using MvvmCross.Platform;
 using ServiceLocator.Core.IServices;
 using ServiceLocator.Entities;
@@ -28,6 +29,7 @@ namespace ServiceLocator.Core.ViewModels
         private User _clientUser;
         private bool _isMy;
         private bool _isMaster;
+        private bool _isClient;
 
 
         public Record Record
@@ -102,6 +104,7 @@ namespace ServiceLocator.Core.ViewModels
                     if (value.id == CurrentUser.id)
                     {
                         IsMy = true;
+                        IsMaster = true;
                     }
                 }
                 RaisePropertyChanged(() => MasterUser);
@@ -161,6 +164,7 @@ namespace ServiceLocator.Core.ViewModels
                     if (value.id == CurrentUser.id)
                     {
                         IsMy = true;
+                        IsClient = true;
                     }
                 }
                 RaisePropertyChanged(() => ClientUser);
@@ -202,6 +206,41 @@ namespace ServiceLocator.Core.ViewModels
                 RaisePropertyChanged(() => IdMaster);
             }
         }
+        public bool IsClient
+        {
+            get { return _isClient; }
+            set
+            {
+                _isClient = value;
+                RaisePropertyChanged(() => IsClient);
+            }
+        }
+        public IMvxCommand DellRecordCommand
+        {
+            get { return new MvxCommand(DellRecord); }
+        }
+       
+        private void DellRecord()
+        {
+           _dataLoaderService.DellRecord(Record.Id);
+        }
+        public IMvxCommand UpdateRecordCommand
+        {
+            get { return new MvxCommand(UpdateRecord); }
+        }
+       
+        private void UpdateRecord()
+        {
+            if (IsMaster)
+            {
+                ShowViewModel<NewRecordClientViewModel>(new { masterId =-1, recordId = 01 });
+            }
+            else if (IsClient)
+            {
+                ShowViewModel<NewRecordMasterViewModel>(new { clientId = -1, recordId = 01 });
+            }
+        }
+
         public async void Init(int idRecord)
         {
            

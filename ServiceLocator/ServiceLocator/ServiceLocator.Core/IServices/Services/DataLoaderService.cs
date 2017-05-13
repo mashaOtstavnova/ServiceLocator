@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ServiceLocator.Core.ViewModels;
 
 namespace ServiceLocator.Core.IServices.Services
 {
@@ -18,7 +19,18 @@ namespace ServiceLocator.Core.IServices.Services
         {
             //throw new NotImplementedException();
         }
-
+        public void DellRecord(Guid idRecord)
+        {
+            //throw new NotImplementedException();
+        }
+        public void UpdateRecordMasters(Record record)
+        {
+            //throw new NotImplementedException();
+        }
+        public void UpdateRecordClients(Record record)
+        {
+            //throw new NotImplementedException();
+        }
         public void AddNewRecord(Record record)
         {
             throw new NotImplementedException();
@@ -53,6 +65,8 @@ namespace ServiceLocator.Core.IServices.Services
             var record = new Record();
             record.IdMaster = 5337911;
             record.IdClient = 58767238;
+            record.Duration = new TimeSpan(0,0,12,0);
+            record.Money = 100;
             record.Service = "Уменьшение вонючести";
             record.Time = DateTime.Now;
             return record;

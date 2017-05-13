@@ -14,16 +14,17 @@ namespace ServiceLocator.Core.ViewModels
     public class NewRecordMasterViewModel:BaseViewModel
     {
 
-        public int _houre = -1;
-        public int _minute= -1;
+        public string _houre = "-1";
+        public string _minute= "-1";
         public string _dateString= "";
+        public string _nameClient= "";
         public DateTime _date= new DateTime();
         private int _duration;
         private decimal _money;
         private string _service;
-        private Client _client;
+        private User _client;
 
-        public int Minute
+        public string Minute
         {
             get => _minute;
             set
@@ -42,7 +43,7 @@ namespace ServiceLocator.Core.ViewModels
                 RaisePropertyChanged(() => Money);
             }
         }
-        public int Hour
+        public string Hour
         {
             get => _houre;
             set
@@ -72,12 +73,14 @@ namespace ServiceLocator.Core.ViewModels
                 RaisePropertyChanged(() => Duration);
             }
         }
-        public Client Client
+        public User Client
         {
             get => _client;
             set
             {
                 _client = value;
+                Photo = $"{value.photo_100}";
+                NameClient = $"{value.first_name} {value.last_name}";
                 RaisePropertyChanged(() => Client);
             }
         }
@@ -90,13 +93,28 @@ namespace ServiceLocator.Core.ViewModels
                 RaisePropertyChanged(() => Service);
             }
         }
+        public string NameClient
+        {
+            get => _nameClient;
+            set
+            {
+                _nameClient = value;
+                RaisePropertyChanged(() => NameClient);
+            }
+        }
         public string TimeString
         {
             get
             {
-                return (Hour != -1 & Minute != -1)
-                    ? (Hour.ToString() + ":" + Minute.ToString())
-                    : "Выбирите время";
+               
+                    return (Hour != "-1" & Minute != "-1")
+                        ? (Hour + ":" + Minute)
+                        : "Выбирите время";
+            }
+            set
+            {
+                _timeString = value;
+                RaisePropertyChanged(() => TimeString);
             }
         }
         public string DateString
@@ -128,10 +146,68 @@ namespace ServiceLocator.Core.ViewModels
         //}
 
         private IDataLoaderService _dataLoaderService;
-        public void Init(string clientId)
+        private Record _record;
+        private int _idClient;
+        private IProfileService _profileService;
+        private string _photo;
+        private string _timeString;
+
+        public string Photo
+        {
+            get { return _photo; }
+            set
+            {
+                _photo = value;
+                RaisePropertyChanged(() => Photo);
+            }
+        }
+        public async void Init(int clientId, int recordId)
         {
             _dataLoaderService = Mvx.Resolve<IDataLoaderService>();
+            _profileService = Mvx.Resolve<IProfileService>();
+            if (recordId != -1)
+            {
+                Record = _dataLoaderService.GetRecord(recordId);
+                Client = await _profileService.GetUserById(Record.IdClient);
+            }
+            else
+            {
            // Client = _dataLoaderService.GetClient(clientId);
+            }
+        }
+
+        public Record Record {
+            get { return _record; }
+            set
+            {
+                _record = value;
+                if (value != null)
+                {
+                    IdClient = value.IdClient;
+                    //IdMaster = value.IdMaster;
+                    Duration = value.Duration.Minutes;
+                    Money = value.Money;
+                    Hour = value.Time.Date.ToString("hh");
+                    Minute = value.Time.Date.ToString("mm");
+                    Date = value.Time;
+                    Service = $"{value.Service}";
+                }
+                RaisePropertyChanged(() => Record);
+            }
+        }
+
+        public int IdClient
+        {
+            get { return _idClient; }
+            set
+            {
+                _idClient = value;
+                //if (value != null)
+                //{
+                //    IdClient = value;
+                //}
+                RaisePropertyChanged(() => IdClient);
+            }
         }
 
         public List<ListItem> Friends { get; set; }

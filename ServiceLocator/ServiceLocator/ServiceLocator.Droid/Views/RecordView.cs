@@ -32,18 +32,25 @@ namespace ServiceLocator.Droid.Views
             set.Bind(collapsingToolbar).For(ctb => ctb.Title).To(vm => vm.NameMaster);
             var delButton = FindViewById<Button>(Resource.Id.del_button);
             var updateButoon = FindViewById<Button>(Resource.Id.update_button);
+            delButton.Click += DelButton_Click;
+            updateButoon.Click += UpdateButoonOnClick;
             set.Bind(delButton).For(ctb => ctb.Visibility).To(vm => (vm.IsMy)).WithConversion("MyVisibility");
             set.Bind(updateButoon).For(ctb => ctb.Visibility).To(vm => vm.IsMy).WithConversion("MyVisibility");
             this.CreateBinding().For("Title").To<RecordViewModel>(vm => vm.NameMaster).Apply();
             set.Apply();
             
-            //if (ViewModel.HomePhone == null & ViewModel.MobilePhone == null)
-            //{
-            //    callButton.Visibility = ViewStates.Invisible;
-            //}
         }
 
-       
+        private void UpdateButoonOnClick(object sender, EventArgs eventArgs)
+        {
+            ViewModel.UpdateRecordCommand.Execute();
+        }
+
+        private void DelButton_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
         protected override void OnDestroy()
         {
             //var openPresentsButton = FindViewById<Button>(Resource.Id.button_present_user);

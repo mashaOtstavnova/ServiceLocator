@@ -7,13 +7,30 @@ using Android.App;
 using Android.Content;
 using Android.OS;
 using Android.Runtime;
+using Android.Support.Design.Widget;
 using Android.Views;
 using Android.Widget;
 using Java.Lang;
+using MvvmCross.Binding.BindingContext;
 using ServiceLocator.Core.ViewModels;
 using ServiceLocator.Entities;
 using Exception = System.Exception;
 using String = System.String;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+using Android.App;
+using Android.Content;
+using Android.OS;
+using Android.Runtime;
+using Android.Support.Design.Widget;
+using Android.Views;
+using Android.Widget;
+using MvvmCross.Binding.BindingContext;
+using ServiceLocator.Core.ViewModels;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace ServiceLocator.Droid.Views
 {
@@ -31,6 +48,16 @@ namespace ServiceLocator.Droid.Views
         protected override async void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
+
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+            var collapsingToolbar = FindViewById<CollapsingToolbarLayout>(Resource.Id.collapsing_toolbar);
+            var set = this.CreateBindingSet<NewRecordMasterView, NewRecordMasterViewModel>();
+            set.Bind(collapsingToolbar).For(ctb => ctb.Title).To(vm => vm.NameClient);
+            this.CreateBinding().For("Title").To<NewRecordMasterViewModel>(vm => vm.NameClient).Apply();
+            set.Apply();
+
             var autoCompleteOptions = new String[]
                 {"Hello", "Hey", "Heja", "Hi", "Hola", "Bonjour", "Gday", "Goodbye", "Sayonara", "Farewell", "Adios"};
            // var listName = ViewModel.Friends.Select(t=>t.Title);
@@ -56,8 +83,7 @@ namespace ServiceLocator.Droid.Views
                     dialog.DatePicker.MinDate = today.Millisecond;
                     dialog.Show();
                 };
-                save_button.Click += SaveButtonOnClick;
-
+               
             }
             catch (Exception e)
             {
@@ -80,14 +106,14 @@ namespace ServiceLocator.Droid.Views
 
         private void TimePickerCallback(object sender, TimePickerDialog.TimeSetEventArgs e)
         {
-            ViewModel.Hour = e.HourOfDay;
-            ViewModel.Minute = e.Minute;
+            ViewModel.Hour = e.HourOfDay.ToString();
+            ViewModel.Minute = e.Minute.ToString();
            // UpdateDisplay();
         }
         protected override Dialog OnCreateDialog(int id)
         {
             if (id == TIME_DIALOG_ID)
-                return new TimePickerDialog(this, TimePickerCallback, ViewModel.Hour,ViewModel.Minute, false);
+                return new TimePickerDialog(this, TimePickerCallback, Convert.ToInt32(ViewModel.Hour), Convert.ToInt32(ViewModel.Minute), false);
 
             return null;
         }

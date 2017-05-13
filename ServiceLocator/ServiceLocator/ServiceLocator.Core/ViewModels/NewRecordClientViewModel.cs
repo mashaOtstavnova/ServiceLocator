@@ -78,10 +78,11 @@ namespace ServiceLocator.Core.ViewModels
         private IDataLoaderService _dataLoaderService;
         private Master _master;
 
-        public void Init(int masterId)
+        public void Init(int masterId, int recordId)
         {
             _dataLoaderService = Mvx.Resolve<IDataLoaderService>();
             IdMaster = masterId;
+            var ord = recordId;
             Master = _dataLoaderService.GetMaster(masterId);
         }
     }

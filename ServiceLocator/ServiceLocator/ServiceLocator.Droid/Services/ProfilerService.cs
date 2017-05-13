@@ -63,7 +63,7 @@ namespace ServiceLocator.Droid.Services
             var t = new Dictionary<string, Object>();
             t.Add("user_ids",
                 idFriend);
-            t.Add(VKApiConst.Fields, "id,first_name,last_name,contacts,sex,bdate,city,photo_50,photo_max_orig");
+            t.Add(VKApiConst.Fields, "id,first_name,last_name,contacts,sex,bdate,city,photo_50,photo_100,photo_max_orig");
             var request = VKApi.Users.Get(new VKParameters(t));
             try
             {
