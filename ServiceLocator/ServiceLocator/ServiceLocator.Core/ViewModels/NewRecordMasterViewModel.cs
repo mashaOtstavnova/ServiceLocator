@@ -170,9 +170,11 @@ namespace ServiceLocator.Core.ViewModels
                 Record = _dataLoaderService.GetRecord(recordId);
                 Client = await _profileService.GetUserById(Record.IdClient);
             }
-            else
+            else if (clientId != -1)
             {
-           // Client = _dataLoaderService.GetClient(clientId);
+               Client = await _profileService.GetUserById(clientId);
+                
+                // Client = _dataLoaderService.GetClient(clientId);
             }
         }
 

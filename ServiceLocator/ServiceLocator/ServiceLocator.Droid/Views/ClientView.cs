@@ -47,7 +47,7 @@ namespace ServiceLocator.Droid.Views
             set.Bind(callButton).For(ctb => ctb.Visibility).To(vm => vm.IsPhone).WithConversion("MyVisibility");
 
             set.Bind(addNewRecordButoon).For(ctb => ctb.Visibility).To(vm => vm.IsMy).WithConversion("MyVisibilityFalse");
-            // set.Bind(fab).To(vm => vm.Client.IsRegistration).WithConversion("MySwapImage");
+   
             this.CreateBinding().For("Title").To<MasterViewModel>(vm => vm.FullName).Apply();
             set.Apply();
             if (ViewModel.Client != null && ViewModel.Client.IsRegistration)
@@ -69,7 +69,7 @@ namespace ServiceLocator.Droid.Views
         private void OnButtonFoCall(object sender, EventArgs e)
         {
             Intent intent = new Intent(Intent.ActionDial);
-            intent.SetData(Android.Net.Uri.Parse("tel:" + ViewModel.СontactsString));
+            intent.SetData(Android.Net.Uri.Parse("tel:" + ViewModel.ContactsString));
             StartActivity(intent);
         }
 

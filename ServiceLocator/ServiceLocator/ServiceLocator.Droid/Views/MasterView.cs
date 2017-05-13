@@ -74,7 +74,7 @@ namespace ServiceLocator.Droid.Views
         private void OnButtonFoCall(object sender, EventArgs e)
         {
             Intent intent = new Intent(Intent.ActionDial);
-            intent.SetData(Android.Net.Uri.Parse("tel:" +ViewModel.СontactsString));
+            intent.SetData(Android.Net.Uri.Parse("tel:" +ViewModel.ContactsString));
             StartActivity(intent);
         }
         protected override void OnDestroy()

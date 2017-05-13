@@ -72,7 +72,7 @@ namespace ServiceLocator.Core.ViewModels
                 RaisePropertyChanged(() => ServicesString);
             }
         }
-        public string СontactsString
+        public string ContactsString
         {
             get { return _contactsString; }
             set
@@ -82,7 +82,7 @@ namespace ServiceLocator.Core.ViewModels
                 {
                     _contactsString = "Нет контактов";
                 }
-                RaisePropertyChanged(() => СontactsString);
+                RaisePropertyChanged(() => ContactsString);
             }
         }
         public string Bdate
@@ -159,11 +159,12 @@ namespace ServiceLocator.Core.ViewModels
                     IsMy = false;
                     FullName = $"{value.first_name} {value.last_name}";
                     Bdate = $"{value.bdate}";
-                    СontactsString = (value.home_phone != null || value.mobile_phone != null) ? $"{value.home_phone } {value.mobile_phone }" : "Нет контактов";
+                    ContactsString = (string.IsNullOrWhiteSpace(value.home_phone) || string.IsNullOrWhiteSpace(value.mobile_phone)) ? $"{value.home_phone } {value.mobile_phone }" : "Нет контактов";
+                    IsPhone = (string.IsNullOrWhiteSpace(HomePhone) & string.IsNullOrWhiteSpace(MobilePhone)) ? false : true;
                     City = $"{value.city?.title}";
                     HomePhone = $"{value.home_phone}";
                     MobilePhone = $"{value.mobile_phone}";
-                    IsPhone = (HomePhone == null & MobilePhone == null) ? false : true;
+                   
                     Photo = value.photo_max_orig;
                 }
                 RaisePropertyChanged(() => Friend);
@@ -210,8 +211,8 @@ namespace ServiceLocator.Core.ViewModels
                     Bdate = $"{value.bdate}";
                     HomePhone = $"{value.home_phone}";
                     MobilePhone = $"{value.mobile_phone}";
-                    СontactsString = (value.home_phone != null || value.mobile_phone != null) ? $"{value.home_phone } {value.mobile_phone }" : "Нет контактов";
-                    IsPhone = (HomePhone == null & MobilePhone == null) ? false : true;
+                    ContactsString = (string.IsNullOrWhiteSpace(value.home_phone) || string.IsNullOrWhiteSpace(value.mobile_phone)) ? $"{value.home_phone } {value.mobile_phone }" : "Нет контактов";
+                    IsPhone = (string.IsNullOrWhiteSpace(HomePhone) & string.IsNullOrWhiteSpace(MobilePhone)) ? false : true;
                     City = $"{value.city?.title}";
                     Photo = value.photo_max_orig;
                 }

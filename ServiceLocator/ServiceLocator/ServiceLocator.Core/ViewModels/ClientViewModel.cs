@@ -55,14 +55,14 @@ namespace ServiceLocator.Core.ViewModels
             }
         }
         
-        public string СontactsString
+        public string ContactsString
         {
             get { return _contactsString; }
             set
             {
                 _contactsString = value;
                
-                RaisePropertyChanged(() => СontactsString);
+                RaisePropertyChanged(() => ContactsString);
             }
         }
         public string Bdate
@@ -123,8 +123,8 @@ namespace ServiceLocator.Core.ViewModels
                     IsMy = false;
                     HomePhone = $"{value.home_phone}";
                     MobilePhone = $"{value.mobile_phone}";
-                    СontactsString = (value.home_phone != null || value.mobile_phone != null) ? $"{value.home_phone } {value.mobile_phone }" : "Нет контактов";
-                    IsPhone = (HomePhone == null & MobilePhone == null) ? false : true;
+                    ContactsString = (!string.IsNullOrWhiteSpace(value.home_phone) || !string.IsNullOrWhiteSpace(value.mobile_phone)) ? $"{value.home_phone } {value.mobile_phone }" : "Нет контактов";
+                    IsPhone = (string.IsNullOrWhiteSpace(HomePhone) & string.IsNullOrWhiteSpace(MobilePhone)) ? false : true;
                     Photo = value.photo_max_orig;
                 }
                 RaisePropertyChanged(() => Friend);
@@ -143,9 +143,8 @@ namespace ServiceLocator.Core.ViewModels
                     Bdate = $"{value.bdate}";
                     HomePhone = $"{value.home_phone}";
                     MobilePhone = $"{value.mobile_phone}";
-                    СontactsString = (value.home_phone != null || value.mobile_phone != null) ? $"{value.home_phone } {value.mobile_phone }" : "Нет контактов";
-                    IsPhone = (HomePhone == null & MobilePhone == null) ? false : true;
-                   
+                    ContactsString = (string.IsNullOrWhiteSpace(value.home_phone) || string.IsNullOrWhiteSpace(value.mobile_phone)) ? $"{value.home_phone } {value.mobile_phone }" : "Нет контактов";
+                    IsPhone = (string.IsNullOrWhiteSpace(HomePhone) & string.IsNullOrWhiteSpace(MobilePhone)) ? false : true;
                     Photo = value.photo_max_orig;
                 }
                 RaisePropertyChanged(() => User);
@@ -179,7 +178,7 @@ namespace ServiceLocator.Core.ViewModels
 
         private void AddNewRecord()
         {
-            ShowViewModel<NewRecordMasterViewModel>(new { clientId = Client.Id , recordId = -1 });
+            ShowViewModel<NewRecordMasterViewModel>(new { clientId = UserId, recordId = -1 });
         }
     }
 }
