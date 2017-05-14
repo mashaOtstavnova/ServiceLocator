@@ -16,6 +16,7 @@ namespace ServiceLocator.Droid.Views
         private CalendarView _calendar;
         private ListView _eventsList;
         private SegmentedGroup _segmentedControl;
+        private SegmentedGroup tabSelect;
         private DateTime _calendarDate;
         protected override int LayoutResource => Resource.Layout.sheduli_view;
 
@@ -26,6 +27,10 @@ namespace ServiceLocator.Droid.Views
             ViewModel.Title = "Расписание";
             Title = ViewModel.Title;
             var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            var tabFree = FindViewById<RadioButton>(Resource.Id.schedule_view_segment_free);
+            tabSelect = FindViewById<SegmentedGroup>(Resource.Id.schedule_view_segmentedControl);
+            var tabBusy = FindViewById<RadioButton>(Resource.Id.schedule_view_segment_busy);
+            tabSelect.Check(Resource.Id.schedule_view_segment_free);
             SetSupportActionBar(toolbar);
             SupportActionBar.SetDisplayHomeAsUpEnabled(true);
 
@@ -60,6 +65,8 @@ namespace ServiceLocator.Droid.Views
 
         private void SegmentedControlOnCheckedChange(object sender, RadioGroup.CheckedChangeEventArgs e)
         {
+
+            tabSelect.Check(Resource.Id.schedule_view_segment_free);
             switch (e.CheckedId)
             {
                 case Resource.Id.schedule_view_segment_free:
@@ -68,6 +75,7 @@ namespace ServiceLocator.Droid.Views
                     break;
                 case Resource.Id.schedule_view_segment_busy:
                     ViewModel.ScheduleType = ScheduleType.Busy;
+                    ViewModel.ReloadRecord(_calendarDate);
                     break;
             }
         }
