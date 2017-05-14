@@ -54,4 +54,9 @@ namespace ServiceLocator.Entities
         public static string Photo => "Фото- и видеосъёмка";
         public static string Other => "Другое";
     }
+    public enum ScheduleType
+    {
+        Free,
+        Busy
+    }
 }

@@ -1,6 +1,7 @@
 ﻿using ServiceLocator.Entities;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -83,6 +84,40 @@ namespace ServiceLocator.Core.IServices.Services
             Client client = new Client();
             client.IsRegistration = true;
             return client;
+        }
+        /// <summary>
+        /// Возвращаем записи по дате для мастеров из списка ids
+        /// </summary>
+        /// <param name="date"></param>
+        /// <param name="ids"></param>
+        /// <returns></returns>
+        public ObservableCollection<Record> GetRecords(DateTime date, List<int> ids)
+        {
+            try
+            {
+                var t = Fakes.Records;
+                return new ObservableCollection<Record>(
+                    t.Where(r => r.Time.Date.ToString("dd/MM/yyyy") == date.ToString("dd/MM/yyyy") && ids.Exists(i => i == r.IdMaster)));
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+
+        /// <summary>
+        /// Получение мастеров из числа друзей
+        /// </summary>
+        /// <param name="ids"></param>
+        /// <returns></returns>
+        public List<int> GetMastersByFriends(List<int> ids)
+        {
+            return new List<int>
+            {
+                58767238,
+                5226616
+
+            };
         }
 
     }

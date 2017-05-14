@@ -99,6 +99,7 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "ServiceLocator.Droid.dll" comes first in this list. */
 		"ServiceLocator.Droid.dll",
+		"AndroidSegmentedControl.Droid.dll",
 		"MvvmCross.Binding.dll",
 		"MvvmCross.Binding.Droid.dll",
 		"MvvmCross.Core.dll",

@@ -87,6 +87,9 @@ namespace ServiceLocator.Droid.Views
                 case Resource.Id.nav_new_record:
                     ViewModel.ShowNewRecord();
                     break;
+                case Resource.Id.nav_schedule:
+                    ViewModel.ShowSchedule();
+                    break;
                 case Resource.Id.nav_exit:
                     Logout();
                     break;

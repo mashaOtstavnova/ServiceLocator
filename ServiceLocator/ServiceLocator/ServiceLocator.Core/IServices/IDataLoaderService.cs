@@ -1,6 +1,7 @@
 ﻿using ServiceLocator.Entities;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,5 +22,7 @@ namespace ServiceLocator.Core.IServices
         void DellRecord(Guid idRecord);
         void UpdateRecordMasters(Record record);
         void UpdateRecordClients(Record record);
+        ObservableCollection<Record> GetRecords(DateTime date, List<int> ids);
+        List<int> GetMastersByFriends(List<int> ids);
     }
 }

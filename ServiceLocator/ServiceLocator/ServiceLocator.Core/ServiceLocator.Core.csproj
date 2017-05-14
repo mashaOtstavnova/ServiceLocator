@@ -55,6 +55,7 @@
     <Compile Include="ViewModels\NewRecordClientViewModel.cs" />
     <Compile Include="ViewModels\NewRecordMasterViewModel.cs" />
     <Compile Include="ViewModels\RecordViewModel.cs" />
+    <Compile Include="ViewModels\ScheduleViewModel.cs" />
     <Compile Include="ViewModels\TypeUserViewModel.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -36,11 +36,11 @@
             android:padding="2dp"
             local:MvxBind="Text Title" />
         <TextView
-          android:layout_width="fill_parent"
-          android:layout_height="wrap_content"
-          android:text="List item view"
-          android:textSize="10sp"
-          android:padding="2dp"
-          local:MvxBind="Text Services" />
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="List item view"
+            android:textSize="10sp"
+            android:padding="2dp"
+            local:MvxBind="Text Services" />
     </LinearLayout>
 </LinearLayout>

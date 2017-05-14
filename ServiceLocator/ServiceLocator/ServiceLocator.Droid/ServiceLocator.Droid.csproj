@@ -56,6 +56,9 @@
     <AndroidLinkMode>SdkOnly</AndroidLinkMode>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AndroidSegmentedControl.Droid, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\AndroidSegmentedControl.Droid.Binding.1.0.2\lib\MonoAndroid\AndroidSegmentedControl.Droid.dll</HintPath>
+    </Reference>
     <Reference Include="Mono.Android" />
     <Reference Include="Mono.Android.Export" />
     <Reference Include="mscorlib" />
@@ -214,6 +217,7 @@
     <Compile Include="Views\NewRecordClientView.cs" />
     <Compile Include="Views\NewRecordMasterView.cs" />
     <Compile Include="Views\RecordView.cs" />
+    <Compile Include="Views\ScheduleView.cs" />
     <Compile Include="Views\SplashScreen.cs" />
     <Compile Include="Views\TypeUserView.cs" />
   </ItemGroup>
@@ -272,6 +276,12 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\friends_all_fragment.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\sheduli_view.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\list_record_view.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

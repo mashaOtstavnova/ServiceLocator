@@ -21,6 +21,9 @@ namespace ServiceLocator.Entities
         public List<string> Categories { get; set; }
         public string AboutMe { get; set; }
         public string Subcategory { get; set; }
+
+        public TimeSpan StartTime { get; set; }
+        public TimeSpan EndTime { get; set; }
     }
 
     public class Client : Human

@@ -2,6 +2,7 @@
 <Paths>
   <Jars></Jars>
   <ResolvedResourceDirectories>
+    <ResolvedResourceDirectory>C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Droid\obj\Debug\__library_projects__\AndroidSegmentedControl.Droid\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Droid\obj\Debug\__library_projects__\MvvmCross.Binding.Droid\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Droid\obj\Debug\__library_projects__\MvvmCross.Droid\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Droid\obj\Debug\__library_projects__\MvvmCross.Droid.Shared\library_project_imports\res</ResolvedResourceDirectory>
@@ -15,6 +16,7 @@
     <ResolvedResourceDirectory>C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Droid\obj\Debug\__library_projects__\VKontakte.Android\library_project_imports\res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
+    <ResolvedAssetDirectory>obj\Debug\__library_projects__\AndroidSegmentedControl.Droid\library_project_imports\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj\Debug\__library_projects__\MvvmCross.Binding.Droid\library_project_imports\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj\Debug\__library_projects__\MvvmCross.Droid\library_project_imports\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj\Debug\__library_projects__\MvvmCross.Droid.Shared\library_project_imports\assets</ResolvedAssetDirectory>
@@ -29,6 +31,7 @@
   </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
+    <ResolvedResourceDirectoryStamp>C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Droid\obj\Debug\__library_projects__\AndroidSegmentedControl.Droid.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Droid\obj\Debug\__library_projects__\MvvmCross.Binding.Droid.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Droid\obj\Debug\__library_projects__\MvvmCross.Droid.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Droid\obj\Debug\__library_projects__\MvvmCross.Droid.Shared.stamp</ResolvedResourceDirectoryStamp>
