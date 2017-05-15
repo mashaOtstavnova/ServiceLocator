@@ -113,7 +113,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        app:MvxBind="Text СontactsString"
+                        app:MvxBind="Text ContactsString"
                         android:id="@+id/сontactsString" />
                 </LinearLayout>
             </android.support.v7.widget.CardView>
@@ -159,6 +159,22 @@
                         android:id="@+id/discription" />
                 </LinearLayout>
             </android.support.v7.widget.CardView>
+          <Button
+            android:id="@+id/shedule_button"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Расписание"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:background="@color/button"
+            android:textAllCaps="false"
+            android:textSize="18dp"
+            android:textColor="@color/textIcon" />
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 </android.support.design.widget.CoordinatorLayout>

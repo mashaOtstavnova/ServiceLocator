@@ -21,12 +21,16 @@ namespace ServiceLocator.Core.ViewModels
         {
             get
             {
-                return (_timeString != "")
-                    ? (_timeString)
+
+                return (Hour != "-1" & Minute != "-1")
+                    ? (Hour + ":" + Minute)
                     : "Выбирите время";
             }
             set
             {
+                var t = value.Split(':');
+                Hour = t[0];
+                Minute = t[1];
                 _timeString = value;
                 RaisePropertyChanged(() => TimeString);
             }
@@ -65,25 +69,136 @@ namespace ServiceLocator.Core.ViewModels
                 RaisePropertyChanged(() => IdMaster);
             }
         }
-        public Master Master
+        public User Master
         {
             get => _master;
             set
             {
+                Photo = $"{value.photo_100}";
+                NameMaster = $"{value.first_name} {value.last_name}";
                 _master = value;
                 RaisePropertyChanged(() => Master);
             }
         }
 
-        private IDataLoaderService _dataLoaderService;
-        private Master _master;
+        public string NameMaster
+        {
+            get => _nameMaster;
+            set
+            {
+                _nameMaster = value;
+                RaisePropertyChanged(() => NameMaster);
+            }
+        }
 
-        public void Init(int masterId, int recordId)
+        private IDataLoaderService _dataLoaderService;
+        private User _master;
+        private Record _record;
+        private string _service;
+        private int _duration;
+        private IProfileService _profileService;
+        private decimal _money;
+        public string _houre = "-1";
+        public string _minute = "-1";
+        private string _photo;
+        private string _nameMaster;
+
+        public async void Init(int masterId, string recordId)
         {
             _dataLoaderService = Mvx.Resolve<IDataLoaderService>();
+
             IdMaster = masterId;
+            _profileService = Mvx.Resolve<IProfileService>();
+            if (!string.IsNullOrWhiteSpace(recordId))
+            {
+                Record = _dataLoaderService.GetRecord(Guid.Parse(recordId));
+                Master = await _profileService.GetUserById(Record.IdMaster);
+            }
+            else if (masterId != -1)
+            {
+                Master = await _profileService.GetUserById(masterId);
+
+                // Client = _dataLoaderService.GetClient(clientId);
+            }
             var ord = recordId;
-            Master = _dataLoaderService.GetMaster(masterId);
         }
+        public int Duration
+        {
+            get => _duration;
+            set
+            {
+                _duration = value;
+                RaisePropertyChanged(() => Duration);
+            }
+        }
+        public string Minute
+        {
+            get => _minute;
+            set
+            {
+                _minute = value;
+                RaisePropertyChanged(() => Minute);
+                RaisePropertyChanged(() => TimeString);
+            }
+        }
+        public decimal Money
+        {
+            get => _money;
+            set
+            {
+                _money = value;
+                RaisePropertyChanged(() => Money);
+            }
+        }
+        public string Hour
+        {
+            get => _houre;
+            set
+            {
+                _houre = value;
+                RaisePropertyChanged(() => Hour);
+                RaisePropertyChanged(() => TimeString);
+            }
+        }
+        public Record Record
+        {
+            get { return _record; }
+            set
+            {
+                _record = value;
+                if (value != null)
+                {
+                    IdMaster = value.IdMaster;
+                    Duration = value.Duration.Minutes;
+                    Money = value.Money;
+                    Hour = value.Time.Date.ToString("hh");
+                    Minute = value.Time.Date.ToString("mm");
+                    Date = value.Time;
+                    Service = $"{value.Service}";
+                }
+                RaisePropertyChanged(() => Record);
+            }
+        }
+        public string Service
+        {
+            get => _service;
+            set
+            {
+                _service = value;
+                RaisePropertyChanged(() => Service);
+            }
+        }
+        public string Photo
+        {
+            get { return _photo; }
+            set
+            {
+                _photo = value;
+                RaisePropertyChanged(() => Photo);
+            }
+        }
+
     }
+
+    
 }

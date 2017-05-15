@@ -29,7 +29,7 @@ namespace ServiceLocator.Entities
             new Record
             {
                 Id = Guid.NewGuid(),
-                IdClient = Masters.FirstOrDefault().Id,
+                IdClient = 5337911,
                 IdMaster = 58767238,
                 Duration = TimeSpan.FromHours(1),
                 IsBusy = true,
@@ -40,7 +40,7 @@ namespace ServiceLocator.Entities
             new Record
             {
                 Id = Guid.NewGuid(),
-                IdClient = Masters.FirstOrDefault().Id,
+                IdClient = 5337911,
                 IdMaster = 5226616,
                 Duration = TimeSpan.FromHours(1),
                 IsBusy = true,
@@ -52,7 +52,7 @@ namespace ServiceLocator.Entities
             {
                 Id = Guid.NewGuid(),
 
-                IdClient = 58767238,
+                IdClient = 5337911,
                 IdMaster = Masters.FirstOrDefault().Id,
                 Duration = TimeSpan.FromHours(1).Add(TimeSpan.FromMinutes(25)),
                 IsBusy = false,
@@ -64,7 +64,7 @@ namespace ServiceLocator.Entities
         new Record
         {
             Id = Guid.NewGuid(),
-            IdClient = Masters.FirstOrDefault().Id,
+            IdClient = 5337911,
             IdMaster = 58767238,
             Duration = TimeSpan.FromHours(1),
             IsBusy = false,
@@ -75,7 +75,7 @@ namespace ServiceLocator.Entities
         new Record
         {
             Id = Guid.NewGuid(),
-            IdClient = Masters.FirstOrDefault().Id,
+            IdClient = 5337911,
             IdMaster = 5226616,
             Duration = TimeSpan.FromHours(1),
             IsBusy = true,
@@ -87,7 +87,7 @@ namespace ServiceLocator.Entities
         {
             Id = Guid.NewGuid(),
 
-            IdClient = Masters.FirstOrDefault().Id,
+            IdClient = 5337911,
             IdMaster = 5226616,
             Duration = TimeSpan.FromHours(1).Add(TimeSpan.FromMinutes(25)),
             IsBusy = false,

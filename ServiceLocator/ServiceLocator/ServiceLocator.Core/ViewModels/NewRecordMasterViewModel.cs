@@ -161,13 +161,13 @@ namespace ServiceLocator.Core.ViewModels
                 RaisePropertyChanged(() => Photo);
             }
         }
-        public async void Init(int clientId, int recordId)
+        public async void Init(int clientId, string recordId)
         {
             _dataLoaderService = Mvx.Resolve<IDataLoaderService>();
             _profileService = Mvx.Resolve<IProfileService>();
-            if (recordId != -1)
+            if (!string.IsNullOrWhiteSpace(recordId))
             {
-                Record = _dataLoaderService.GetRecord(recordId);
+                Record = _dataLoaderService.GetRecord(Guid.Parse(recordId));
                 Client = await _profileService.GetUserById(Record.IdClient);
             }
             else if (clientId != -1)

@@ -61,7 +61,7 @@ namespace ServiceLocator.Core.IServices.Services
             return master;
         }
 
-        public Record GetRecord(int id)
+        public Record GetRecord(Guid id)
         {
             var record = new Record();
             record.IdMaster = 5337911;
@@ -70,12 +70,14 @@ namespace ServiceLocator.Core.IServices.Services
             record.Money = 100;
             record.Service = "Уменьшение вонючести";
             record.Time = DateTime.Now;
-            return record;
+            var t = Fakes.Records;
+            var r = t.Where(i => i.Id ==id).FirstOrDefault();
+            return r;
         }
 
         public string GetType(int id)
         {
-            return "Client";
+            return "Master";
         }
         public Client GetClient(int id)
         {

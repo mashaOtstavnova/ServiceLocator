@@ -815,5 +815,6 @@ C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\Ser
 C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Droid\bin\Debug\AndroidSegmentedControl.Droid.dll.mdb
 C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Droid\obj\Debug\android\assets\AndroidSegmentedControl.Droid.dll.mdb
 C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Droid\obj\Debug\res\layout\list_record_view.xml
+C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Droid\obj\Debug\res\layout\shedule_page_view.xml
 C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Droid\obj\Debug\ServiceLocator.Droid.dll.mdb
 C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Droid\bin\Debug\ServiceLocator.Droid.dll.mdb

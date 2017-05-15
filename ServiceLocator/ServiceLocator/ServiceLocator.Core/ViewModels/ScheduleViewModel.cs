@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using MvvmCross.Core.ViewModels;
+using MvvmCross.Platform;
 using ServiceLocator.Core.IServices;
 using ServiceLocator.Entities;
 
@@ -9,23 +11,19 @@ namespace ServiceLocator.Core.ViewModels
 {
     public class ScheduleViewModel : BaseViewModel
     {
-        private readonly IDataLoaderService _dataLoader;
-        private readonly IProfileService _profileService;
+        private  IDataLoaderService _dataLoader;
+        private  IProfileService _profileService;
         private List<Friend> _friends;
         private List<int> _masterIds;
         private ObservableCollection<RecordItem> _records;
         private ScheduleType _scheduleType;
+        private string _typeData;
+        private List<RecordItem> _selectedItems;
 
-        public ScheduleViewModel(IDataLoaderService dataLoaderService, IProfileService profileService)
+        public ScheduleViewModel()
         {
-            _profileService = profileService;
-            _dataLoader = dataLoaderService;
-            ScheduleType = ScheduleType.Free;
-            RecordItems = new ObservableCollection<RecordItem>();
 
-            //TODO: make logic from NavDrawer or Screen for one master
-            //if (если для одного и в др. сл. для всех)
-            LoadData();
+            ScheduleType = ScheduleType.Free;
         }
 
 
@@ -35,9 +33,9 @@ namespace ServiceLocator.Core.ViewModels
             set
             {
                 _scheduleType = value;
-               
+
                 RaisePropertyChanged(() => ScheduleType);
-                
+
             }
         }
 
@@ -50,9 +48,9 @@ namespace ServiceLocator.Core.ViewModels
                 RaisePropertyChanged(() => RecordItems);
             }
         }
-        
 
-        private async void LoadData()
+
+        private async void LoadDataAll()
         {
             await _profileService.GetFriends()
                 .ContinueWith(task =>
@@ -62,7 +60,16 @@ namespace ServiceLocator.Core.ViewModels
                     ReloadRecord(DateTime.Today);
                 });
         }
-
+        private async void LoadDataOne(int id)
+        {
+            await _profileService.GetFriends()
+                .ContinueWith(task =>
+                {
+                    _friends = task.Result.items;
+                    _masterIds = new List<int>(){id};
+                    ReloadRecord(DateTime.Today);
+                });
+        }
         public async void ReloadRecord(DateTime date)
         {
             var data = _dataLoader.GetRecords(date, _masterIds).ToList();
@@ -82,6 +89,7 @@ namespace ServiceLocator.Core.ViewModels
                         var master = await _profileService.GetUserById(item.IdMaster);
                         recordItem.NameMaster = $"{master.first_name} {master.last_name}";
                         recordItem.PhotoMaster = master.photo_100;
+                        recordItem.Id = item.Id;
                         recordItem.Time = item.Time.Date.ToString("hh:mm");
                         recordItems.Add(recordItem);
                     }
@@ -98,6 +106,7 @@ namespace ServiceLocator.Core.ViewModels
                         var master = await _profileService.GetUserById(item.IdMaster);
                         recordItem.NameMaster = $"{master.first_name} {master.last_name}";
                         recordItem.PhotoMaster = master.photo_100;
+                        recordItem.Id = item.Id;
                         recordItem.Time = item.Time.Date.ToString("hh:mm");
                         recordItems.Add(recordItem);
                     }
@@ -105,13 +114,50 @@ namespace ServiceLocator.Core.ViewModels
                     break;
             }
         }
-    }
+        public IMvxCommand OnItemSelectCommand
+        {
+            get { return new MvxCommand<RecordItem>(OnItemSelect); }
+        }
 
-    public class RecordItem
-    {
-        public string PhotoMaster { get; set; }
-        public string NameMaster { get; set; }
-        public string Time { get; set; }
-        public string Service { get; set; }
+        private void OnItemSelect(RecordItem obj)
+        {
+            ShowViewModel<RecordViewModel>(new { idRecord = obj.Id.ToString() });
+        }
+
+        public List<RecordItem> SelectedItems
+        {
+            get
+            {
+                if (_selectedItems == null)
+                    _selectedItems = new List<RecordItem>();
+                return _selectedItems;
+            }
+            set
+            {
+                _selectedItems = value;
+                RaisePropertyChanged(() => SelectedItems);
+            }
+        }
+        public void Init(int idMasters)
+        {
+            _dataLoader = Mvx.Resolve<IDataLoaderService>();
+            _profileService = Mvx.Resolve<IProfileService>();
+            RecordItems = new ObservableCollection<RecordItem>();
+            if (idMasters==-1)
+                LoadDataAll();
+            else
+            {
+                LoadDataOne(idMasters);
+            }
+        }
+
+        public class RecordItem
+        {
+            public string PhotoMaster { get; set; }
+            public string NameMaster { get; set; }
+            public string Time { get; set; }
+            public string Service { get; set; }
+            public Guid Id { get; set; }
+        }
     }
 }

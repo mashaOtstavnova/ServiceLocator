@@ -56,7 +56,7 @@
         android:divider="@null"
         android:choiceMode="multipleChoice"
         local:MvxItemTemplate="@layout/list_record_view"
-        local:MvxBind="ItemsSource RecordItems">
+        local:MvxBind="ItemsSource RecordItems; ItemClick OnItemSelectCommand; SelectedItems SelectedItems, Mode=OneWay">
       </MvxSelectableListView>
     </LinearLayout>
   </LinearLayout>

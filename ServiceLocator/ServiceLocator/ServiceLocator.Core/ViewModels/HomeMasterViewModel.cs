@@ -67,8 +67,6 @@ namespace ServiceLocator.Core.ViewModels
 
         public void ShowInfo()
         {
-           
-            ShowViewModel<RecordViewModel>(new { idRecord = 01 });
         }
 
         public void ShowMainPage()
@@ -87,11 +85,11 @@ namespace ServiceLocator.Core.ViewModels
         }
         public void ShowNewRecord()
         {
-            ShowViewModel<NewRecordMasterViewModel>(new { clientId = -1, recordId = -1 });
+            ShowViewModel<NewRecordMasterViewModel>(new { clientId = -1, recordId = "" });
         }
         public void ShowSchedule()
         {
-            ShowViewModel<ScheduleViewModel>();
+            ShowViewModel<ScheduleViewModel>(new { idMasters = -1 });
         }
         public void ShowBrowse()
         {

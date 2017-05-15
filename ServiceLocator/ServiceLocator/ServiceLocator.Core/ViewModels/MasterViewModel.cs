@@ -78,10 +78,7 @@ namespace ServiceLocator.Core.ViewModels
             set
             {
                 _contactsString = value;
-                if (_contactsString == "")
-                {
-                    _contactsString = "Нет контактов";
-                }
+
                 RaisePropertyChanged(() => ContactsString);
             }
         }
@@ -159,12 +156,11 @@ namespace ServiceLocator.Core.ViewModels
                     IsMy = false;
                     FullName = $"{value.first_name} {value.last_name}";
                     Bdate = $"{value.bdate}";
+                    HomePhone = $"{value.home_phone}";
+                    MobilePhone = $"{value.mobile_phone}";
                     ContactsString = (string.IsNullOrWhiteSpace(value.home_phone) || string.IsNullOrWhiteSpace(value.mobile_phone)) ? $"{value.home_phone } {value.mobile_phone }" : "Нет контактов";
                     IsPhone = (string.IsNullOrWhiteSpace(HomePhone) & string.IsNullOrWhiteSpace(MobilePhone)) ? false : true;
                     City = $"{value.city?.title}";
-                    HomePhone = $"{value.home_phone}";
-                    MobilePhone = $"{value.mobile_phone}";
-                   
                     Photo = value.photo_max_orig;
                 }
                 RaisePropertyChanged(() => Friend);
@@ -224,6 +220,15 @@ namespace ServiceLocator.Core.ViewModels
         public IMvxCommand AddNewRecordCommand
         {
             get { return new MvxCommand(AddNewRecord); }
+        }
+        public IMvxCommand SheduleCommand
+        {
+            get { return new MvxCommand(Shedule); }
+        }
+
+        private void Shedule()
+        {
+            ShowViewModel<ScheduleViewModel>(new { idMasters = UserId });
         }
 
         public bool IsMy

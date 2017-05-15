@@ -30,6 +30,7 @@ namespace ServiceLocator.Core.ViewModels
         private bool _isMy;
         private bool _isMaster;
         private bool _isClient;
+        private Guid _idRecord;
 
 
         public Record Record
@@ -233,22 +234,22 @@ namespace ServiceLocator.Core.ViewModels
         {
             if (IsMaster)
             {
-                ShowViewModel<NewRecordClientViewModel>(new { masterId =-1, recordId = 01 });
+                ShowViewModel<NewRecordMasterViewModel>(new { masterId =-1, recordId = _idRecord });
             }
             else if (IsClient)
             {
-                ShowViewModel<NewRecordMasterViewModel>(new { clientId = -1, recordId = 01 });
+                ShowViewModel<NewRecordClientViewModel>(new { clientId = -1, recordId = _idRecord });
             }
         }
 
-        public async void Init(int idRecord)
+        public async void Init(string idRecord)
         {
-           
+            _idRecord = Guid.Parse(idRecord);
             _dataLoaderService = Mvx.Resolve<IDataLoaderService>();
             _profileService = Mvx.Resolve<IProfileService>();
             try
             {
-                Record = _dataLoaderService.GetRecord(idRecord);
+                Record = _dataLoaderService.GetRecord(Guid.Parse(idRecord));
                 CurrentUser = await _profileService.GetUser();
                 MasterUser = await _profileService.GetUserById(IdMaster);
                 ClientUser = await _profileService.GetUserById(IdClient);

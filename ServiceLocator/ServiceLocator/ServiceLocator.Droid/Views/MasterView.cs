@@ -27,7 +27,8 @@ namespace ServiceLocator.Droid.Views
             SetSupportActionBar(toolbar);
             SupportActionBar.SetDisplayHomeAsUpEnabled(true);
             var callButton = FindViewById<ImageButton>(Resource.Id.button_open_call);
-            
+            var sheduleButton = FindViewById<Button>(Resource.Id.shedule_button);
+            sheduleButton.Click += OnButtonForShedule;
 
             var collapsingToolbar = FindViewById<CollapsingToolbarLayout>(Resource.Id.collapsing_toolbar);
 
@@ -64,6 +65,11 @@ namespace ServiceLocator.Droid.Views
             //{
             //    callButton.Visibility = ViewStates.Invisible;
             //}
+        }
+
+        private void OnButtonForShedule(object sender, EventArgs e)
+        {
+            ViewModel.SheduleCommand.Execute();
         }
 
         private void OnAddNewRecord(object sender, EventArgs e)

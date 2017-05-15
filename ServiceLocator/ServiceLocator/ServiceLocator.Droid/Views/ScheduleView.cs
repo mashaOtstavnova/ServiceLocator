@@ -28,12 +28,12 @@ namespace ServiceLocator.Droid.Views
             Title = ViewModel.Title;
             var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
             var tabFree = FindViewById<RadioButton>(Resource.Id.schedule_view_segment_free);
-            tabSelect = FindViewById<SegmentedGroup>(Resource.Id.schedule_view_segmentedControl);
+             tabSelect = FindViewById<SegmentedGroup>(Resource.Id.schedule_view_segmentedControl);
             var tabBusy = FindViewById<RadioButton>(Resource.Id.schedule_view_segment_busy);
             tabSelect.Check(Resource.Id.schedule_view_segment_free);
             SetSupportActionBar(toolbar);
             SupportActionBar.SetDisplayHomeAsUpEnabled(true);
-
+            _calendarDate = DateTime.Now;
             _calendar = FindViewById<CalendarView>(Resource.Id.schedule_view_calendar);
             _calendar.DateChange += CalendarOnDateChange;
 
@@ -47,6 +47,7 @@ namespace ServiceLocator.Droid.Views
 
         private void CalendarOnDateChange(object sender, CalendarView.DateChangeEventArgs e)
         {
+            tabSelect.Check(Resource.Id.schedule_view_segment_free);
             _calendarDate = new DateTime(e.Year, e.Month + 1, e.DayOfMonth);
             ViewModel.ReloadRecord(_calendarDate);
         }
@@ -66,7 +67,6 @@ namespace ServiceLocator.Droid.Views
         private void SegmentedControlOnCheckedChange(object sender, RadioGroup.CheckedChangeEventArgs e)
         {
 
-            tabSelect.Check(Resource.Id.schedule_view_segment_free);
             switch (e.CheckedId)
             {
                 case Resource.Id.schedule_view_segment_free:
