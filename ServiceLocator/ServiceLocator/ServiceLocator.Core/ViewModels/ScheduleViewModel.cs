@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Threading.Tasks;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Platform;
 using ServiceLocator.Core.IServices;
@@ -19,6 +20,8 @@ namespace ServiceLocator.Core.ViewModels
         private ScheduleType _scheduleType;
         private string _typeData;
         private List<RecordItem> _selectedItems;
+        private bool _isMaster;
+        private User _currentUser;
 
         public ScheduleViewModel()
         {
@@ -89,6 +92,7 @@ namespace ServiceLocator.Core.ViewModels
                         var master = await _profileService.GetUserById(item.IdMaster);
                         recordItem.NameMaster = $"{master.first_name} {master.last_name}";
                         recordItem.PhotoMaster = master.photo_100;
+                        recordItem.IsBusy = item.IsBusy;
                         recordItem.Id = item.Id;
                         recordItem.Time = item.Time.Date.ToString("hh:mm");
                         recordItems.Add(recordItem);
@@ -106,6 +110,7 @@ namespace ServiceLocator.Core.ViewModels
                         var master = await _profileService.GetUserById(item.IdMaster);
                         recordItem.NameMaster = $"{master.first_name} {master.last_name}";
                         recordItem.PhotoMaster = master.photo_100;
+                        recordItem.IsBusy = item.IsBusy;
                         recordItem.Id = item.Id;
                         recordItem.Time = item.Time.Date.ToString("hh:mm");
                         recordItems.Add(recordItem);
@@ -121,7 +126,22 @@ namespace ServiceLocator.Core.ViewModels
 
         private void OnItemSelect(RecordItem obj)
         {
-            ShowViewModel<RecordViewModel>(new { idRecord = obj.Id.ToString() });
+            if (!obj.IsBusy)
+            {
+                ShowViewModel<RecordViewModel>(new { idRecord = obj.Id.ToString() });
+            }
+            else
+            {
+                if (IsMaster)
+                {
+                    ShowViewModel<NewRecordMasterViewModel>(new { masterId = -1, recordId = obj.Id.ToString() });
+                }
+                else
+                {
+                    ShowViewModel<NewRecordClientViewModel>(new { clientId = -1, recordId  = obj.Id.ToString() });
+                }
+                
+            }
         }
 
         public List<RecordItem> SelectedItems
@@ -138,10 +158,11 @@ namespace ServiceLocator.Core.ViewModels
                 RaisePropertyChanged(() => SelectedItems);
             }
         }
-        public void Init(int idMasters)
+        public async Task Init(int idMasters)
         {
             _dataLoader = Mvx.Resolve<IDataLoaderService>();
             _profileService = Mvx.Resolve<IProfileService>();
+            CurrentUser = await _profileService.GetUser();
             RecordItems = new ObservableCollection<RecordItem>();
             if (idMasters==-1)
                 LoadDataAll();
@@ -151,9 +172,44 @@ namespace ServiceLocator.Core.ViewModels
             }
         }
 
+        public User CurrentUser
+        {
+            get => _currentUser;
+            set
+            {
+                _currentUser = value;
+                if (_currentUser!=null)
+                {
+                    var typeUser = _dataLoader.GetType(_currentUser.id);
+                    if (typeUser == "Master")
+                    {
+                        IsMaster = true;
+                    }
+                    else if (typeUser == "Client")
+                    {
+                        IsMaster = false;
+                    }
+
+                }
+                RaisePropertyChanged(() => CurrentUser);
+            }
+        }
+
+        public bool IsMaster
+        {
+
+            get => _isMaster;
+            set
+            {
+                _isMaster = value;
+                RaisePropertyChanged(() => IsMaster);
+            }
+        }
+
         public class RecordItem
         {
             public string PhotoMaster { get; set; }
+            public bool IsBusy { get; set; }
             public string NameMaster { get; set; }
             public string Time { get; set; }
             public string Service { get; set; }

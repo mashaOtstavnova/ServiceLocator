@@ -5,13 +5,18 @@ using System.Text;
 
 using Android.App;
 using Android.Content;
+using Android.Graphics;
 using Android.OS;
 using Android.Runtime;
+using Android.Support.Design.Widget;
 using Android.Views;
 using Android.Widget;
+using MvvmCross.Binding.BindingContext;
 using MvvmCross.Platform;
 using ServiceLocator.Core.IServices;
 using ServiceLocator.Core.ViewModels;
+
+using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace ServiceLocator.Droid.Views
 {
@@ -26,6 +31,19 @@ namespace ServiceLocator.Droid.Views
         protected override async void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
+
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+            var collapsingToolbar = FindViewById<CollapsingToolbarLayout>(Resource.Id.collapsing_toolbar);
+
+            collapsingToolbar.SetCollapsedTitleTextColor(Color.White);
+            collapsingToolbar.SetExpandedTitleColor(Color.White);
+            var set = this.CreateBindingSet<NewRecordClientView, NewRecordClientViewModel>();
+            set.Bind(collapsingToolbar).For(ctb => ctb.Title).To(vm => vm.NameMaster);
+            this.CreateBinding().For("Title").To<NewRecordClientViewModel>(vm => vm.NameMaster).Apply();
+            set.Apply();
+
             var autoCompleteOptions = new String[]
                 {"Hello", "Hey", "Heja", "Hi", "Hola", "Bonjour", "Gday", "Goodbye", "Sayonara", "Farewell", "Adios"};
             // var listName = ViewModel.Friends.Select(t=>t.Title);

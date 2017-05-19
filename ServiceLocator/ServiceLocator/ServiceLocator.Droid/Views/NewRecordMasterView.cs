@@ -23,6 +23,7 @@ using System.Text;
 
 using Android.App;
 using Android.Content;
+using Android.Graphics;
 using Android.OS;
 using Android.Runtime;
 using Android.Support.Design.Widget;
@@ -53,6 +54,9 @@ namespace ServiceLocator.Droid.Views
             SetSupportActionBar(toolbar);
             SupportActionBar.SetDisplayHomeAsUpEnabled(true);
             var collapsingToolbar = FindViewById<CollapsingToolbarLayout>(Resource.Id.collapsing_toolbar);
+
+            collapsingToolbar.SetCollapsedTitleTextColor(Color.White);
+            collapsingToolbar.SetExpandedTitleColor(Color.White);
             var set = this.CreateBindingSet<NewRecordMasterView, NewRecordMasterViewModel>();
             set.Bind(collapsingToolbar).For(ctb => ctb.Title).To(vm => vm.NameClient);
             this.CreateBinding().For("Title").To<NewRecordMasterViewModel>(vm => vm.NameClient).Apply();

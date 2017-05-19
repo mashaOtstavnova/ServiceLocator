@@ -77,7 +77,7 @@ namespace ServiceLocator.Core.IServices.Services
 
         public string GetType(int id)
         {
-            return "Master";
+            return "Client";
         }
         public Client GetClient(int id)
         {
