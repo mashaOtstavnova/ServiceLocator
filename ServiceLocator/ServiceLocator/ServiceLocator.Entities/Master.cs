@@ -30,7 +30,12 @@ namespace ServiceLocator.Entities
     {
     }
 
-
+    public class SheduleDay
+    {
+        public string Day { get; set; }
+        public string StartDay { get; set; }
+        public string EndDay { get; set; }
+    }
     public class Record
     {
         public bool IsBusy { get; set; }

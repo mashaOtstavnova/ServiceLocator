@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="320dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp">
-  <Button
-    android:layout_alignParentBottom="true"
-    android:id="@+id/category_dialog_closeButton"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="Сохранить"
-    style="?android:attr/borderlessButtonStyle"
-    android:background="@null"
-    android:gravity="right|center_vertical"
-    android:layout_marginRight="10dp"
-    android:textColor="@color/button"
-    android:textStyle="bold" />
-  <ScrollView
-    android:layout_alignParentTop="true"
-    android:layout_above="@id/category_dialog_closeButton"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
-    <LinearLayout
-      android:id="@+id/category_dialog_main"
-      android:orientation="vertical"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginLeft="5dp"
-      android:layout_marginRight="5dp"
-      android:layout_marginTop="5dp"
-      android:layout_marginBottom="5dp" />
-  </ScrollView>
+    android:layout_height="320dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/category_dialog_closeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сохранить"
+        style="?android:attr/borderlessButtonStyle"
+        android:background="@null"
+        android:gravity="right|center_vertical"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/button"
+        android:textStyle="bold" />
+    <ScrollView
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/category_dialog_closeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/category_dialog_main"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+    </ScrollView>
 </RelativeLayout>

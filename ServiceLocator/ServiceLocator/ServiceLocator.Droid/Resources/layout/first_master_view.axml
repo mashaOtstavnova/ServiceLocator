@@ -118,6 +118,23 @@
                     android:ems="10" />
             </android.support.design.widget.TextInputLayout>
             <Button
+                android:id="@+id/schedule"
+                android:layout_height="40dp"
+                android:drawableLeft="@drawable/ic_date"
+                android:drawableRight="@drawable/ic_keyboard_arrow"
+                android:layout_width="match_parent"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="left|center_vertical"
+                android:text="Расписание"
+                android:textAllCaps="false"
+                android:textSize="17dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/secondaryText"
+                android:background="@drawable/linearBorder" />
+            <Button
                 android:id="@+id/save_button"
                 android:layout_height="50dp"
                 android:layout_width="match_parent"

@@ -20,6 +20,7 @@ namespace ServiceLocator.Droid.Views
         private Button _buttonForCategory;
         private ImageLoader _imageLoader;
         private Button _saveButton;
+        private Button _buttonForShedule;
         protected override int LayoutResource => Resource.Layout.first_master_view;
 
         protected override async void OnCreate(Bundle bundle)
@@ -57,7 +58,9 @@ namespace ServiceLocator.Droid.Views
                 var m = ex.Message;
             }
             _buttonForCategory = (Button) FindViewById(Resource.Id.category);
+            _buttonForShedule = (Button) FindViewById(Resource.Id.schedule);
             _buttonForCategory.Click += OnCategoryClick;
+            _buttonForShedule.Click += OnSheduleClick;
             _saveButton = FindViewById<Button>(Resource.Id.save_button);
             _saveButton.Click += SaveButtonOnClick;
         }
@@ -74,7 +77,11 @@ namespace ServiceLocator.Droid.Views
         {
             ViewModel.SaveInfoCommand.Execute();
         }
-
+        private void OnSheduleClick(object sender, EventArgs eventArgs)
+        {
+            var dialog4 = new SheduleServiceDialog(ViewModel);
+            dialog4.Show(SupportFragmentManager, "PrintedAndNotServedDialog");
+        }
         private void OnCategoryClick(object sender, EventArgs eventArgs)
         {
             var dialog4 = new CategoryServiceDialog(ViewModel);

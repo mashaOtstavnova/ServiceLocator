@@ -1,11 +1,14 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using MvvmCross.Core.ViewModels;
+using ServiceLocator.Entities;
 
 namespace ServiceLocator.Core.ViewModels
 {
     public class FirstMasterViewModel : BaseViewModel
     {
         private List<string> _selectedCategories;
+        public List<SheduleDay> Shedule;
 
         public FirstMasterViewModel()
         {
@@ -43,4 +46,6 @@ namespace ServiceLocator.Core.ViewModels
             //_dataLoader.SetTypeUser();
         }
     }
+
+    
 }

@@ -30,7 +30,16 @@ namespace ServiceLocator.Entities
             Photo,
             Other
         };
-
+        public static List<string> DayOfWeekList = new List<string>
+        {
+            "ПН",
+            "ВТ",
+            "СР",
+            "ЧТ",
+            "ПТ",
+            "СБ",
+            "ВС"
+        };
         public static string IT => "IT, интернет, телеком";
         public static string Household => "Бытовые услуги";
         public static string Business => "Деловые услуги";

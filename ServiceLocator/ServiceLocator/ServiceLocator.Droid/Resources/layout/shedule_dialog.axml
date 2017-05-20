@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/category_dialog_closeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сохранить"
+        style="?android:attr/borderlessButtonStyle"
+        android:background="@null"
+        android:gravity="right|center_vertical"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/button"
+        android:textStyle="bold" />
+    <ScrollView
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/category_dialog_closeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/category_dialog_main"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <CheckBox
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/checkbox_pn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ПН"
+                    android:textSize="17dp"
+                    android:textColor="#ff000000" />
+              
+                <TextView
+                    android:layout_toRightOf="@id/checkbox_pn"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:text="C"
+                    android:id="@+id/checkbox_pn_s_text"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="0.0dp"
+                    android:paddingLeft="0dp"
+                    android:textSize="18dp"
+                    android:paddingTop="5dp"
+                    android:textColor="#ff010404" />
+                <Button
+                    android:layout_toRightOf="@id/checkbox_pn_s_text"
+                    android:id="@+id/checkbox_pn_s"
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/button"
+                    android:text="9:00"
+                    android:layout_marginLeft="5dp"
+                    
+                  android:background="@null"
+                    android:drawable="@drawable/ic_keyboard_arrow" />
+                <TextView
+                    android:layout_toRightOf="@id/checkbox_pn_s"
+                    android:id="@+id/checkbox_pn_po_text"
+                    android:layout_height="match_parent"
+                    android:text="по"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="0.0dp"
+                    android:textSize="17dp"
+                    android:layout_width="20dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#ff000000" />
+                <Button
+                  android:layout_toRightOf="@id/checkbox_pn_po_text"
+                  android:id="@+id/checkbox_pn_po"
+                  
+                  android:background="@null"
+                  android:layout_width="50dp"
+                  android:layout_height="35dp"
+                  android:drawable="@drawable/ic_keyboard_arrow"
+                  android:gravity="center_vertical"
+                  android:textColor="@color/button"
+                  android:layout_marginLeft="8dp"
+                  android:text="18:00" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <CheckBox
+                  
+                  android:layout_alignParentLeft="true"
+                    android:id="@+id/checkbox_vt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ВТ"
+                    android:textSize="18dp"
+                    android:textColor="#ff000000" />
+                <TextView
+                  
+                  android:layout_toRightOf="@id/checkbox_vt"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:text="C"
+                  android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="0.0dp"
+                    android:id="@+id/checkbox_vt_s_text"
+                    android:paddingLeft="0dp"
+                    android:textSize="17dp"
+                    android:paddingTop="5dp"
+                    android:textColor="#ff010404" />
+                <Button
+                  android:background="@null"
+                  
+                  android:layout_toRightOf="@id/checkbox_vt_s_text"
+                    android:id="@+id/checkbox_vt_s"
+                  android:layout_width="50dp"
+                   
+                  android:layout_height="35dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/button"
+                  android:text="9:00"
+                    android:layout_marginLeft="5dp"
+                    android:drawable="@drawable/ic_keyboard_arrow" />
+                <TextView
+                  
+                  android:layout_toRightOf="@id/checkbox_vt_s"
+                  android:id="@+id/checkbox_vt_po_text"
+                    android:layout_height="match_parent"
+                    android:text="по"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="0.0dp"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="17dp"
+                    android:layout_width="20dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#ff000000" />
+                <Button
+                  android:background="@null"
+                    android:id="@+id/checkbox_vt_po"
+                    
+                  android:layout_toRightOf="@id/checkbox_vt_po_text"
+                  android:layout_width="50dp"
+                  android:layout_height="35dp"
+                    android:drawable="@drawable/ic_keyboard_arrow"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/button"
+                  android:text="18:00"
+                    android:layout_marginLeft="5dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <CheckBox
+                  
+                  android:layout_alignParentLeft="true"
+                    android:id="@+id/checkbox_sr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="СР"
+                    android:textSize="18dp"
+                    android:textColor="#ff000000" />
+                <TextView
+                  
+                  android:layout_toRightOf="@id/checkbox_sr"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:text="C"
+                  android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="0.0dp"
+                    android:paddingLeft="0dp"
+                    android:textSize="17dp"
+                    android:paddingTop="5dp"
+                    android:textColor="#ff010404" 
+              
+                  android:id="@+id/checkbox_sr_s_text"/>
+                <Button
+                  android:background="@null"
+                  android:layout_toRightOf="@id/checkbox_sr_s_text"
+                    android:id="@+id/checkbox_sr_s"
+                  android:layout_width="50dp"
+                  android:layout_height="35dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/button"
+                  android:text="9:00"
+                    android:layout_marginLeft="5dp"
+                    android:drawable="@drawable/ic_keyboard_arrow" />
+                <TextView
+                  
+                  android:layout_toRightOf="@id/checkbox_sr_s"
+                  android:id="@+id/checkbox_sr_po_text"
+                    android:layout_height="match_parent"
+                    android:text="по"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="0.0dp"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="17dp"
+                    android:layout_width="20dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#ff000000" />
+                <Button
+                  android:background="@null"
+                    android:id="@+id/checkbox_sr_po"
+                    
+                  android:layout_toRightOf="@id/checkbox_sr_po_text"
+                  android:layout_width="50dp"
+                  android:layout_height="35dp"
+                    android:drawable="@drawable/ic_keyboard_arrow"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/button"
+                  android:text="18:00"
+                    android:layout_marginLeft="5dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <CheckBox
+                  
+                  android:layout_alignParentLeft="true"
+                    android:id="@+id/checkbox_che"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ЧТ"
+                    android:textSize="18dp"
+                    android:textColor="#ff000000" />
+                <TextView
+                  
+                  android:id="@+id/checkbox_che_s_text"
+                  android:layout_toRightOf="@id/checkbox_che"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:text="C"
+                  android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="0.0dp"
+                    android:paddingLeft="0dp"
+                    android:textSize="17dp"
+                    android:paddingTop="5dp"
+                    android:textColor="#ff010404" />
+                <Button
+                  android:background="@null"
+                  android:layout_toRightOf="@id/checkbox_che_s_text"
+                    android:id="@+id/checkbox_che_s"
+                  android:layout_width="50dp"
+                  android:layout_height="35dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/button"
+                  android:text="9:00"
+                    android:layout_marginLeft="5dp"
+                    android:drawable="@drawable/ic_keyboard_arrow" />
+                <TextView
+                  
+                  android:layout_toRightOf="@id/checkbox_che_s"
+                  android:id="@+id/checkbox_che_po_text"
+                    android:layout_height="match_parent"
+                    android:text="по"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="0.0dp"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="17dp"
+                    android:layout_width="20dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#ff000000" />
+                <Button
+                  android:background="@null"
+                    android:id="@+id/checkbox_che_po"
+                    
+                  android:layout_toRightOf="@id/checkbox_che_po_text"
+                  android:layout_width="50dp"
+                  android:layout_height="35dp"
+                    android:drawable="@drawable/ic_keyboard_arrow"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/button"
+                  android:text="18:00"
+                    android:layout_marginLeft="5dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <CheckBox
+                  
+                  android:layout_alignParentLeft="true"
+                    android:id="@+id/checkbox_pt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ПТ"
+                    android:textSize="18dp"
+                    android:textColor="#ff000000" />
+                <TextView
+                  
+                  android:id="@+id/checkbox_pt_s_text"
+                  android:layout_toRightOf="@id/checkbox_pt"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:text="C"
+                  android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="0.0dp"
+                    android:paddingLeft="0dp"
+                    android:textSize="17dp"
+                    android:paddingTop="5dp"
+                    android:textColor="#ff010404" />
+                <Button
+                  android:background="@null"
+                  android:layout_toRightOf="@id/checkbox_pt_s_text"
+                    android:id="@+id/checkbox_pt_s" 
+                    android:layout_width="50dp"
+                  android:layout_height="35dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/button"
+                  android:text="9:00"
+                    android:layout_marginLeft="5dp"
+                    android:drawable="@drawable/ic_keyboard_arrow" />
+                <TextView
+                  
+                  android:layout_toRightOf="@id/checkbox_pt_s"
+                  android:id="@+id/checkbox_pt_po_text"
+                    android:layout_height="match_parent"
+                    android:text="по"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="0.0dp"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="17dp"
+                    android:layout_width="20dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#ff000000" />
+                <Button
+                  android:background="@null"
+                    android:id="@+id/checkbox_pt_po"
+                    
+                  android:layout_toRightOf="@id/checkbox_pt_po_text"
+                  android:layout_width="50dp"
+                  android:layout_height="35dp"
+                    android:drawable="@drawable/ic_keyboard_arrow"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/button"
+                  android:text="18:00"
+                    android:layout_marginLeft="5dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <CheckBox
+                  
+                  android:layout_alignParentLeft="true"
+                    android:id="@+id/checkbox_sb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="СБ"
+                    android:textSize="18dp"
+                    android:textColor="#ff000000" />
+                <TextView
+                  
+                  android:id="@+id/checkbox_sb_s_text"
+                  android:layout_toRightOf="@id/checkbox_sb"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:text="C"
+                  android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="0.0dp"
+                    android:paddingLeft="0dp"
+                    android:textSize="17dp"
+                    android:paddingTop="5dp"
+                    android:textColor="#ff010404" />
+                <Button
+                  android:background="@null"
+                  android:layout_toRightOf="@id/checkbox_sb_s_text"
+                    android:id="@+id/checkbox_sb_s"
+                  android:layout_width="50dp"
+                  android:layout_height="35dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/button"
+                  android:text="9:00"
+                    android:layout_marginLeft="5dp"
+                    android:drawable="@drawable/ic_keyboard_arrow" />
+                <TextView
+                  
+                  android:layout_toRightOf="@id/checkbox_sb_s"
+                  android:id="@+id/checkbox_sb_po_text"
+                    android:layout_height="match_parent"
+                    android:text="по"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="0.0dp"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="17dp"
+                    android:layout_width="20dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#ff000000" />
+                <Button
+                  android:background="@null"
+                    android:id="@+id/checkbox_sb_po"
+                    
+                  android:layout_toRightOf="@id/checkbox_sb_po_text"
+                  android:layout_width="50dp"
+                  android:layout_height="35dp"
+                    android:drawable="@drawable/ic_keyboard_arrow"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/button"
+                  android:text="18:00"
+                    android:layout_marginLeft="5dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <CheckBox
+                  
+                  android:layout_alignParentLeft="true"
+                    android:id="@+id/checkbox_vs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ВС"
+                    android:textSize="18dp"
+                    android:textColor="#ff000000" />
+                <TextView
+                  
+                  android:id="@+id/checkbox_vs_s_text"
+                  android:layout_toRightOf="@id/checkbox_vs"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:text="C"
+                  android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="0.0dp"
+                    android:paddingLeft="0dp"
+                    android:textSize="17dp"
+                    android:paddingTop="5dp"
+                    android:textColor="#ff010404" />
+                <Button
+                  android:background="@null"
+                  android:layout_toRightOf="@id/checkbox_vs_s_text"
+                    android:id="@+id/checkbox_vs_s"
+                   
+                  android:layout_width="50dp"
+                  android:layout_height="35dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/button"
+                  android:text="9:00"
+                    android:layout_marginLeft="5dp"
+                    android:drawable="@drawable/ic_keyboard_arrow" />
+                <TextView
+                  
+                  android:layout_toRightOf="@id/checkbox_vs_s"
+                  android:id="@+id/checkbox_vs_po_text"
+                    android:layout_height="match_parent"
+                    android:text="по"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="0.0dp"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="17dp"
+                    android:layout_width="20dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#ff000000" />
+                <Button
+                  android:background="@null"
+                    android:id="@+id/checkbox_vs_po"
+                   
+                  android:layout_toRightOf="@id/checkbox_vs_po_text"
+                  android:layout_width="50dp"
+                  android:layout_height="35dp"
+                    android:drawable="@drawable/ic_keyboard_arrow"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/button"
+                  android:text="18:00"
+                    android:layout_marginLeft="5dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

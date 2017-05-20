@@ -74,6 +74,10 @@ ServiceLocator.Droid.Views.Dialogs.CategoryServiceDialog, ServiceLocator.Droid;m
 ServiceLocator.Droid.Views.Dialogs.CategoryServiceDialog, ServiceLocator.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5d858ccb213f1b7baa8a38afe447463c3.CategoryServiceDialog
 ServiceLocator.Droid.Views.Dialogs.CategoryServiceDialog;md5d858ccb213f1b7baa8a38afe447463c3.CategoryServiceDialog
 servicelocator.droid.views.dialogs.CategoryServiceDialog;md5d858ccb213f1b7baa8a38afe447463c3.CategoryServiceDialog
+ServiceLocator.Droid.Views.Dialogs.SheduleServiceDialog, ServiceLocator.Droid;md5d858ccb213f1b7baa8a38afe447463c3.SheduleServiceDialog
+ServiceLocator.Droid.Views.Dialogs.SheduleServiceDialog, ServiceLocator.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5d858ccb213f1b7baa8a38afe447463c3.SheduleServiceDialog
+ServiceLocator.Droid.Views.Dialogs.SheduleServiceDialog;md5d858ccb213f1b7baa8a38afe447463c3.SheduleServiceDialog
+servicelocator.droid.views.dialogs.SheduleServiceDialog;md5d858ccb213f1b7baa8a38afe447463c3.SheduleServiceDialog
 MvvmCross.Binding.Droid.Views.MvxBaseListItemView, MvvmCross.Binding.Droid;md5bf0126c95bf9fc0db24c02c9adb4cfa7.MvxBaseListItemView
 MvvmCross.Binding.Droid.Views.MvxBaseListItemView, MvvmCross.Binding.Droid, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null;md5bf0126c95bf9fc0db24c02c9adb4cfa7.MvxBaseListItemView
 MvvmCross.Binding.Droid.Views.MvxBaseListItemView;md5bf0126c95bf9fc0db24c02c9adb4cfa7.MvxBaseListItemView
