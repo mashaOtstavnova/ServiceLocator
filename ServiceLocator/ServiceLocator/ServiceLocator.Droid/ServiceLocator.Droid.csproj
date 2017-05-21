@@ -59,6 +59,12 @@
     <Reference Include="AndroidSegmentedControl.Droid, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\AndroidSegmentedControl.Droid.Binding.1.0.2\lib\MonoAndroid\AndroidSegmentedControl.Droid.dll</HintPath>
     </Reference>
+    <Reference Include="GCM.Client">
+      <HintPath>..\..\Components\GCMClient-1.0\lib\android\GCM.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Messaging.Android">
+      <HintPath>..\..\Components\azure-messaging-1.1.5.6\lib\android\Microsoft.WindowsAzure.Messaging.Android.dll</HintPath>
+    </Reference>
     <Reference Include="Mono.Android" />
     <Reference Include="Mono.Android.Export" />
     <Reference Include="mscorlib" />
@@ -199,6 +205,7 @@
     <Compile Include="Extensions\UIExtensions.cs" />
     <Compile Include="Fragments\FriendsAllFragment.cs" />
     <Compile Include="Fragments\FriendsMasterFragment.cs" />
+    <Compile Include="GcmBroadcastReceiver.cs" />
     <Compile Include="helpers\Conventers.cs" />
     <Compile Include="LinkerPleaseInclude.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />

@@ -3217,9 +3217,9 @@ containing a value of this type.
         public static final int nav_menu_masters=0x7f0d0001;
     }
     public static final class string {
-        public static final int ApplicationName=0x7f050042;
-        public static final int Hello=0x7f050040;
-        public static final int Navigation=0x7f050041;
+        public static final int ApplicationName=0x7f050043;
+        public static final int Hello=0x7f050041;
+        public static final int Navigation=0x7f050042;
         public static final int abc_action_bar_home_description=0x7f05001f;
         public static final int abc_action_bar_home_description_format=0x7f050020;
         public static final int abc_action_bar_home_subtitle_description_format=0x7f050021;
@@ -3239,7 +3239,7 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with=0x7f05002f;
         public static final int abc_shareactionprovider_share_with_application=0x7f050030;
         public static final int abc_toolbar_collapse_description=0x7f050031;
-        public static final int app_name=0x7f05003f;
+        public static final int app_name=0x7f050040;
         public static final int appbar_scrolling_view_behavior=0x7f050033;
         /**  Brand name for Facebook [DO NOT TRANSLATE] 
          */
@@ -3351,6 +3351,7 @@ containing a value of this type.
         public static final int common_signin_button_text_long=0x7f05001e;
         public static final int fab_scroll_shrink_grow_autohide_behavior=0x7f05003d;
         public static final int fab_scroll_translation_autohide_behavior=0x7f05003e;
+        public static final int library_name=0x7f05003f;
         public static final int status_bar_notification_info_overflow=0x7f050032;
         public static final int vk_enter_captcha_text=0x7f050036;
         public static final int vk_name=0x7f050037;

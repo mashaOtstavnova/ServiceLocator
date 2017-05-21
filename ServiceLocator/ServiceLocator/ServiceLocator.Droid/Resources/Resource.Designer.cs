@@ -26,6 +26,7 @@ namespace ServiceLocator.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::Gcm.Client.Resource.String.library_name = global::ServiceLocator.Droid.Resource.String.library_name;
 			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxBind = global::ServiceLocator.Droid.Resource.Attribute.MvxBind;
 			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxDropDownItemTemplate = global::ServiceLocator.Droid.Resource.Attribute.MvxDropDownItemTemplate;
 			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxGroupItemTemplate = global::ServiceLocator.Droid.Resource.Attribute.MvxGroupItemTemplate;
@@ -5187,14 +5188,14 @@ namespace ServiceLocator.Droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f050042
-			public const int ApplicationName = 2131034178;
-			
-			// aapt resource value: 0x7f050040
-			public const int Hello = 2131034176;
+			// aapt resource value: 0x7f050043
+			public const int ApplicationName = 2131034179;
 			
 			// aapt resource value: 0x7f050041
-			public const int Navigation = 2131034177;
+			public const int Hello = 2131034177;
+			
+			// aapt resource value: 0x7f050042
+			public const int Navigation = 2131034178;
 			
 			// aapt resource value: 0x7f05001f
 			public const int abc_action_bar_home_description = 2131034143;
@@ -5253,8 +5254,8 @@ namespace ServiceLocator.Droid
 			// aapt resource value: 0x7f050031
 			public const int abc_toolbar_collapse_description = 2131034161;
 			
-			// aapt resource value: 0x7f05003f
-			public const int app_name = 2131034175;
+			// aapt resource value: 0x7f050040
+			public const int app_name = 2131034176;
 			
 			// aapt resource value: 0x7f050033
 			public const int appbar_scrolling_view_behavior = 2131034163;
@@ -5363,6 +5364,9 @@ namespace ServiceLocator.Droid
 			
 			// aapt resource value: 0x7f05003e
 			public const int fab_scroll_translation_autohide_behavior = 2131034174;
+			
+			// aapt resource value: 0x7f05003f
+			public const int library_name = 2131034175;
 			
 			// aapt resource value: 0x7f050032
 			public const int status_bar_notification_info_overflow = 2131034162;

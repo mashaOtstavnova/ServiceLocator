@@ -100,6 +100,8 @@ class MonoPackageManager_Resources {
 		/* We need to ensure that "ServiceLocator.Droid.dll" comes first in this list. */
 		"ServiceLocator.Droid.dll",
 		"AndroidSegmentedControl.Droid.dll",
+		"GCM.Client.dll",
+		"Microsoft.WindowsAzure.Messaging.Android.dll",
 		"MvvmCross.Binding.dll",
 		"MvvmCross.Binding.Droid.dll",
 		"MvvmCross.Core.dll",

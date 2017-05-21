@@ -1,3 +1,11 @@
+ServiceLocator.Droid.GcmBroadcastReceiver, ServiceLocator.Droid;md5125ebd17ef9509e4cbe1fe290f2647c9.GcmBroadcastReceiver
+ServiceLocator.Droid.GcmBroadcastReceiver, ServiceLocator.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5125ebd17ef9509e4cbe1fe290f2647c9.GcmBroadcastReceiver
+ServiceLocator.Droid.GcmBroadcastReceiver;md5125ebd17ef9509e4cbe1fe290f2647c9.GcmBroadcastReceiver
+servicelocator.droid.GcmBroadcastReceiver;md5125ebd17ef9509e4cbe1fe290f2647c9.GcmBroadcastReceiver
+ServiceLocator.Droid.GcmService, ServiceLocator.Droid;md5125ebd17ef9509e4cbe1fe290f2647c9.GcmService
+ServiceLocator.Droid.GcmService, ServiceLocator.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5125ebd17ef9509e4cbe1fe290f2647c9.GcmService
+ServiceLocator.Droid.GcmService;md5125ebd17ef9509e4cbe1fe290f2647c9.GcmService
+servicelocator.droid.GcmService;md5125ebd17ef9509e4cbe1fe290f2647c9.GcmService
 ServiceLocator.Droid.ServiceLocatorApplication, ServiceLocator.Droid;otstavnova.ServiceLocator.ServiceLocator
 ServiceLocator.Droid.ServiceLocatorApplication, ServiceLocator.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;otstavnova.ServiceLocator.ServiceLocator
 ServiceLocator.Droid.ServiceLocatorApplication;otstavnova.ServiceLocator.ServiceLocator
@@ -90,6 +98,22 @@ ServiceLocator.Droid.Views.Dialogs.SheduleServiceDialog, ServiceLocator.Droid;md
 ServiceLocator.Droid.Views.Dialogs.SheduleServiceDialog, ServiceLocator.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5d858ccb213f1b7baa8a38afe447463c3.SheduleServiceDialog
 ServiceLocator.Droid.Views.Dialogs.SheduleServiceDialog;md5d858ccb213f1b7baa8a38afe447463c3.SheduleServiceDialog
 servicelocator.droid.views.dialogs.SheduleServiceDialog;md5d858ccb213f1b7baa8a38afe447463c3.SheduleServiceDialog
+Gcm.Client.GcmBroadcastReceiverBase`1, GCM.Client;md5214eafb7e7b3b7fcc363a68a6358563f.GcmBroadcastReceiverBase_1
+Gcm.Client.GcmBroadcastReceiverBase`1, GCM.Client, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null;md5214eafb7e7b3b7fcc363a68a6358563f.GcmBroadcastReceiverBase_1
+Gcm.Client.GcmBroadcastReceiverBase`1;md5214eafb7e7b3b7fcc363a68a6358563f.GcmBroadcastReceiverBase_1
+gcm.client.GcmBroadcastReceiverBase_1;md5214eafb7e7b3b7fcc363a68a6358563f.GcmBroadcastReceiverBase_1
+Gcm.Client.GcmServiceBase, GCM.Client;md5214eafb7e7b3b7fcc363a68a6358563f.GcmServiceBase
+Gcm.Client.GcmServiceBase, GCM.Client, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null;md5214eafb7e7b3b7fcc363a68a6358563f.GcmServiceBase
+Gcm.Client.GcmServiceBase;md5214eafb7e7b3b7fcc363a68a6358563f.GcmServiceBase
+gcm.client.GcmServiceBase;md5214eafb7e7b3b7fcc363a68a6358563f.GcmServiceBase
+Gcm.GcmBroadcastReceiverBase`1, Microsoft.WindowsAzure.Messaging.Android;md5595da4d4e7cb22fe6af1e179e7257f69.GcmBroadcastReceiverBase_1
+Gcm.GcmBroadcastReceiverBase`1, Microsoft.WindowsAzure.Messaging.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5595da4d4e7cb22fe6af1e179e7257f69.GcmBroadcastReceiverBase_1
+Gcm.GcmBroadcastReceiverBase`1;md5595da4d4e7cb22fe6af1e179e7257f69.GcmBroadcastReceiverBase_1
+gcm.GcmBroadcastReceiverBase_1;md5595da4d4e7cb22fe6af1e179e7257f69.GcmBroadcastReceiverBase_1
+Gcm.GcmServiceBase, Microsoft.WindowsAzure.Messaging.Android;md5595da4d4e7cb22fe6af1e179e7257f69.GcmServiceBase
+Gcm.GcmServiceBase, Microsoft.WindowsAzure.Messaging.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5595da4d4e7cb22fe6af1e179e7257f69.GcmServiceBase
+Gcm.GcmServiceBase;md5595da4d4e7cb22fe6af1e179e7257f69.GcmServiceBase
+gcm.GcmServiceBase;md5595da4d4e7cb22fe6af1e179e7257f69.GcmServiceBase
 MvvmCross.Binding.Droid.Views.MvxBaseListItemView, MvvmCross.Binding.Droid;md5bf0126c95bf9fc0db24c02c9adb4cfa7.MvxBaseListItemView
 MvvmCross.Binding.Droid.Views.MvxBaseListItemView, MvvmCross.Binding.Droid, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null;md5bf0126c95bf9fc0db24c02c9adb4cfa7.MvxBaseListItemView
 MvvmCross.Binding.Droid.Views.MvxBaseListItemView;md5bf0126c95bf9fc0db24c02c9adb4cfa7.MvxBaseListItemView
