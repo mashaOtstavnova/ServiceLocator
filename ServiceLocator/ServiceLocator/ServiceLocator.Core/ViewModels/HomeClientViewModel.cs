@@ -88,7 +88,7 @@ namespace ServiceLocator.Core.ViewModels
         }
         public void ShowNewRecord()
         {
-            ShowViewModel<NewRecordClientViewModel>();
+            ShowViewModel<NewRecordClientViewModel>(new { masterId = -1, recordId ="" });
         }
 
         public void ShowBrowse()

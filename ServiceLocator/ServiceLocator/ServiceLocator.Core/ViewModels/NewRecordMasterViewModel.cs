@@ -1,28 +1,43 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Platform;
+using MvvmCross.Plugins.Messenger;
 using ServiceLocator.Core.IServices;
 using ServiceLocator.Entities;
 
 namespace ServiceLocator.Core.ViewModels
 {
-    public class NewRecordMasterViewModel:BaseViewModel
+    public class NewRecordMasterViewModel : BaseViewModel
     {
-
-        public string _houre = "-1";
-        public string _minute= "-1";
-        public string _dateString= "";
-        public string _nameClient= "";
-        public DateTime _date= new DateTime();
-        private int _duration;
-        private decimal _money;
-        private string _service;
         private User _client;
+
+        private string _currentTextHint;
+        private IDataLoaderService _dataLoaderService;
+        public DateTime _date;
+        public string _dateString = "";
+        private int _duration;
+        private int _idClient;
+        private List<FriendItem> _items;
+        public string _minute = "-1";
+        private decimal _money;
+        public string _nameClient = "";
+        private string _photo;
+        private IProfileService _profileService;
+        private Record _record;
+        private string _searchTerm;
+        private object _selectedObject;
+        private string _service;
+        private string _timeString;
+
+        public string Houre = "-1";
+
+        public NewRecordMasterViewModel()
+        {
+            Items = new List<FriendItem>();
+        }
 
         public string Minute
         {
@@ -34,6 +49,7 @@ namespace ServiceLocator.Core.ViewModels
                 RaisePropertyChanged(() => TimeString);
             }
         }
+
         public decimal Money
         {
             get => _money;
@@ -43,16 +59,18 @@ namespace ServiceLocator.Core.ViewModels
                 RaisePropertyChanged(() => Money);
             }
         }
+
         public string Hour
         {
-            get => _houre;
+            get => Houre;
             set
             {
-                _houre = value;
+                Houre = value;
                 RaisePropertyChanged(() => Hour);
                 RaisePropertyChanged(() => TimeString);
             }
         }
+
         public DateTime Date
         {
             get => _date;
@@ -64,6 +82,7 @@ namespace ServiceLocator.Core.ViewModels
                 RaisePropertyChanged(() => DateString);
             }
         }
+
         public int Duration
         {
             get => _duration;
@@ -73,6 +92,7 @@ namespace ServiceLocator.Core.ViewModels
                 RaisePropertyChanged(() => Duration);
             }
         }
+
         public User Client
         {
             get => _client;
@@ -84,6 +104,7 @@ namespace ServiceLocator.Core.ViewModels
                 RaisePropertyChanged(() => Client);
             }
         }
+
         public string Service
         {
             get => _service;
@@ -93,64 +114,50 @@ namespace ServiceLocator.Core.ViewModels
                 RaisePropertyChanged(() => Service);
             }
         }
+
         public string NameClient
         {
-            get => _nameClient;
+            get
+            {
+                if(string.IsNullOrWhiteSpace(_nameClient))
+                {
+                    return "Клиент";
+                }
+                else
+                {
+                    return _nameClient;
+                }
+            }
             set
             {
                 _nameClient = value;
                 RaisePropertyChanged(() => NameClient);
             }
         }
+
         public string TimeString
         {
-            get
-            {
-               
-                    return (Hour != "-1" & Minute != "-1")
-                        ? (Hour + ":" + Minute)
-                        : "Выбирите время";
-            }
+            get => (Hour != "-1") & (Minute != "-1")
+                ? Hour + ":" + Minute
+                : "Выбирите время";
             set
             {
                 _timeString = value;
                 RaisePropertyChanged(() => TimeString);
             }
         }
+
         public string DateString
         {
-            get
-            {
-                return (_dateString!="")
-                    ? (_dateString)
-                    : "Выбирите дату";
-            }
+            get => _dateString != ""
+                ? _dateString
+                : "Выбирите дату";
             set
             {
                 _dateString = value;
                 RaisePropertyChanged(() => DateString);
             }
         }
-        //public async void Init()
-        ////{
-        ////    IProfileService profileService;
-        ////    Mvx.TryResolve(out profileService);
-
-        ////    var users = await profileService.GetFriends();
-
-        ////    var s =
-        ////        users.items.Select(
-        ////                friend => new ListItem(friend.first_name + " " + friend.last_name, friend.photo_50, friend.id))
-        ////            .ToList();
-        ////    Friends = new List<ListItem>(s);
-        //}
-
-        private IDataLoaderService _dataLoaderService;
-        private Record _record;
-        private int _idClient;
-        private IProfileService _profileService;
-        private string _photo;
-        private string _timeString;
 
         public string Photo
         {
@@ -173,30 +180,9 @@ namespace ServiceLocator.Core.ViewModels
             }
         }
 
-        private  IProgressLoaderService _progressLoaderService;
-        public async void Init(int clientId, string recordId)
+        public Record Record
         {
-
-            _progressLoaderService = Mvx.Resolve<IProgressLoaderService>();
-            _progressLoaderService.ShowProgressBar();
-            _dataLoaderService = Mvx.Resolve<IDataLoaderService>();
-            _profileService = Mvx.Resolve<IProfileService>();
-            if (!string.IsNullOrWhiteSpace(recordId))
-            {
-                Record = _dataLoaderService.GetRecord(Guid.Parse(recordId));
-                Client = await _profileService.GetUserById(Record.IdClient);
-            }
-            else if (clientId != -1)
-            {
-               Client = await _profileService.GetUserById(clientId);
-                
-                // Client = _dataLoaderService.GetClient(clientId);
-            }
-            _progressLoaderService.HideProgressBar();
-        }
-
-        public Record Record {
-            get { return _record; }
+            get => _record;
             set
             {
                 _record = value;
@@ -217,7 +203,7 @@ namespace ServiceLocator.Core.ViewModels
 
         public int IdClient
         {
-            get { return _idClient; }
+            get => _idClient;
             set
             {
                 _idClient = value;
@@ -230,14 +216,113 @@ namespace ServiceLocator.Core.ViewModels
         }
 
         public List<ListItem> Friends { get; set; }
-        public MvxCommand<Record> AddNewRecordCommand
+
+        public MvxCommand<Record> AddNewRecordCommand => new MvxCommand<Record>(AddNewRecord);
+
+        public List<FriendItem> Items
         {
-            get { return new MvxCommand<Record>(AddNewRecord); }
+            get => _items;
+            set
+            {
+                _items = value;
+                RaisePropertyChanged(() => Items);
+            }
         }
+
+        private IProgressLoaderService _progressLoaderService;
+        public async void Init(int clientId, string recordId)
+        {
+
+            _progressLoaderService = Mvx.Resolve<IProgressLoaderService>();
+            _progressLoaderService.ShowProgressBar();
+            _dataLoaderService = Mvx.Resolve<IDataLoaderService>();
+            _profileService = Mvx.Resolve<IProfileService>();
+            if (!string.IsNullOrWhiteSpace(recordId))
+            {
+                Record = _dataLoaderService.GetRecord(Guid.Parse(recordId));
+                Client = await _profileService.GetUserById(Record.IdClient);
+            }
+            else if (clientId != -1)
+            {
+                Client = await _profileService.GetUserById(clientId);
+            }
+
+            var friends = (await _profileService.GetFriends()).items;
+
+            Items = friends.Select(
+                    f => new FriendItem { Image = f.photo_100, Name = f.first_name, SurName = f.last_name,Id=f.id })
+                .ToList();
+            ;
+            if (Items.Count > 0)
+                Mvx.Resolve<IMvxMessenger>().Publish(new NeedSetAdapterMessage(this));
+            _progressLoaderService.HideProgressBar();
+        }
+
         private void AddNewRecord(Record record)
         {
-            
             //_dataLoader.AddNeweRecord(record);
+        }
+    }
+
+    public class FriendItem : INotifyPropertyChanged
+    {
+        private string _image;
+        private string _name;
+        private string _surName;
+        private int _id;
+
+
+        public string Name
+        {
+            get => _name;
+            set
+            {
+                _name = value;
+                RaisePropertyChanged("Name");
+            }
+        }
+        public int Id
+        {
+            get => _id;
+            set
+            {
+                _id = value;
+                RaisePropertyChanged("Id");
+            }
+        }
+
+        public string SurName
+        {
+            get => _surName;
+            set
+            {
+                _surName = value;
+                RaisePropertyChanged("SurName");
+            }
+        }
+
+        public string Image
+        {
+            get => _image;
+            set
+            {
+                _image = value;
+                RaisePropertyChanged("Image");
+            }
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        public override string ToString()
+        {
+            return $"{Name} {SurName}";
+        }
+
+        protected void RaisePropertyChanged(string propertyName)
+        {
+            var propertyChanged = PropertyChanged;
+            if (propertyChanged != null)
+                propertyChanged(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

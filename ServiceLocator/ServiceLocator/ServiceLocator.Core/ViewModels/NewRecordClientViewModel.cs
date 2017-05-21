@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using MvvmCross.Platform;
 using ServiceLocator.Core.IServices;
 using ServiceLocator.Entities;
+using MvvmCross.Plugins.Messenger;
 
 namespace ServiceLocator.Core.ViewModels
 {
@@ -33,6 +34,15 @@ namespace ServiceLocator.Core.ViewModels
                 Minute = t[1];
                 _timeString = value;
                 RaisePropertyChanged(() => TimeString);
+            }
+        }
+        public List<FriendItem> Items
+        {
+            get => _items;
+            set
+            {
+                _items = value;
+                RaisePropertyChanged(() => Items);
             }
         }
         public string DateString
@@ -83,7 +93,17 @@ namespace ServiceLocator.Core.ViewModels
 
         public string NameMaster
         {
-            get => _nameMaster;
+            get
+            {
+                if (string.IsNullOrWhiteSpace(_nameMaster))
+                {
+                    return "Мастер";
+                }
+                else
+                {
+                    return _nameMaster;
+                }
+            }
             set
             {
                 _nameMaster = value;
@@ -104,6 +124,8 @@ namespace ServiceLocator.Core.ViewModels
         private string _nameMaster;
 
         private  IProgressLoaderService _progressLoaderService;
+        private List<FriendItem> _items;
+
         public async void Init(int masterId, string recordId)
         {
 
@@ -125,6 +147,16 @@ namespace ServiceLocator.Core.ViewModels
                 // Client = _dataLoaderService.GetClient(clientId);
             }
             var ord = recordId;
+
+            var friends = (await _profileService.GetFriends()).items;
+
+            Items = friends.Select(
+                    f => new FriendItem { Image = f.photo_100, Name = f.first_name, SurName = f.last_name, Id = f.id })
+                .ToList();
+            ;
+            if (Items.Count > 0)
+                Mvx.Resolve<IMvxMessenger>().Publish(new NeedSetAdapterMessage(this));
+
             _progressLoaderService.HideProgressBar();
         }
         public int Duration

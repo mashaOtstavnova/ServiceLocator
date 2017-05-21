@@ -122,6 +122,9 @@
       <HintPath>..\..\packages\MvvmCross.Plugin.Json.4.3.0\lib\MonoAndroid\MvvmCross.Plugins.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="MvvmCross.Plugins.Messenger, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MvvmCross.Plugin.Messenger.4.3.0\lib\MonoAndroid\MvvmCross.Plugins.Messenger.dll</HintPath>
+    </Reference>
     <Reference Include="MvvmCross.Plugins.Visibility, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\MvvmCross.Plugin.Visibility.4.3.0\lib\MonoAndroid\MvvmCross.Plugins.Visibility.dll</HintPath>
     </Reference>
@@ -189,6 +192,7 @@
     <Compile Include="Bootstrap\DownloadCachePluginBootstrap.cs" />
     <Compile Include="Bootstrap\FilePluginBootstrap.cs" />
     <Compile Include="Bootstrap\JsonPluginBootstrap.cs" />
+    <Compile Include="Bootstrap\MessengerPluginBootstrap.cs" />
     <Compile Include="Bootstrap\VisibilityPluginBootstrap.cs" />
     <Compile Include="DebugTrace.cs" />
     <Compile Include="Extensions\StoreExtensions.cs" />
@@ -209,6 +213,7 @@
     <Compile Include="Views\Dialogs\CategoryServiceDialog.cs" />
     <Compile Include="Views\FirstMasterView.cs" />
     <Compile Include="Views\FriendsClientView.cs" />
+    <Compile Include="Views\FriendsFilteringAdapter.cs" />
     <Compile Include="Views\FriendsView.cs" />
     <Compile Include="Views\HomeClientView.cs" />
     <Compile Include="Views\HomeMasterView.cs" />
@@ -296,6 +301,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\list_for_money.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\new_record_master_item.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

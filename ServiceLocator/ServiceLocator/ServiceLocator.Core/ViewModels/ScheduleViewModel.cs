@@ -138,11 +138,11 @@ namespace ServiceLocator.Core.ViewModels
             {
                 if (IsMaster)
                 {
-                    ShowViewModel<NewRecordMasterViewModel>(new { masterId = -1, recordId = obj.Id.ToString() });
+                    ShowViewModel<NewRecordMasterViewModel>(new { clientId = -1, recordId = obj.Id.ToString() });
                 }
                 else
                 {
-                    ShowViewModel<NewRecordClientViewModel>(new { clientId = -1, recordId  = obj.Id.ToString() });
+                    ShowViewModel<NewRecordClientViewModel>(new { masterId = -1, recordId  = obj.Id.ToString() });
                 }
                 
             }

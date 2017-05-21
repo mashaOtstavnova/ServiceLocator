@@ -823,5 +823,7 @@ C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\Ser
 C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Droid\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
 C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Droid\obj\Debug\android\assets\System.Xml.dll.mdb
 C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Droid\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
+C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Droid\bin\Debug\MvvmCross.Plugins.Messenger.dll
+C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Droid\obj\Debug\res\layout\new_record_master_item.xml
 C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Droid\obj\Debug\ServiceLocator.Droid.dll.mdb
 C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Droid\bin\Debug\ServiceLocator.Droid.dll.mdb

@@ -67,7 +67,9 @@
             <AutoCompleteTextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/AutoCompleteInput"
+                android:id="@+id/new_record_master_autoCompleteInput"
+                android:completionThreshold="1"
+                android:dropDownHeight="138dp"
                 android:hint="Добавьте клиента" />
             <Button
                 android:id="@+id/pickTime"

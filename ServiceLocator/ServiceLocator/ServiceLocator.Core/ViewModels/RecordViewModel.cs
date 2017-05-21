@@ -234,11 +234,11 @@ namespace ServiceLocator.Core.ViewModels
         {
             if (IsMaster)
             {
-                ShowViewModel<NewRecordMasterViewModel>(new { masterId =-1, recordId = _idRecord.ToString() });
+                ShowViewModel<NewRecordMasterViewModel>(new { clientId =-1, recordId = _idRecord.ToString() });
             }
             else if (IsClient)
             {
-                ShowViewModel<NewRecordClientViewModel>(new { clientId = -1, recordId = _idRecord.ToString() });
+                ShowViewModel<NewRecordClientViewModel>(new { masterId = -1, recordId = _idRecord.ToString() });
             }
         }
 

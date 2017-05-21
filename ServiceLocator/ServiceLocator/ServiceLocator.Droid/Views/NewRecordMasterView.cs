@@ -1,37 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
-using System.Text;
-
 using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Support.Design.Widget;
-using Android.Views;
-using Android.Widget;
-using Java.Lang;
-using MvvmCross.Binding.BindingContext;
-using ServiceLocator.Core.ViewModels;
-using ServiceLocator.Entities;
-using Exception = System.Exception;
-using String = System.String;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
-using Android.Content;
 using Android.Graphics;
 using Android.OS;
-using Android.Runtime;
 using Android.Support.Design.Widget;
-using Android.Views;
 using Android.Widget;
 using MvvmCross.Binding.BindingContext;
+using MvvmCross.Platform;
+using MvvmCross.Plugins.Messenger;
 using ServiceLocator.Core.ViewModels;
+using ServiceLocator.Entities;
+using Object = Java.Lang.Object;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
+using Android.Views;
+using ServiceLocator.Core.IServices;
 
 namespace ServiceLocator.Droid.Views
 {
@@ -45,11 +29,16 @@ namespace ServiceLocator.Droid.Views
         private Button pickDate_button;
         DatePicker datePicker;
 
+        private MvxSubscriptionToken _token;
+
+        private AutoCompleteTextView _autocompleteTextView;
         const int TIME_DIALOG_ID = 0;
+        private IProfileService _profileService;
+
         protected override async void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-
+            _token = Mvx.Resolve<IMvxMessenger>().SubscribeOnMainThread<NeedSetAdapterMessage>(DeliveryAction);
             var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
             SupportActionBar.SetDisplayHomeAsUpEnabled(true);
@@ -61,20 +50,14 @@ namespace ServiceLocator.Droid.Views
             set.Bind(collapsingToolbar).For(ctb => ctb.Title).To(vm => vm.NameClient);
             this.CreateBinding().For("Title").To<NewRecordMasterViewModel>(vm => vm.NameClient).Apply();
             set.Apply();
-
-            var autoCompleteOptions = new String[]
-                {"Hello", "Hey", "Heja", "Hi", "Hola", "Bonjour", "Gday", "Goodbye", "Sayonara", "Farewell", "Adios"};
-           // var listName = ViewModel.Friends.Select(t=>t.Title);
-            var textlest = new List<test>();
-            textlest.Add(new test() {id = 89, str = "test"});
-            textlest.Add(new test() {id = 98, str = "test1"});
-            textlest.Add(new test() {id = 9, str = "test2"});
-            ArrayAdapter autoCompleteAdapter = new ArrayAdapter(this, Android.Resource.Layout.SimpleDropDownItem1Line,
-                autoCompleteOptions);
+            _autocompleteTextView =
+                                FindViewById<AutoCompleteTextView>(Resource.Id.new_record_master_autoCompleteInput);
+            // var listName = ViewModel.Friends.Select(t=>t.Title);
+          
+          
             try
             {
-                var autocompleteTextView = FindViewById<AutoCompleteTextView>(Resource.Id.AutoCompleteInput);
-                autocompleteTextView.Adapter = autoCompleteAdapter;
+                
                 
                 pick_button = FindViewById<Button>(Resource.Id.pickTime);
                 pickDate_button = FindViewById<Button>(Resource.Id.pickDate);
@@ -95,6 +78,42 @@ namespace ServiceLocator.Droid.Views
                 throw;
             }
         }
+        protected override void Dispose(bool disposing)
+        {
+            _token?.Dispose();
+            _token = null;
+            base.Dispose(disposing);
+        }
+        private void DeliveryAction(NeedSetAdapterMessage needSetAdapterMessage)
+        {
+            //var friends = ViewModel.Items.Select(
+            //        f => new FriendItem {Image = f.photo_50, Name = f.first_name, SurName = f.last_name})
+            //    .ToList();
+
+            try
+            {
+                _autocompleteTextView.Adapter =
+                    new FriendsFilteringAdapter(this, Android.Resource.Layout.SimpleDropDownItem1Line,
+                        new ObservableCollection<FriendItem>(ViewModel.Items));
+                _autocompleteTextView.ItemClick += AutocompleteTextViewOnItemClick;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+        }
+
+        private async void AutocompleteTextViewOnItemClick(object sender1, AdapterView.ItemClickEventArgs itemClickEventArgs)
+        {
+            var item = (_autocompleteTextView.Adapter as FriendsFilteringAdapter)?.FilteredItems[itemClickEventArgs.Position];
+            _autocompleteTextView.Text = item?.ToString();
+
+            _profileService = Mvx.Resolve<IProfileService>();
+            ViewModel.IdClient = item.Id;
+            ViewModel.Client = await _profileService.GetUserById(item.Id);
+        }
+
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
             switch (item.ItemId)
