@@ -167,6 +167,7 @@ namespace ServiceLocator.Core.ViewModels
         public async Task Init(int idFriend)
         {
             UserId = idFriend;
+            
             User = await Mvx.Resolve<IProfileService>().GetUser();
             Client = Mvx.Resolve<IDataLoaderService>().GetClient(UserId);
             Friend = await Mvx.Resolve<IProfileService>().GetFriend(idFriend);

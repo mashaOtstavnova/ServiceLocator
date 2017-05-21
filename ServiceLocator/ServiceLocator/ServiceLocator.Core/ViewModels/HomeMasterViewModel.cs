@@ -83,6 +83,10 @@ namespace ServiceLocator.Core.ViewModels
         {
             ShowViewModel<MasterViewModel>(new {idFriend = CurrentUser.id});
         }
+        public void ShowMoney()
+        {
+            ShowViewModel<MoneyViewModel>();
+        }
         public void ShowNewRecord()
         {
             ShowViewModel<NewRecordMasterViewModel>(new { clientId = -1, recordId = "" });

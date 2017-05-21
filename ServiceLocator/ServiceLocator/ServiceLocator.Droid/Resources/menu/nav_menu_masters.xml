@@ -23,6 +23,10 @@
       android:icon="@drawable/ic_date"
       android:title="Расписание" />
     <item
+      android:id="@+id/nav_money"
+      android:icon="@drawable/ic_rouble"
+      android:title="Выручка" />
+    <item
         android:id="@+id/nav_info"
         android:icon="@drawable/ic_info"
         android:title="О программе" />

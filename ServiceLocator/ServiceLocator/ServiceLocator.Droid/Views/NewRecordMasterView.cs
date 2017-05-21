@@ -95,7 +95,16 @@ namespace ServiceLocator.Droid.Views
                 throw;
             }
         }
-
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            switch (item.ItemId)
+            {
+                case Android.Resource.Id.Home:
+                    ViewModel.CloseThisVMCommand.Execute();
+                    return true;
+            }
+            return base.OnOptionsItemSelected(item);
+        }
         private void SaveButtonOnClick(object sender1, EventArgs eventArgs)
         {
             var record = new Record();

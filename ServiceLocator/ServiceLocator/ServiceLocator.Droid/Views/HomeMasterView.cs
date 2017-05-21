@@ -84,6 +84,9 @@ namespace ServiceLocator.Droid.Views
                 case Resource.Id.nav_info:
                     ViewModel.ShowInfo();
                     break;
+                case Resource.Id.nav_money:
+                    ViewModel.ShowMoney();
+                    break;
                 case Resource.Id.nav_new_record:
                     ViewModel.ShowNewRecord();
                     break;

@@ -8,6 +8,8 @@ using Android.Widget;
 using MvvmCross.Binding.BindingContext;
 using ServiceLocator.Core.ViewModels;
 using V7Toolbar = Android.Support.V7.Widget.Toolbar;
+using ServiceLocator.Core.IServices;
+using MvvmCross.Platform;
 
 namespace ServiceLocator.Droid.Views
 {
@@ -17,9 +19,15 @@ namespace ServiceLocator.Droid.Views
     {
         protected override int LayoutResource => Resource.Layout.master_view;
 
+        private  IProgressLoaderService _progressLoaderService;
+
         protected override void OnCreate(Bundle bundle)
         {
+            
             base.OnCreate(bundle);
+
+            _progressLoaderService = Mvx.Resolve<IProgressLoaderService>();
+            _progressLoaderService.ShowProgressBar();
             var fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
             var addNewRecordButoon = FindViewById<FloatingActionButton>(Resource.Id.addNewRecord);
            
@@ -44,6 +52,7 @@ namespace ServiceLocator.Droid.Views
             }
             catch (Exception e)
             {
+                _progressLoaderService.HideProgressBar();
                 Console.WriteLine(e);
                 throw;
             }
@@ -61,12 +70,22 @@ namespace ServiceLocator.Droid.Views
                 var draw = GetDrawable(Resource.Drawable.ic_clear);
                 fab.SetImageDrawable(draw);
             }
+            _progressLoaderService.HideProgressBar();
             //if (ViewModel.HomePhone == null & ViewModel.MobilePhone == null)
             //{
             //    callButton.Visibility = ViewStates.Invisible;
             //}
         }
-
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            switch (item.ItemId)
+            {
+                case Android.Resource.Id.Home:
+                    ViewModel.CloseThisVMCommand.Execute();
+                    return true;
+            }
+            return base.OnOptionsItemSelected(item);
+        }
         private void OnButtonForShedule(object sender, EventArgs e)
         {
             ViewModel.SheduleCommand.Execute();
@@ -90,24 +109,6 @@ namespace ServiceLocator.Droid.Views
             base.OnDestroy();
         }
 
-        public override bool OnOptionsItemSelected(IMenuItem item)
-        {
-            switch (item.ItemId)
-            {
-                case Android.Resource.Id.Home:
-
-                    try
-                    {
-                        ViewModel.CloseThisVMCommand.Execute();
-                    }
-                    catch (Exception ex)
-                    {
-                        var m = ex.Message;
-                    }
-                    break;
-            }
-
-            return base.OnOptionsItemSelected(item);
-        }
+       
     }
 }

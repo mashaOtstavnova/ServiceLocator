@@ -11,6 +11,11 @@ namespace ServiceLocator.Core.IServices.Services
 {
     public class DataLoaderService : IDataLoaderService
     {
+        public List<Record> GetMoneyMaster(string startDay, string endDay, int idMaster)
+        {
+            var r = Fakes.Records.ToList();
+            return r;
+        }
         public void GetTypeUser()
         {
             //throw new NotImplementedException();

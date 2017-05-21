@@ -49,8 +49,12 @@ namespace ServiceLocator.Core.ViewModels
             get { return new MvxCommand<ListItem>(OnItemSelect); }
         }
 
+        private  IProgressLoaderService _progressLoaderService;
         public async void Init()
         {
+
+            _progressLoaderService = Mvx.Resolve<IProgressLoaderService>();
+            _progressLoaderService.ShowProgressBar();
             IProfileService profileService;
             Mvx.TryResolve(out profileService);
 
@@ -78,6 +82,7 @@ namespace ServiceLocator.Core.ViewModels
                 var t = new ListItem(item.first_name + " " + item.last_name, item.photo_50,services, item.id);
                 Items.Add(t);
             }
+            _progressLoaderService.HideProgressBar();
             //var s =
             //    users.items.Select(
             //            friend => new ListItem(friend.first_name + " " + friend.last_name, friend.photo_50, friend.id))

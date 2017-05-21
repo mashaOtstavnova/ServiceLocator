@@ -33,6 +33,7 @@
     <activity android:name="md5e187c0d02747d8043bdf48cfd714108a.HomeClientView" />
     <activity android:name="md5e187c0d02747d8043bdf48cfd714108a.HomeMasterView" />
     <activity android:label="Friend" android:name="md5e187c0d02747d8043bdf48cfd714108a.MasterView" />
+    <activity android:name="md5e187c0d02747d8043bdf48cfd714108a.MoneyView" />
     <activity android:name="md5e187c0d02747d8043bdf48cfd714108a.NewRecordClientView" />
     <activity android:name="md5e187c0d02747d8043bdf48cfd714108a.NewRecordMasterView" />
     <activity android:name="md5e187c0d02747d8043bdf48cfd714108a.RecordView" />

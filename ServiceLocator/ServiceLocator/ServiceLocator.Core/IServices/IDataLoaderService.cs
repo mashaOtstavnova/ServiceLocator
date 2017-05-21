@@ -13,6 +13,7 @@ namespace ServiceLocator.Core.IServices
     {
         void GetTypeUser();
         void SetTypeUser();
+        List<Record> GetMoneyMaster(string startDay, string endDay, int idMaster);
         void AddNewRecord(Record record);
         List<string> GetIsBusiRecordsMaster(int idMaster, DateTime date);
         Master GetMaster(int id);

@@ -38,6 +38,8 @@ namespace ServiceLocator.Droid
         {
             base.InitializeFirstChance();
             Mvx.RegisterSingleton<IDataLoaderService>(() => new DataLoaderService());
+
+            Mvx.RegisterSingleton<IProgressLoaderService>(() => new ProgressLoaderService());
             Mvx.RegisterSingleton<IProfileService>(() => new ProfileService());
             Mvx.RegisterSingleton<IGetProfileService>(() => new GetProfileService());
         }

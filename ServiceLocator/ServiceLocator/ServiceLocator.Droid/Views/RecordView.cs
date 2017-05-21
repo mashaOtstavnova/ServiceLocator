@@ -45,7 +45,16 @@ namespace ServiceLocator.Droid.Views
         {
             ViewModel.UpdateRecordCommand.Execute();
         }
-
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            switch (item.ItemId)
+            {
+                case Android.Resource.Id.Home:
+                    ViewModel.CloseThisVMCommand.Execute();
+                    return true;
+            }
+            return base.OnOptionsItemSelected(item);
+        }
         private void DelButton_Click(object sender, EventArgs e)
         {
             throw new NotImplementedException();
@@ -56,26 +65,6 @@ namespace ServiceLocator.Droid.Views
             //var openPresentsButton = FindViewById<Button>(Resource.Id.button_present_user);
             //openPresentsButton.Click -= ButtonForPresent;
             base.OnDestroy();
-        }
-
-        public override bool OnOptionsItemSelected(IMenuItem item)
-        {
-            switch (item.ItemId)
-            {
-                case Android.Resource.Id.Home:
-
-                    try
-                    {
-                        ViewModel.CloseThisVMCommand.Execute();
-                    }
-                    catch (Exception ex)
-                    {
-                        var m = ex.Message;
-                    }
-                    break;
-            }
-
-            return base.OnOptionsItemSelected(item);
         }
     }
 }

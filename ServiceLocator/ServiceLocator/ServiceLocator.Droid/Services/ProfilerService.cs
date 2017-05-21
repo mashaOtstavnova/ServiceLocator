@@ -42,7 +42,7 @@ namespace ServiceLocator.Droid.Services
             
             var request = VKApi.Friends.Get(new VKParameters(new Dictionary<string, Object>
             {
-                {VKApiConst.Fields, "id,first_name,last_name,contacts,sex,bdate,city,photo_50,photo_max_orig"}
+                {VKApiConst.Fields, "id,first_name,last_name,contacts,sex,bdate,city,photo_50,photo_100,photo_max_orig"}
             }));
             try
             {

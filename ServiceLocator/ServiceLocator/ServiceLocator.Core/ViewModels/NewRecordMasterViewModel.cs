@@ -154,15 +154,31 @@ namespace ServiceLocator.Core.ViewModels
 
         public string Photo
         {
-            get { return _photo; }
+            get
+            {
+                if (string.IsNullOrWhiteSpace(_photo))
+                {
+                    return "http://guiaexcelenciascuba.com/Images/Utils/icon-user.png";
+                }
+                else
+                {
+                    return _photo;
+
+                }
+            }
             set
             {
                 _photo = value;
                 RaisePropertyChanged(() => Photo);
             }
         }
+
+        private  IProgressLoaderService _progressLoaderService;
         public async void Init(int clientId, string recordId)
         {
+
+            _progressLoaderService = Mvx.Resolve<IProgressLoaderService>();
+            _progressLoaderService.ShowProgressBar();
             _dataLoaderService = Mvx.Resolve<IDataLoaderService>();
             _profileService = Mvx.Resolve<IProfileService>();
             if (!string.IsNullOrWhiteSpace(recordId))
@@ -176,6 +192,7 @@ namespace ServiceLocator.Core.ViewModels
                 
                 // Client = _dataLoaderService.GetClient(clientId);
             }
+            _progressLoaderService.HideProgressBar();
         }
 
         public Record Record {

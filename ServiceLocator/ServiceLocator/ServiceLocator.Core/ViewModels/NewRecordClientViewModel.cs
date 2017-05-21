@@ -103,8 +103,12 @@ namespace ServiceLocator.Core.ViewModels
         private string _photo;
         private string _nameMaster;
 
+        private  IProgressLoaderService _progressLoaderService;
         public async void Init(int masterId, string recordId)
         {
+
+            _progressLoaderService = Mvx.Resolve<IProgressLoaderService>();
+            _progressLoaderService.ShowProgressBar();
             _dataLoaderService = Mvx.Resolve<IDataLoaderService>();
 
             IdMaster = masterId;
@@ -121,6 +125,7 @@ namespace ServiceLocator.Core.ViewModels
                 // Client = _dataLoaderService.GetClient(clientId);
             }
             var ord = recordId;
+            _progressLoaderService.HideProgressBar();
         }
         public int Duration
         {
@@ -190,7 +195,17 @@ namespace ServiceLocator.Core.ViewModels
         }
         public string Photo
         {
-            get { return _photo; }
+            get {
+                if(string.IsNullOrWhiteSpace(_photo))
+                {
+                    return "http://guiaexcelenciascuba.com/Images/Utils/icon-user.png";
+                }
+                else
+                {
+                    return _photo;
+
+                }
+                 }
             set
             {
                 _photo = value;

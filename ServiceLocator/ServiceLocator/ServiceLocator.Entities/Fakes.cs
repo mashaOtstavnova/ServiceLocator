@@ -29,7 +29,7 @@ namespace ServiceLocator.Entities
             new Record
             {
                 Id = Guid.NewGuid(),
-                IdClient = 5337911,
+                IdClient = 5226616,
                 IdMaster = 58767238,
                 Duration = TimeSpan.FromHours(1),
                 IsBusy = true,
@@ -40,7 +40,7 @@ namespace ServiceLocator.Entities
             new Record
             {
                 Id = Guid.NewGuid(),
-                IdClient = 5337911,
+                IdClient = 58767238,
                 IdMaster = 5226616,
                 Duration = TimeSpan.FromHours(1),
                 IsBusy = true,

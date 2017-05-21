@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using MvvmCross.Core.ViewModels;
 using ServiceLocator.Entities;
+using ServiceLocator.Core.IServices;
 
 namespace ServiceLocator.Core.ViewModels
 {
@@ -9,6 +10,7 @@ namespace ServiceLocator.Core.ViewModels
     {
         private List<string> _selectedCategories;
         public List<SheduleDay> Shedule;
+        
 
         public FirstMasterViewModel()
         {

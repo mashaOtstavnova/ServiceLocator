@@ -202,6 +202,7 @@
     <Compile Include="ServiceLocatorApplication.cs" />
     <Compile Include="Services\GetProfileService.cs" />
     <Compile Include="Services\ProfilerService.cs" />
+    <Compile Include="Services\ProgressLoaderService.cs" />
     <Compile Include="Setup.cs" />
     <Compile Include="Views\BaseView.cs" />
     <Compile Include="Views\ClientView.cs" />
@@ -214,6 +215,7 @@
     <Compile Include="Views\LoginVKView.cs" />
     <Compile Include="Views\MasterView.cs" />
     <Compile Include="Views\Controls\MvxSelectableListView.cs" />
+    <Compile Include="Views\MoneyView.cs" />
     <Compile Include="Views\NewRecordClientView.cs" />
     <Compile Include="Views\NewRecordMasterView.cs" />
     <Compile Include="Views\RecordView.cs" />
@@ -288,6 +290,12 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\shedule_dialog.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\money_master_view.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\list_for_money.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -451,6 +459,10 @@
     <AndroidResource Include="Resources\drawable-xxxhdpi\ic_alarm_span.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\ic_rouble.png" />
     <AndroidResource Include="Resources\menu\nav_menu_clients.xml" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_cached.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_cached.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_cached.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_cached.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ServiceLocator.Core\ServiceLocator.Core.csproj">

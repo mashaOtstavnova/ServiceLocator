@@ -242,8 +242,12 @@ namespace ServiceLocator.Core.ViewModels
             }
         }
 
+        private  IProgressLoaderService _progressLoaderService;
         public async void Init(string idRecord)
         {
+
+            _progressLoaderService = Mvx.Resolve<IProgressLoaderService>();
+            _progressLoaderService.ShowProgressBar();
             _idRecord = Guid.Parse(idRecord);
             _dataLoaderService = Mvx.Resolve<IDataLoaderService>();
             _profileService = Mvx.Resolve<IProfileService>();
@@ -266,9 +270,9 @@ namespace ServiceLocator.Core.ViewModels
             }
             catch (Exception ex)
             {
-                
+                _progressLoaderService.HideProgressBar();
             }
-
+            _progressLoaderService.HideProgressBar();
 
         }
     }

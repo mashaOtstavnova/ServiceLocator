@@ -13,6 +13,8 @@ using Android.Widget;
 using MvvmCross.Binding.BindingContext;
 using ServiceLocator.Core.ViewModels;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
+using ServiceLocator.Core.IServices;
+using MvvmCross.Platform;
 
 namespace ServiceLocator.Droid.Views
 {
@@ -20,8 +22,13 @@ namespace ServiceLocator.Droid.Views
     public class ClientView : BaseView<ClientViewModel>
     {
         protected override int LayoutResource => Resource.Layout.client_view;
+
+        private  IProgressLoaderService _progressLoaderService;
         protected override void OnCreate(Bundle bundle)
         {
+
+            _progressLoaderService = Mvx.Resolve<IProgressLoaderService>();
+            _progressLoaderService.ShowProgressBar();
             base.OnCreate(bundle);
             var fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
            
@@ -60,6 +67,7 @@ namespace ServiceLocator.Droid.Views
                 var draw = GetDrawable(Resource.Drawable.ic_clear);
                 fab.SetImageDrawable(draw);
             }
+            _progressLoaderService.HideProgressBar();
         }
 
         private void OnAddNewRecord(object sender, EventArgs e)

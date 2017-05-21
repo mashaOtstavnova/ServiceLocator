@@ -27,14 +27,14 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_gravity="center"
-        android:padding="6dp"> 
-      <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="List item view"
-        android:textSize="18sp"
-        android:padding="2dp"
-        local:MvxBind="Text Time" />
+        android:padding="6dp">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="List item view"
+            android:textSize="18sp"
+            android:padding="2dp"
+            local:MvxBind="Text Time" />
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -42,7 +42,7 @@
             android:textSize="10sp"
             android:padding="2dp"
             local:MvxBind="Text NameMaster" />
-      <TextView
+        <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="List item view"

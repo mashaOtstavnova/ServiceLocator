@@ -75,6 +75,16 @@ namespace ServiceLocator.Droid.Views
                 throw;
             }
         }
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            switch (item.ItemId)
+            {
+                case Android.Resource.Id.Home:
+                    ViewModel.CloseThisVMCommand.Execute();
+                    return true;
+            }
+            return base.OnOptionsItemSelected(item);
+        }
         private void OnDateSet(object sender, DatePickerDialog.DateSetEventArgs e)
         {
             ViewModel.Date = e.Date;

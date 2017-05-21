@@ -13,6 +13,8 @@ namespace ServiceLocator.Core.ViewModels
     public class ScheduleViewModel : BaseViewModel
     {
         private  IDataLoaderService _dataLoader;
+
+        private  IProgressLoaderService _progressLoaderService;
         private  IProfileService _profileService;
         private List<Friend> _friends;
         private List<int> _masterIds;
@@ -75,6 +77,7 @@ namespace ServiceLocator.Core.ViewModels
         }
         public async void ReloadRecord(DateTime date)
         {
+            _progressLoaderService.ShowProgressBar();
             var data = _dataLoader.GetRecords(date, _masterIds).ToList();
             data = data.OrderBy(x => x.Time).ToList();
             var recordItems = new ObservableCollection<RecordItem>();
@@ -118,6 +121,7 @@ namespace ServiceLocator.Core.ViewModels
                     RecordItems = new ObservableCollection<RecordItem>(recordItems);
                     break;
             }
+            _progressLoaderService.HideProgressBar();
         }
         public IMvxCommand OnItemSelectCommand
         {
@@ -160,6 +164,9 @@ namespace ServiceLocator.Core.ViewModels
         }
         public async Task Init(int idMasters)
         {
+
+            _progressLoaderService = Mvx.Resolve<IProgressLoaderService>();
+            _progressLoaderService.ShowProgressBar();
             _dataLoader = Mvx.Resolve<IDataLoaderService>();
             _profileService = Mvx.Resolve<IProfileService>();
             CurrentUser = await _profileService.GetUser();
@@ -170,6 +177,7 @@ namespace ServiceLocator.Core.ViewModels
             {
                 LoadDataOne(idMasters);
             }
+            _progressLoaderService.HideProgressBar();
         }
 
         public User CurrentUser

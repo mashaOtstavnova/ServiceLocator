@@ -47,6 +47,7 @@ namespace ServiceLocator.Entities
         public Сontacts contacts { get; set; }
         public City city { get; set; }
         public string photo_50 { get; set; }
+        public string photo_100 { get; set; }
         public string mobile_phone { get; set; }
         public string home_phone { get; set; }
         public string photo_max_orig { get; set; }

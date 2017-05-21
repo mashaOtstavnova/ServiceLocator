@@ -23,10 +23,13 @@ namespace ServiceLocator.Droid.Views
         private Button _buttonForShedule;
         protected override int LayoutResource => Resource.Layout.first_master_view;
 
+        private  IProgressLoaderService _progressLoaderService;
         protected override async void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
 
+            _progressLoaderService = Mvx.Resolve<IProgressLoaderService>();
+            _progressLoaderService.ShowProgressBar();
             _imageLoader = ImageLoader.Instance;
 
             if (!_imageLoader.IsInited)
@@ -63,6 +66,7 @@ namespace ServiceLocator.Droid.Views
             _buttonForShedule.Click += OnSheduleClick;
             _saveButton = FindViewById<Button>(Resource.Id.save_button);
             _saveButton.Click += SaveButtonOnClick;
+            _progressLoaderService.HideProgressBar();
         }
 
         protected override void OnDestroy()
