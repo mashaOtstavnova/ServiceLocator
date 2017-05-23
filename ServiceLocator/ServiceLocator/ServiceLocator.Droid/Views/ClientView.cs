@@ -48,13 +48,17 @@ namespace ServiceLocator.Droid.Views
 
             var addNewRecordButoon = FindViewById<FloatingActionButton>(Resource.Id.addNewRecord);
             addNewRecordButoon.Click += OnAddNewRecord;
+
+            var myRecordButoon = FindViewById<Button>(Resource.Id.shedule_button);
+            myRecordButoon.Click += MyRecordButoon_Click; ;
             var set = this.CreateBindingSet<ClientView, ClientViewModel>();
             set.Bind(collapsingToolbar).For(ctb => ctb.Title).To(vm => vm.FullName);
 
             set.Bind(callButton).For(ctb => ctb.Visibility).To(vm => vm.IsPhone).WithConversion("MyVisibility");
 
             set.Bind(addNewRecordButoon).For(ctb => ctb.Visibility).To(vm => vm.IsMy).WithConversion("MyVisibilityFalse");
-   
+            set.Bind(myRecordButoon).For(ctb => ctb.Visibility).To(vm => vm.IsMy).WithConversion("MyVisibility");
+
             this.CreateBinding().For("Title").To<MasterViewModel>(vm => vm.FullName).Apply();
             set.Apply();
             if (ViewModel.Client != null && ViewModel.Client.IsRegistration)
@@ -68,6 +72,11 @@ namespace ServiceLocator.Droid.Views
                 fab.SetImageDrawable(draw);
             }
             _progressLoaderService.HideProgressBar();
+        }
+
+        private void MyRecordButoon_Click(object sender, EventArgs e)
+        {
+            ViewModel.ShowMyRecordCommand.Execute();
         }
 
         private void OnAddNewRecord(object sender, EventArgs e)

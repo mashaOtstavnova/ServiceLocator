@@ -48,6 +48,7 @@
         <data android:scheme="vk5963678" />
       </intent-filter>
     </activity>
+    <activity android:name="md5e187c0d02747d8043bdf48cfd714108a.ClientsRecordsView" />
     <activity android:label="Friend" android:name="md5e187c0d02747d8043bdf48cfd714108a.ClientView" />
     <activity android:label="Master" android:parentActivityName="md5e187c0d02747d8043bdf48cfd714108a.FirstMasterView" android:name="md5e187c0d02747d8043bdf48cfd714108a.FirstMasterView">
       <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="navdrawer.activities.FirstMasterView" />
@@ -55,10 +56,12 @@
     <activity android:label="Friends" android:parentActivityName="md5e187c0d02747d8043bdf48cfd714108a.HomeMasterView" android:name="md5e187c0d02747d8043bdf48cfd714108a.FriendsView" />
     <activity android:name="md5e187c0d02747d8043bdf48cfd714108a.HomeClientView" />
     <activity android:name="md5e187c0d02747d8043bdf48cfd714108a.HomeMasterView" />
+    <activity android:name="md5e187c0d02747d8043bdf48cfd714108a.InfoView" />
     <activity android:label="Friend" android:name="md5e187c0d02747d8043bdf48cfd714108a.MasterView" />
     <activity android:name="md5e187c0d02747d8043bdf48cfd714108a.MoneyView" />
     <activity android:name="md5e187c0d02747d8043bdf48cfd714108a.NewRecordClientView" />
     <activity android:name="md5e187c0d02747d8043bdf48cfd714108a.NewRecordMasterView" />
+    <activity android:name="md5e187c0d02747d8043bdf48cfd714108a.PushMasterView" />
     <activity android:name="md5e187c0d02747d8043bdf48cfd714108a.RecordView" />
     <activity android:label="Schedule" android:name="md5e187c0d02747d8043bdf48cfd714108a.ScheduleView" />
     <activity android:icon="@drawable/icon" android:label="ServiceLocatorApplication.Droid" android:noHistory="true" android:screenOrientation="portrait" android:theme="@style/Theme.Splash" android:name="md5e187c0d02747d8043bdf48cfd714108a.SplashScreenView">

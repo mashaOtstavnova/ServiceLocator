@@ -216,6 +216,7 @@
     <Compile Include="Services\ProgressLoaderService.cs" />
     <Compile Include="Setup.cs" />
     <Compile Include="Views\BaseView.cs" />
+    <Compile Include="Views\ClientsRecordsView.cs" />
     <Compile Include="Views\ClientView.cs" />
     <Compile Include="Views\Dialogs\CategoryServiceDialog.cs" />
     <Compile Include="Views\FirstMasterView.cs" />
@@ -224,12 +225,14 @@
     <Compile Include="Views\FriendsView.cs" />
     <Compile Include="Views\HomeClientView.cs" />
     <Compile Include="Views\HomeMasterView.cs" />
+    <Compile Include="Views\InfoView.cs" />
     <Compile Include="Views\LoginVKView.cs" />
     <Compile Include="Views\MasterView.cs" />
     <Compile Include="Views\Controls\MvxSelectableListView.cs" />
     <Compile Include="Views\MoneyView.cs" />
     <Compile Include="Views\NewRecordClientView.cs" />
     <Compile Include="Views\NewRecordMasterView.cs" />
+    <Compile Include="Views\PushMasterView.cs" />
     <Compile Include="Views\RecordView.cs" />
     <Compile Include="Views\ScheduleView.cs" />
     <Compile Include="Views\SplashScreen.cs" />
@@ -311,6 +314,18 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\new_record_master_item.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\info_view.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\add_new_push_masters.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\record_clients_view.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\records_clients.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -478,6 +493,12 @@
     <AndroidResource Include="Resources\drawable-xhdpi\ic_cached.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_cached.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\ic_cached.png" />
+    <AndroidResource Include="Resources\drawable\splash31.png" />
+    <AndroidResource Include="Resources\drawable\splash32.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_announcement.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_announcement.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_announcement.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_announcement.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ServiceLocator.Core\ServiceLocator.Core.csproj">

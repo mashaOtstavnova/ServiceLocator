@@ -251,7 +251,7 @@ namespace ServiceLocator.Core.ViewModels
 
         private void AddNewRecord()
         {
-            ShowViewModel<NewRecordClientViewModel>(new {masterId = Master.Id, recordId =""});
+            ShowViewModel<NewRecordClientViewModel>(new {masterId = UserId, recordId =""});
         }
     }
 }

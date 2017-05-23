@@ -118,9 +118,17 @@ namespace ServiceLocator.Core.ViewModels
                 _friend = value;
                 if (value != null)
                 {
+                    TypeUser = Mvx.Resolve<IDataLoaderService>().GetType(value.id);
                     FullName = $"{value.first_name} {value.last_name}";
                     Bdate = $"{value.bdate}";
-                    IsMy = false;
+                    if(TypeUser!="Client")
+                    {
+                        IsMy = false;
+                    }
+                    else
+                    {
+                        IsMy = true;
+                    }
                     HomePhone = $"{value.home_phone}";
                     MobilePhone = $"{value.mobile_phone}";
                     ContactsString = (!string.IsNullOrWhiteSpace(value.home_phone) || !string.IsNullOrWhiteSpace(value.mobile_phone)) ? $"{value.home_phone } {value.mobile_phone }" : "Нет контактов";
@@ -164,6 +172,16 @@ namespace ServiceLocator.Core.ViewModels
                 RaisePropertyChanged(() => Client);
             }
         }
+        private string _typeUser;
+        public string TypeUser {
+            get { return _typeUser; }
+            set
+            {
+                _typeUser = value;
+                
+                RaisePropertyChanged(() => TypeUser);
+            }
+        }
         public async Task Init(int idFriend)
         {
             UserId = idFriend;
@@ -180,6 +198,15 @@ namespace ServiceLocator.Core.ViewModels
         private void AddNewRecord()
         {
             ShowViewModel<NewRecordMasterViewModel>(new { clientId = UserId, recordId = "" });
+        }
+        public IMvxCommand ShowMyRecordCommand
+        {
+            get { return new MvxCommand(ShowMyRecord); }
+        }
+
+        private void ShowMyRecord()
+        {
+            ShowViewModel<ClientsRecordsViewModel>( new { idClients = UserId });
         }
     }
 }

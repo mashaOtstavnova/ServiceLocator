@@ -214,7 +214,8 @@ namespace ServiceLocator.Core.ViewModels
             }
         }
 
-        public class RecordItem
+       
+    } public class RecordItem
         {
             public string PhotoMaster { get; set; }
             public bool IsBusy { get; set; }
@@ -223,5 +224,4 @@ namespace ServiceLocator.Core.ViewModels
             public string Service { get; set; }
             public Guid Id { get; set; }
         }
-    }
 }

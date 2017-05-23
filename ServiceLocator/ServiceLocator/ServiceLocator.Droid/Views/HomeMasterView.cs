@@ -28,6 +28,8 @@ namespace ServiceLocator.Droid.Views
             {
                 base.OnCreate(bundle);
 
+                ViewModel.Title = "Расписание";
+                Title = ViewModel.Title;
                 _drawerLayout = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
 
                 SupportActionBar.SetHomeAsUpIndicator(Resource.Drawable.ic_menu);
@@ -86,6 +88,9 @@ namespace ServiceLocator.Droid.Views
                     break;
                 case Resource.Id.nav_money:
                     ViewModel.ShowMoney();
+                    break;
+                case Resource.Id.nav_push:
+                    ViewModel.ShowNewPush();
                     break;
                 case Resource.Id.nav_new_record:
                     ViewModel.ShowNewRecord();

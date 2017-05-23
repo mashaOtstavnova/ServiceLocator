@@ -44,14 +44,15 @@ namespace ServiceLocator.Droid.Views
             SupportActionBar.SetDisplayHomeAsUpEnabled(true);
             var collapsingToolbar = FindViewById<CollapsingToolbarLayout>(Resource.Id.collapsing_toolbar);
 
+            _autocompleteTextView =
+                                FindViewById<AutoCompleteTextView>(Resource.Id.new_record_master_autoCompleteInput);
             collapsingToolbar.SetCollapsedTitleTextColor(Color.White);
             collapsingToolbar.SetExpandedTitleColor(Color.White);
+            _autocompleteTextView.Text = ViewModel.NameClient;
             var set = this.CreateBindingSet<NewRecordMasterView, NewRecordMasterViewModel>();
             set.Bind(collapsingToolbar).For(ctb => ctb.Title).To(vm => vm.NameClient);
             this.CreateBinding().For("Title").To<NewRecordMasterViewModel>(vm => vm.NameClient).Apply();
             set.Apply();
-            _autocompleteTextView =
-                                FindViewById<AutoCompleteTextView>(Resource.Id.new_record_master_autoCompleteInput);
             // var listName = ViewModel.Friends.Select(t=>t.Title);
           
           

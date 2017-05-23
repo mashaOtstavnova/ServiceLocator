@@ -69,7 +69,7 @@ namespace ServiceLocator.Core.ViewModels
 
         public void ShowInfo()
         {
-            //ShowViewModel<InfoViewModel>();
+            ShowViewModel<InfoViewModel>();
         }
 
         public void ShowMainPage()
@@ -95,10 +95,14 @@ namespace ServiceLocator.Core.ViewModels
         {
             //ShowViewModel<PresentsBrowseViewModel>();
         }
-
+        public void ShowSchedule()
+        {
+            ShowViewModel<ScheduleViewModel>(new { idMasters = -1});
+        }
         public void ShowLogin()
         {
-            //ShowViewModel<FirstViewModel>();
+
+            ShowViewModel<LoginVKViewModel>();
         }
     }
 }

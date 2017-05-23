@@ -16,10 +16,10 @@ namespace ServiceLocator.Core.IServices.Services
             var r = Fakes.Records.ToList();
             return r;
         }
-        public void GetTypeUser()
-        {
-            //throw new NotImplementedException();
-        }
+        //public void GetTypeUser()
+        //{
+        //    //throw new NotImplementedException();
+        //}
 
         public void SetTypeUser()
         {
@@ -82,7 +82,7 @@ namespace ServiceLocator.Core.IServices.Services
 
         public string GetType(int id)
         {
-            return "Client";
+            return "Master";
         }
         public Client GetClient(int id)
         {
@@ -111,7 +111,19 @@ namespace ServiceLocator.Core.IServices.Services
                 return null;
             }
         }
-
+        public ObservableCollection<Record> GetRecordsClients(List<int> ids)
+        {
+            try
+            {
+                var t = Fakes.Records;
+                return new ObservableCollection<Record>(
+                    t.Where(r => ids.Exists(i => i == r.IdClient)));
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
         /// <summary>
         /// Получение мастеров из числа друзей
         /// </summary>

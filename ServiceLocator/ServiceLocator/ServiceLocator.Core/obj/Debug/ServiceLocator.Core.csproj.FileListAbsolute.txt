@@ -37,15 +37,11 @@ C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\Ser
 C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Core\bin\Debug\MvvmCross.Core.dll
 C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Core\bin\Debug\MvvmCross.Localization.dll
 C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Core\bin\Debug\MvvmCross.Platform.dll
+C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Core\bin\Debug\MvvmCross.Plugins.Messenger.dll
 C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Core\bin\Debug\ServiceLocator.Entities.dll
 C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Core\bin\Debug\ServiceLocator.Entities.pdb
 C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Core\obj\Debug\ServiceLocator.Core.csprojResolveAssemblyReference.cache
 C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Core\obj\Debug\ServiceLocator.Core.dll
 C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Core\obj\Debug\ServiceLocator.Core.pdb
-C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Core\bin\Debug\MvvmCross.Plugins.Messenger.dll
-C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Core\obj\Debug\ServiceLocator.Core.dll.mdb
-C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Core\bin\Debug\ServiceLocator.Core.dll.mdb
-C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Core\obj\Debug\ServiceLocator.Core.dll.mdb
-C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Core\bin\Debug\ServiceLocator.Core.dll.mdb
 C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Core\obj\Debug\ServiceLocator.Core.dll.mdb
 C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Core\bin\Debug\ServiceLocator.Core.dll.mdb

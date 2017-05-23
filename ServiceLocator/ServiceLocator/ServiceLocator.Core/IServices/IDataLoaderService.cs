@@ -11,7 +11,7 @@ namespace ServiceLocator.Core.IServices
 {
     public  interface IDataLoaderService
     {
-        void GetTypeUser();
+        //void GetTypeUser();
         void SetTypeUser();
         List<Record> GetMoneyMaster(string startDay, string endDay, int idMaster);
         void AddNewRecord(Record record);
@@ -24,6 +24,7 @@ namespace ServiceLocator.Core.IServices
         void UpdateRecordMasters(Record record);
         void UpdateRecordClients(Record record);
         ObservableCollection<Record> GetRecords(DateTime date, List<int> ids);
+        ObservableCollection<Record> GetRecordsClients(List<int> ids);
         List<int> GetMastersByFriends(List<int> ids);
     }
 }

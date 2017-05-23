@@ -50,8 +50,9 @@ namespace ServiceLocator.Droid.Views
             var set = this.CreateBindingSet<NewRecordClientView, NewRecordClientViewModel>();
             set.Bind(collapsingToolbar).For(ctb => ctb.Title).To(vm => vm.NameMaster);
             this.CreateBinding().For("Title").To<NewRecordClientViewModel>(vm => vm.NameMaster).Apply();
+            _autocompleteTextView.Text = ViewModel.NameMaster;
             set.Apply();
-
+            
           
        
             try
@@ -78,6 +79,7 @@ namespace ServiceLocator.Droid.Views
                 throw;
             }
         }
+
         protected override void Dispose(bool disposing)
         {
             _token?.Dispose();

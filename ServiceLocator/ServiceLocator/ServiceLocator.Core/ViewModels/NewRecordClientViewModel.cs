@@ -120,6 +120,7 @@ namespace ServiceLocator.Core.ViewModels
         private decimal _money;
         public string _houre = "-1";
         public string _minute = "-1";
+        public int MasterId ;
         private string _photo;
         private string _nameMaster;
 
@@ -128,7 +129,7 @@ namespace ServiceLocator.Core.ViewModels
 
         public async void Init(int masterId, string recordId)
         {
-
+            MasterId = masterId;
             _progressLoaderService = Mvx.Resolve<IProgressLoaderService>();
             _progressLoaderService.ShowProgressBar();
             _dataLoaderService = Mvx.Resolve<IDataLoaderService>();

@@ -14,13 +14,11 @@ namespace ServiceLocator.Entities
             new Master
             {
                 Id = 58767238,
-                Name = "1",
                 IsRegistration = false,
                 Categories = new List<string> {ServicesCategory.Business},
                 AboutMe = "Открываю ИП, ООО и т.п.",
                 StartTime = TimeSpan.FromHours(10),
-                EndTime = TimeSpan.FromHours(17),
-                LastName = "2"
+                EndTime = TimeSpan.FromHours(17)
             }
         };
 

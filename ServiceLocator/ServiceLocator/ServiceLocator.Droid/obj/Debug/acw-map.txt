@@ -22,6 +22,10 @@ ServiceLocator.Droid.Views.BaseView`1, ServiceLocator.Droid;md5e187c0d02747d8043
 ServiceLocator.Droid.Views.BaseView`1, ServiceLocator.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5e187c0d02747d8043bdf48cfd714108a.BaseView_1
 ServiceLocator.Droid.Views.BaseView`1;md5e187c0d02747d8043bdf48cfd714108a.BaseView_1
 servicelocator.droid.views.BaseView_1;md5e187c0d02747d8043bdf48cfd714108a.BaseView_1
+ServiceLocator.Droid.Views.ClientsRecordsView, ServiceLocator.Droid;md5e187c0d02747d8043bdf48cfd714108a.ClientsRecordsView
+ServiceLocator.Droid.Views.ClientsRecordsView, ServiceLocator.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5e187c0d02747d8043bdf48cfd714108a.ClientsRecordsView
+ServiceLocator.Droid.Views.ClientsRecordsView;md5e187c0d02747d8043bdf48cfd714108a.ClientsRecordsView
+servicelocator.droid.views.ClientsRecordsView;md5e187c0d02747d8043bdf48cfd714108a.ClientsRecordsView
 ServiceLocator.Droid.Views.ClientView, ServiceLocator.Droid;md5e187c0d02747d8043bdf48cfd714108a.ClientView
 ServiceLocator.Droid.Views.ClientView, ServiceLocator.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5e187c0d02747d8043bdf48cfd714108a.ClientView
 ServiceLocator.Droid.Views.ClientView;md5e187c0d02747d8043bdf48cfd714108a.ClientView
@@ -50,6 +54,10 @@ ServiceLocator.Droid.Views.HomeMasterView, ServiceLocator.Droid;md5e187c0d02747d
 ServiceLocator.Droid.Views.HomeMasterView, ServiceLocator.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5e187c0d02747d8043bdf48cfd714108a.HomeMasterView
 ServiceLocator.Droid.Views.HomeMasterView;md5e187c0d02747d8043bdf48cfd714108a.HomeMasterView
 servicelocator.droid.views.HomeMasterView;md5e187c0d02747d8043bdf48cfd714108a.HomeMasterView
+ServiceLocator.Droid.Views.InfoView, ServiceLocator.Droid;md5e187c0d02747d8043bdf48cfd714108a.InfoView
+ServiceLocator.Droid.Views.InfoView, ServiceLocator.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5e187c0d02747d8043bdf48cfd714108a.InfoView
+ServiceLocator.Droid.Views.InfoView;md5e187c0d02747d8043bdf48cfd714108a.InfoView
+servicelocator.droid.views.InfoView;md5e187c0d02747d8043bdf48cfd714108a.InfoView
 ServiceLocator.Droid.Views.MasterView, ServiceLocator.Droid;md5e187c0d02747d8043bdf48cfd714108a.MasterView
 ServiceLocator.Droid.Views.MasterView, ServiceLocator.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5e187c0d02747d8043bdf48cfd714108a.MasterView
 ServiceLocator.Droid.Views.MasterView;md5e187c0d02747d8043bdf48cfd714108a.MasterView
@@ -70,6 +78,10 @@ ServiceLocator.Droid.Views.NewRecordMasterView, ServiceLocator.Droid;md5e187c0d0
 ServiceLocator.Droid.Views.NewRecordMasterView, ServiceLocator.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5e187c0d02747d8043bdf48cfd714108a.NewRecordMasterView
 ServiceLocator.Droid.Views.NewRecordMasterView;md5e187c0d02747d8043bdf48cfd714108a.NewRecordMasterView
 servicelocator.droid.views.NewRecordMasterView;md5e187c0d02747d8043bdf48cfd714108a.NewRecordMasterView
+ServiceLocator.Droid.Views.PushMasterView, ServiceLocator.Droid;md5e187c0d02747d8043bdf48cfd714108a.PushMasterView
+ServiceLocator.Droid.Views.PushMasterView, ServiceLocator.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5e187c0d02747d8043bdf48cfd714108a.PushMasterView
+ServiceLocator.Droid.Views.PushMasterView;md5e187c0d02747d8043bdf48cfd714108a.PushMasterView
+servicelocator.droid.views.PushMasterView;md5e187c0d02747d8043bdf48cfd714108a.PushMasterView
 ServiceLocator.Droid.Views.RecordView, ServiceLocator.Droid;md5e187c0d02747d8043bdf48cfd714108a.RecordView
 ServiceLocator.Droid.Views.RecordView, ServiceLocator.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5e187c0d02747d8043bdf48cfd714108a.RecordView
 ServiceLocator.Droid.Views.RecordView;md5e187c0d02747d8043bdf48cfd714108a.RecordView

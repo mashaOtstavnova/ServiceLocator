@@ -27,6 +27,10 @@
       android:icon="@drawable/ic_rouble"
       android:title="Выручка" />
     <item
+     android:id="@+id/nav_push"
+     android:icon="@drawable/ic_forum"
+     android:title="Уведомления" />
+    <item
         android:id="@+id/nav_info"
         android:icon="@drawable/ic_info"
         android:title="О программе" />
