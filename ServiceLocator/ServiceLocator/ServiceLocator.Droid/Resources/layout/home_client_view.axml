@@ -17,7 +17,21 @@
             <include
                 layout="@layout/toolbar" />
         </android.support.design.widget.AppBarLayout>
+      <LinearLayout
+   android:orientation="vertical"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent">
+        <MvxSelectableListView
+            android:id="@+id/schedule_view_eventsList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:choiceMode="multipleChoice"
+            app:MvxItemTemplate="@layout/list_record_view"
+            app:MvxBind="ItemsSource RecordItems; ItemClick OnItemSelectCommand; SelectedItems SelectedItems, Mode=OneWay" />
+      </LinearLayout>
     </LinearLayout>
+
     <android.support.design.widget.NavigationView
         android:id="@+id/nav_view"
         android:padding="0dp"

@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using MvvmCross.Platform;
 using ServiceLocator.Core.IServices;
 using ServiceLocator.Entities;
+using System.Collections.ObjectModel;
+using MvvmCross.Core.ViewModels;
 
 namespace ServiceLocator.Core.ViewModels
 {
@@ -56,9 +58,14 @@ namespace ServiceLocator.Core.ViewModels
             //_progressLoaderService.ShowProgressBar();
             var friends = new List<Friend>();
             CurrentUser = await _profileService.GetUser();
-
+            _dataLoader = Mvx.Resolve<IDataLoaderService>();
             if (CurrentUser != null)
+            { 
                 friends = (await _profileService.GetFriends()).items;
+                _clientsIds = new List<int>();
+                _clientsIds.Add(CurrentUser.id);
+                ReloadRecord();
+            }
             //_progressLoaderService.HideProgressBar();
         }
 
@@ -103,6 +110,111 @@ namespace ServiceLocator.Core.ViewModels
         {
 
             ShowViewModel<LoginVKViewModel>();
+        }
+        private IDataLoaderService _dataLoader;
+        private IProgressLoaderService _progressLoaderService;
+        private List<Friend> _friends;
+        private List<int> _clientsIds;
+        private ObservableCollection<RecordItem> _records;
+        private ScheduleType _scheduleType;
+        private string _typeData;
+        private List<RecordItem> _selectedItems;
+        private bool _isMaster;
+
+        
+
+
+        public ScheduleType ScheduleType
+        {
+            get => _scheduleType;
+            set
+            {
+                _scheduleType = value;
+
+                RaisePropertyChanged(() => ScheduleType);
+
+            }
+        }
+
+        public ObservableCollection<RecordItem> RecordItems
+        {
+            get => _records;
+            set
+            {
+                _records = value;
+                RaisePropertyChanged(() => RecordItems);
+            }
+        }
+        
+
+        public async void ReloadRecord()
+        {
+            var data = _dataLoader.GetRecordsClients(_clientsIds).ToList();
+            data = data.OrderBy(x => x.Time).ToList();
+            var recordItems = new ObservableCollection<RecordItem>();
+            var list = new List<Record>();
+
+            foreach (var item in data)
+            {
+                var recordItem = new RecordItem();
+                recordItem.Service = item.Service;
+                var master = await _profileService.GetUserById(item.IdMaster);
+                recordItem.NameMaster = $"{master.first_name} {master.last_name}";
+                recordItem.PhotoMaster = master.photo_100;
+                recordItem.IsBusy = item.IsBusy;
+                recordItem.Id = item.Id;
+                recordItem.Time = item.Time.Date.ToString();
+                recordItems.Add(recordItem);
+            }
+            RecordItems = new ObservableCollection<RecordItem>(recordItems);
+
+        }
+        public IMvxCommand OnItemSelectCommand
+        {
+            get { return new MvxCommand<RecordItem>(OnItemSelect); }
+        }
+
+        private void OnItemSelect(RecordItem obj)
+        {
+            if (!obj.IsBusy)
+            {
+                ShowViewModel<RecordViewModel>(new { idRecord = obj.Id.ToString() });
+            }
+            else
+            {
+
+                ShowViewModel<NewRecordClientViewModel>(new { masterId = -1, recordId = obj.Id.ToString() });
+
+            }
+        }
+
+        public List<RecordItem> SelectedItems
+        {
+            get
+            {
+                if (_selectedItems == null)
+                    _selectedItems = new List<RecordItem>();
+                return _selectedItems;
+            }
+            set
+            {
+                _selectedItems = value;
+                RaisePropertyChanged(() => SelectedItems);
+            }
+        }
+      
+
+      
+
+        public bool IsMaster
+        {
+
+            get => _isMaster;
+            set
+            {
+                _isMaster = value;
+                RaisePropertyChanged(() => IsMaster);
+            }
         }
     }
 }

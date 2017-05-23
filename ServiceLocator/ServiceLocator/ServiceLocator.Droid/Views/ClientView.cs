@@ -57,7 +57,7 @@ namespace ServiceLocator.Droid.Views
             set.Bind(callButton).For(ctb => ctb.Visibility).To(vm => vm.IsPhone).WithConversion("MyVisibility");
 
             set.Bind(addNewRecordButoon).For(ctb => ctb.Visibility).To(vm => vm.IsMy).WithConversion("MyVisibilityFalse");
-            set.Bind(myRecordButoon).For(ctb => ctb.Visibility).To(vm => vm.IsMy).WithConversion("MyVisibility");
+            set.Bind(myRecordButoon).For(ctb => ctb.Visibility).To(vm => vm.IsMyForRecord).WithConversion("MyVisibility");
 
             this.CreateBinding().For("Title").To<MasterViewModel>(vm => vm.FullName).Apply();
             set.Apply();

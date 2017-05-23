@@ -35,6 +35,15 @@ namespace ServiceLocator.Core.ViewModels
                 RaisePropertyChanged(() => IsMy);
             }
         }
+        public bool IsMyForRecord
+        {
+            get { return _isMyForRecord; }
+            set
+            {
+                _isMyForRecord = value;
+                RaisePropertyChanged(() => IsMyForRecord);
+            }
+        }
         public string FullName
         {
             get { return _fullName; }
@@ -121,7 +130,9 @@ namespace ServiceLocator.Core.ViewModels
                     TypeUser = Mvx.Resolve<IDataLoaderService>().GetType(value.id);
                     FullName = $"{value.first_name} {value.last_name}";
                     Bdate = $"{value.bdate}";
-                    if(TypeUser!="Client")
+
+                    IsMyForRecord = false;
+                    if (TypeUser != "Client")
                     {
                         IsMy = false;
                     }
@@ -147,6 +158,7 @@ namespace ServiceLocator.Core.ViewModels
                 if (value != null)
                 {
                     IsMy = true;
+                    IsMyForRecord = true;
                     FullName = $"{value.first_name} {value.last_name}";
                     Bdate = $"{value.bdate}";
                     HomePhone = $"{value.home_phone}";
@@ -173,6 +185,8 @@ namespace ServiceLocator.Core.ViewModels
             }
         }
         private string _typeUser;
+        private bool _isMyForRecord;
+
         public string TypeUser {
             get { return _typeUser; }
             set

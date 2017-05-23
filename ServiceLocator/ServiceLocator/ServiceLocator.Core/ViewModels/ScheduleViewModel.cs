@@ -130,7 +130,7 @@ namespace ServiceLocator.Core.ViewModels
 
         private void OnItemSelect(RecordItem obj)
         {
-            if (!obj.IsBusy)
+            if (obj.IsBusy)
             {
                 ShowViewModel<RecordViewModel>(new { idRecord = obj.Id.ToString() });
             }

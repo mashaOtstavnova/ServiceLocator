@@ -12,6 +12,8 @@ using MvvmCross.Platform;
 using ServiceLocator.Core.IServices;
 using ServiceLocator.Core.ViewModels;
 using VKontakte;
+using Info.Hoang8f.Android.Segmented;
+using ServiceLocator.Entities;
 
 namespace ServiceLocator.Droid.Views
 {
@@ -20,6 +22,11 @@ namespace ServiceLocator.Droid.Views
     {
         private DrawerLayout _drawerLayout;
         private NavigationView _navigationView;
+        private CalendarView _calendar;
+        private ListView _eventsList;
+        private SegmentedGroup _segmentedControl;
+        private SegmentedGroup tabSelect;
+        private DateTime _calendarDate;
         protected override int LayoutResource => Resource.Layout.home_master_view;
 
         protected override async void OnCreate(Bundle bundle)
@@ -28,11 +35,24 @@ namespace ServiceLocator.Droid.Views
             {
                 base.OnCreate(bundle);
 
+                _progressLoaderService = Mvx.Resolve<IProgressLoaderService>();
                 ViewModel.Title = "Расписание";
                 Title = ViewModel.Title;
                 _drawerLayout = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
 
                 SupportActionBar.SetHomeAsUpIndicator(Resource.Drawable.ic_menu);
+                var tabFree = FindViewById<RadioButton>(Resource.Id.schedule_view_segment_free);
+                tabSelect = FindViewById<SegmentedGroup>(Resource.Id.schedule_view_segmentedControl);
+                var tabBusy = FindViewById<RadioButton>(Resource.Id.schedule_view_segment_busy);
+                tabSelect.Check(Resource.Id.schedule_view_segment_free);
+              
+                _calendarDate = DateTime.Now;
+                _calendar = FindViewById<CalendarView>(Resource.Id.schedule_view_calendar);
+                _calendar.DateChange += CalendarOnDateChange;
+
+                _segmentedControl = FindViewById<SegmentedGroup>(Resource.Id.schedule_view_segmentedControl);
+                _segmentedControl.CheckedChange += SegmentedControlOnCheckedChange;
+
 
                 var config = ImageLoaderConfiguration.CreateDefault(ApplicationContext);
                 if(!ImageLoader.Instance.IsInited)
@@ -68,6 +88,45 @@ namespace ServiceLocator.Droid.Views
             _navigationView.NavigationItemSelected +=NavigationViewOnNavigationItemSelected;
         }
 
+        private IProgressLoaderService _progressLoaderService;
+        private void CalendarOnDateChange(object sender, CalendarView.DateChangeEventArgs e)
+        {
+
+            _progressLoaderService.ShowProgressBar();
+            tabSelect.Check(Resource.Id.schedule_view_segment_free);
+            _calendarDate = new DateTime(e.Year, e.Month + 1, e.DayOfMonth);
+            ViewModel.ReloadRecord(_calendarDate);
+
+            _progressLoaderService.HideProgressBar();
+        }
+
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            switch (item.ItemId)
+            {
+                case Android.Resource.Id.Home:
+                    _drawerLayout.OpenDrawer(GravityCompat.Start);
+                    return true;
+            }
+            return base.OnOptionsItemSelected(item);
+        }
+
+
+        private void SegmentedControlOnCheckedChange(object sender, RadioGroup.CheckedChangeEventArgs e)
+        {
+
+            switch (e.CheckedId)
+            {
+                case Resource.Id.schedule_view_segment_free:
+                    ViewModel.ScheduleType = ScheduleType.Free;
+                    ViewModel.ReloadRecord(_calendarDate);
+                    break;
+                case Resource.Id.schedule_view_segment_busy:
+                    ViewModel.ScheduleType = ScheduleType.Busy;
+                    ViewModel.ReloadRecord(_calendarDate);
+                    break;
+            }
+        }
         private void NavigationViewOnNavigationItemSelected(object o, NavigationView.NavigationItemSelectedEventArgs e)
         {
             e.MenuItem.SetChecked(true);
@@ -112,17 +171,7 @@ namespace ServiceLocator.Droid.Views
                 ViewModel.ShowLogin();
         }
 
-        public override bool OnOptionsItemSelected(IMenuItem item)
-        {
-            switch (item.ItemId)
-            {
-                case Android.Resource.Id.Home:
-                    _drawerLayout.OpenDrawer(GravityCompat.Start);
-                    return true;
-            }
-            return base.OnOptionsItemSelected(item);
-        }
-
+       
         protected override void OnDestroy()
         {
             ImageLoader.Instance.Destroy();

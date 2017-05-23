@@ -13,7 +13,16 @@ C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\Ser
 C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Entities\bin\Debug\ServiceLocator.Entities.pdb
 C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Entities\obj\Debug\ServiceLocator.Entities.dll
 C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Entities\obj\Debug\ServiceLocator.Entities.pdb
-C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Entities\obj\Debug\ServiceLocator.Entities.csprojResolveAssemblyReference.cache
+C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Entities\obj\Debug\ServiceLocator.Entities.dll.mdb
+C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Entities\bin\Debug\ServiceLocator.Entities.dll.mdb
+C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Entities\obj\Debug\ServiceLocator.Entities.dll.mdb
+C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Entities\bin\Debug\ServiceLocator.Entities.dll.mdb
+C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Entities\obj\Debug\ServiceLocator.Entities.dll.mdb
+C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Entities\bin\Debug\ServiceLocator.Entities.dll.mdb
+C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Entities\obj\Debug\ServiceLocator.Entities.dll.mdb
+C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Entities\bin\Debug\ServiceLocator.Entities.dll.mdb
+C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Entities\obj\Debug\ServiceLocator.Entities.dll.mdb
+C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Entities\bin\Debug\ServiceLocator.Entities.dll.mdb
 C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Entities\obj\Debug\ServiceLocator.Entities.dll.mdb
 C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Entities\bin\Debug\ServiceLocator.Entities.dll.mdb
 C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Entities\obj\Debug\ServiceLocator.Entities.dll.mdb
