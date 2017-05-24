@@ -36,7 +36,7 @@ namespace ServiceLocator.Droid.Views
                 base.OnCreate(bundle);
 
                 _progressLoaderService = Mvx.Resolve<IProgressLoaderService>();
-                ViewModel.Title = "Расписание";
+                ViewModel.Title = "Мои записи";
                 Title = ViewModel.Title;
                 _drawerLayout = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
 

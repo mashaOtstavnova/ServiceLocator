@@ -499,6 +499,7 @@
     <AndroidResource Include="Resources\drawable-xhdpi\ic_announcement.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_announcement.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\ic_announcement.png" />
+    <AndroidResource Include="Resources\drawable\line_background.xml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ServiceLocator.Core\ServiceLocator.Core.csproj">

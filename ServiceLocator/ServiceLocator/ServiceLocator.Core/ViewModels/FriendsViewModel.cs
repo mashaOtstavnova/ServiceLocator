@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Platform;
 using ServiceLocator.Core.IServices;
+using MvvmCross.Plugins.Messenger;
 
 namespace ServiceLocator.Core.ViewModels
 {
@@ -13,7 +14,10 @@ namespace ServiceLocator.Core.ViewModels
     {
         private List<ListItem> _selectedItems;
         private List<ListItem> list = new List<ListItem>();
-
+        public FriendsViewModel()
+         {
+            ItemsAutoComText = new List<FriendItem>();
+        }
         public List<ListItem> Items
         {
             set
@@ -44,12 +48,24 @@ namespace ServiceLocator.Core.ViewModels
             }
         }
 
+        private List<FriendItem> _itemsAutoComText;
+        public List<FriendItem> ItemsAutoComText
+        {
+            get => _itemsAutoComText;
+            set
+            {
+                _itemsAutoComText = value;
+                RaisePropertyChanged(() => ItemsAutoComText);
+            }
+        }
         public IMvxCommand OnItemSelectCommand
         {
             get { return new MvxCommand<ListItem>(OnItemSelect); }
         }
 
         private  IProgressLoaderService _progressLoaderService;
+        private IProfileService _profileService;
+
         public async void Init()
         {
 
@@ -82,6 +98,14 @@ namespace ServiceLocator.Core.ViewModels
                 var t = new ListItem(item.first_name + " " + item.last_name, item.photo_50,services, item.id);
                 Items.Add(t);
             }
+            var friends = (await profileService.GetFriends()).items;
+
+            ItemsAutoComText = friends.Select(
+                    f => new FriendItem { Image = f.photo_100, Name = f.first_name, SurName = f.last_name, Id = f.id })
+                .ToList();
+            ;
+            if (Items.Count > 0)
+                Mvx.Resolve<IMvxMessenger>().Publish(new NeedSetAdapterMessage(this));
             _progressLoaderService.HideProgressBar();
             //var s =
             //    users.items.Select(
@@ -123,6 +147,29 @@ namespace ServiceLocator.Core.ViewModels
             //    SelectedItems.Add(item);
             //}
             RaisePropertyChanged(() => SelectedItems);
+        }
+        public void OnItemAutoSelect(int id)
+        {
+            IDataLoaderService dataLoaderService;
+            var service = Mvx.TryResolve(out dataLoaderService);
+            var type = dataLoaderService.GetType(id);
+            if (type == "Master")
+            {
+                ShowViewModel<MasterViewModel>(new { idFriend = id });
+            }
+            else
+            {
+                ShowViewModel<ClientViewModel>(new { idFriend = id });
+            }
+            //if (SelectedItems.Contains(item))
+            //{
+            //    SelectedItems.Remove(item);
+            //}
+            //else
+            //{
+            //    SelectedItems.Add(item);
+            ////}
+            //RaisePropertyChanged(() => SelectedItems);
         }
     }
 

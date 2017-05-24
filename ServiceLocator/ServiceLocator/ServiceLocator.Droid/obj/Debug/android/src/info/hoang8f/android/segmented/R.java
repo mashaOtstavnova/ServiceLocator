@@ -2850,21 +2850,22 @@ containing a value of this type.
         public static final int ic_user=0x7f02009e;
         public static final int icon=0x7f02009f;
         public static final int img=0x7f0200a0;
-        public static final int linearborder=0x7f0200a1;
-        public static final int nameservice=0x7f0200a2;
-        public static final int notification_template_icon_bg=0x7f0200af;
-        public static final int radio_checked=0x7f0200a3;
-        public static final int radio_unchecked=0x7f0200a4;
-        public static final int splash=0x7f0200a5;
-        public static final int splash1=0x7f0200a6;
-        public static final int splash2=0x7f0200a7;
-        public static final int splash3=0x7f0200a8;
-        public static final int splash31=0x7f0200a9;
-        public static final int splash32=0x7f0200aa;
-        public static final int vk_clear_shape=0x7f0200ab;
-        public static final int vk_gray_transparent_shape=0x7f0200ac;
-        public static final int vk_logo=0x7f0200ad;
-        public static final int vk_share_send_button_background=0x7f0200ae;
+        public static final int line_background=0x7f0200a1;
+        public static final int linearborder=0x7f0200a2;
+        public static final int nameservice=0x7f0200a3;
+        public static final int notification_template_icon_bg=0x7f0200b0;
+        public static final int radio_checked=0x7f0200a4;
+        public static final int radio_unchecked=0x7f0200a5;
+        public static final int splash=0x7f0200a6;
+        public static final int splash1=0x7f0200a7;
+        public static final int splash2=0x7f0200a8;
+        public static final int splash3=0x7f0200a9;
+        public static final int splash31=0x7f0200aa;
+        public static final int splash32=0x7f0200ab;
+        public static final int vk_clear_shape=0x7f0200ac;
+        public static final int vk_gray_transparent_shape=0x7f0200ad;
+        public static final int vk_logo=0x7f0200ae;
+        public static final int vk_share_send_button_background=0x7f0200af;
     }
     public static final class id {
         public static final int MvvmCrossTagId=0x7f09000b;

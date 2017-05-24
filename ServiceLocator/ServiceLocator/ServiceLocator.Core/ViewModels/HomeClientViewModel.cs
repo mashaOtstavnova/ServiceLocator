@@ -25,7 +25,7 @@ namespace ServiceLocator.Core.ViewModels
         {
             _profileService = Mvx.Resolve<IProfileService>();
             _loaderService = Mvx.Resolve<IDataLoaderService>();
-            //_progressLoaderService = Mvx.Resolve<IProgressLoaderService>();
+            _progressLoaderService = Mvx.Resolve<IProgressLoaderService>();
         }
 
         //public ObservableCollection<Present> AllWantedPresents
@@ -55,7 +55,6 @@ namespace ServiceLocator.Core.ViewModels
 
         public async Task Initialize()
         {
-            //_progressLoaderService.ShowProgressBar();
             var friends = new List<Friend>();
             CurrentUser = await _profileService.GetUser();
             _dataLoader = Mvx.Resolve<IDataLoaderService>();
@@ -66,7 +65,6 @@ namespace ServiceLocator.Core.ViewModels
                 _clientsIds.Add(CurrentUser.id);
                 ReloadRecord();
             }
-            //_progressLoaderService.HideProgressBar();
         }
 
         //private void OpenPresentPage(Present present)
@@ -149,6 +147,7 @@ namespace ServiceLocator.Core.ViewModels
 
         public async void ReloadRecord()
         {
+            _progressLoaderService.ShowProgressBar();
             var data = _dataLoader.GetRecordsClients(_clientsIds).ToList();
             data = data.OrderBy(x => x.Time).ToList();
             var recordItems = new ObservableCollection<RecordItem>();
@@ -167,6 +166,7 @@ namespace ServiceLocator.Core.ViewModels
                 recordItems.Add(recordItem);
             }
             RecordItems = new ObservableCollection<RecordItem>(recordItems);
+            _progressLoaderService.HideProgressBar();
 
         }
         public IMvxCommand OnItemSelectCommand

@@ -76,11 +76,12 @@ namespace ServiceLocator.Core.ViewModels
         }
         public async void ReloadRecord(DateTime date)
         {
+
+            //_progressLoaderService.ShowProgressBar();
             var data = _dataLoader.GetRecords(date, _masterIds).ToList();
             data = data.OrderBy(x => x.Time).ToList();
             var recordItems = new ObservableCollection<RecordItem>();
             var list = new List<Record>();
-
             switch (ScheduleType)
             {
                 case ScheduleType.Free:
@@ -119,7 +120,10 @@ namespace ServiceLocator.Core.ViewModels
                     RecordItems = new ObservableCollection<RecordItem>(recordItems);
                     
                     break;
+                default:
+                    break;
             }
+            //_progressLoaderService.HideProgressBar();
         }
         public IMvxCommand OnItemSelectCommand
         {
@@ -213,7 +217,7 @@ namespace ServiceLocator.Core.ViewModels
 
             _dataLoader = Mvx.Resolve<IDataLoaderService>();
             _progressLoaderService = Mvx.Resolve<IProgressLoaderService>();
-            //_progressLoaderService = Mvx.Resolve<IProgressLoaderService>();
+            _progressLoaderService = Mvx.Resolve<IProgressLoaderService>();
         }
 
         //public ObservableCollection<Present> AllWantedPresents

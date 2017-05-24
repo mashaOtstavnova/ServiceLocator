@@ -244,9 +244,11 @@ C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\Ser
 C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Droid\obj\Debug\res\drawable-xhdpi\ic_announcement.png
 C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Droid\obj\Debug\res\drawable-xxhdpi\ic_announcement.png
 C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Droid\obj\Debug\res\drawable-xxxhdpi\ic_announcement.png
+C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Droid\obj\Debug\res\drawable\line_background.xml
 C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Droid\obj\Debug\R.cs.flag
 C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Droid\obj\Debug\uploadflags.txt
 C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Droid\bin\Debug\ServiceLocator.Droid.dll.mdb
+C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Droid\bin\Debug\ServiceLocator.Core.dll.mdb
 C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Droid\bin\Debug\ServiceLocator.Entities.dll.mdb
 C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Droid\bin\Debug\Java.Interop.dll.mdb
 C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Droid\bin\Debug\Microsoft.CSharp.dll.mdb
@@ -254,7 +256,6 @@ C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\Ser
 C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Droid\bin\Debug\Mono.Android.Export.dll.mdb
 C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Droid\bin\Debug\Mono.CSharp.dll.mdb
 C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Droid\bin\Debug\mscorlib.dll.mdb
-C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Droid\bin\Debug\ServiceLocator.Core.dll.mdb
 C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Droid\bin\Debug\System.ComponentModel.Composition.dll.mdb
 C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Droid\bin\Debug\System.Core.dll.mdb
 C:\Users\maria\Documents\GitHub\ServiceLocator\ServiceLocator\ServiceLocator\ServiceLocator.Droid\bin\Debug\System.dll.mdb

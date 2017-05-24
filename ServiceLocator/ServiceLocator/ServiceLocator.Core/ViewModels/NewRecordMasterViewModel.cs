@@ -121,7 +121,7 @@ namespace ServiceLocator.Core.ViewModels
             {
                 if(string.IsNullOrWhiteSpace(_nameClient))
                 {
-                    return "Мастер";
+                    return "Клиент";
                 }
                 else
                 {

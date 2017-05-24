@@ -63,12 +63,20 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="10dp">
-          <AutoCompleteTextView
-             android:layout_width="fill_parent"
-             android:layout_height="wrap_content"
-             android:id="@+id/new_record_master_autoCompleteInput"
-             android:completionThreshold="1"
-             android:dropDownHeight="138dp"
+            <AutoCompleteTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/new_record_master_autoCompleteInput"
+                android:completionThreshold="1"
+                android:dropDownHeight="138dp"
+                android:textColor="@color/secondaryText"
+                android:textColorHint="@android:color/white"
+                android:background="@drawable/linearBorder"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="5dp"
                 android:hint="Добавьте мастера" />
             <Button
                 android:id="@+id/pickDate"

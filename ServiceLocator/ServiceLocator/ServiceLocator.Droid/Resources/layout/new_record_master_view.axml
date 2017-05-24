@@ -69,7 +69,16 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/new_record_master_autoCompleteInput"
                 android:completionThreshold="1"
+                android:textColor="@color/secondaryText"
+                android:textColorHint="@android:color/white"
+                android:background="@drawable/linearBorder"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
                 android:dropDownHeight="138dp"
+                
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="5dp"
                 android:hint="Добавьте клиента" />
             <Button
                 android:id="@+id/pickTime"
